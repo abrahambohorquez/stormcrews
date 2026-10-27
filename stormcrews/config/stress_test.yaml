@@ -1,0 +1,15 @@
+# StormCrews scenario: stress test. A quarter of the local crews unavailable and no mutual aid at all, as when every
+# neighbor is hit at the same time. Requests for aid are accepted but nobody comes.
+#
+#   sim = stormcrews.Simulator("stress_test")
+
+region: ne                 # ne (New England) | pawv (Pennsylvania and West Virginia)
+storms: all                # all | a list of storm ids
+calibration: shape         # shape | equal | anchored | anchored_low | anchored_high
+decision_h: 6.0            # hours between decision points (also when mutual aid arrives)
+
+fleet_factor: 0.75         # 75 % of the calibrated local fleet
+aid: none                  # no mutual aid
+reactive_aid: false        # no automatic request
+
+job_order: largest         # largest | oldest | guard | sweep

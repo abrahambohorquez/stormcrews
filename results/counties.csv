@@ -1,0 +1,1025 @@
+scenario,rule,fips,mean_outage_h
+new_england,current practice,9001,10.621108575331553
+new_england,current practice,9003,10.358307040787704
+new_england,current practice,9005,11.120317868302966
+new_england,current practice,9007,13.893010297015744
+new_england,current practice,9009,9.911491091812023
+new_england,current practice,9011,11.134328649330136
+new_england,current practice,9013,13.736101100604092
+new_england,current practice,9015,14.653131664353152
+new_england,current practice,23001,16.40931229556842
+new_england,current practice,23003,21.226977619166842
+new_england,current practice,23005,11.934552548967172
+new_england,current practice,23007,20.28448423689453
+new_england,current practice,23009,14.479526711806455
+new_england,current practice,23011,15.081583222484689
+new_england,current practice,23013,15.21425005242628
+new_england,current practice,23015,13.016118563599575
+new_england,current practice,23017,14.225994521280358
+new_england,current practice,23019,16.096857343753793
+new_england,current practice,23021,21.661729839220264
+new_england,current practice,23023,15.365510072760033
+new_england,current practice,23025,16.348999475130093
+new_england,current practice,23027,16.06771593153941
+new_england,current practice,23029,18.550835928647675
+new_england,current practice,23031,14.563804734508045
+new_england,current practice,25001,12.331186789926527
+new_england,current practice,25003,10.286265339289393
+new_england,current practice,25005,11.032259224633627
+new_england,current practice,25007,24.708332470852916
+new_england,current practice,25009,11.18273423564468
+new_england,current practice,25011,12.621895814941746
+new_england,current practice,25013,10.058287594577692
+new_england,current practice,25015,10.77254445422781
+new_england,current practice,25017,10.585923285523224
+new_england,current practice,25019,26.617376956683444
+new_england,current practice,25021,11.21523218758228
+new_england,current practice,25023,11.377359837282347
+new_england,current practice,25025,9.234687363550066
+new_england,current practice,25027,10.202383793217072
+new_england,current practice,33001,12.459555501803585
+new_england,current practice,33003,11.733812883347563
+new_england,current practice,33005,11.168645045224354
+new_england,current practice,33007,16.857288101408866
+new_england,current practice,33009,13.944627212664326
+new_england,current practice,33011,11.459883862438014
+new_england,current practice,33013,14.111028729225566
+new_england,current practice,33015,11.789346068509154
+new_england,current practice,33017,14.417573804533244
+new_england,current practice,33019,13.929954498092066
+new_england,current practice,44001,30.412907190300963
+new_england,current practice,44003,12.423925983153032
+new_england,current practice,44005,15.511569684696523
+new_england,current practice,44007,13.616007142724785
+new_england,current practice,44009,15.182500363366097
+new_england,current practice,50001,17.843888043892413
+new_england,current practice,50003,13.958387011866646
+new_england,current practice,50005,17.373452768394632
+new_england,current practice,50007,19.24290810089736
+new_england,current practice,50009,19.5115863063817
+new_england,current practice,50011,14.31170740406844
+new_england,current practice,50013,24.449766206865803
+new_england,current practice,50015,14.434590935513882
+new_england,current practice,50017,12.548202890628021
+new_england,current practice,50019,20.56725568446461
+new_england,current practice,50021,14.04579397624812
+new_england,current practice,50023,17.742223611202643
+new_england,current practice,50025,11.179194910190931
+new_england,current practice,50027,12.434722787111054
+new_england,forecast weighted,9001,8.985024265379042
+new_england,forecast weighted,9003,7.177048404356062
+new_england,forecast weighted,9005,8.83666722757126
+new_england,forecast weighted,9007,8.249663844638366
+new_england,forecast weighted,9009,7.296889677370468
+new_england,forecast weighted,9011,7.994954096990702
+new_england,forecast weighted,9013,10.831243911154411
+new_england,forecast weighted,9015,10.018569002140854
+new_england,forecast weighted,23001,14.262436949300854
+new_england,forecast weighted,23003,12.14381115791445
+new_england,forecast weighted,23005,13.949997941604593
+new_england,forecast weighted,23007,12.343626139455651
+new_england,forecast weighted,23009,12.977315293926996
+new_england,forecast weighted,23011,12.978474327760052
+new_england,forecast weighted,23013,13.739354444054348
+new_england,forecast weighted,23015,14.697886497911366
+new_england,forecast weighted,23017,11.452950966484154
+new_england,forecast weighted,23019,12.31958400560609
+new_england,forecast weighted,23021,12.470699414548637
+new_england,forecast weighted,23023,15.212911555960854
+new_england,forecast weighted,23025,12.648876539069013
+new_england,forecast weighted,23027,13.890739838997492
+new_england,forecast weighted,23029,13.716878814513203
+new_england,forecast weighted,23031,13.34923571966892
+new_england,forecast weighted,25001,8.906320513665134
+new_england,forecast weighted,25003,8.294731371855937
+new_england,forecast weighted,25005,8.059796465557039
+new_england,forecast weighted,25007,8.34422838027163
+new_england,forecast weighted,25009,8.482860738178864
+new_england,forecast weighted,25011,9.271318241177529
+new_england,forecast weighted,25013,6.993964925711161
+new_england,forecast weighted,25015,8.987734612188722
+new_england,forecast weighted,25017,6.816812558185762
+new_england,forecast weighted,25019,8.615484502127506
+new_england,forecast weighted,25021,7.947576608989383
+new_england,forecast weighted,25023,10.226904542962687
+new_england,forecast weighted,25025,5.939382489400004
+new_england,forecast weighted,25027,8.400139701880047
+new_england,forecast weighted,33001,12.551822036556434
+new_england,forecast weighted,33003,12.066324503930383
+new_england,forecast weighted,33005,10.860037124310717
+new_england,forecast weighted,33007,8.604909333386692
+new_england,forecast weighted,33009,8.221097763074773
+new_england,forecast weighted,33011,9.644362524086178
+new_england,forecast weighted,33013,11.352568266346672
+new_england,forecast weighted,33015,10.226412413196769
+new_england,forecast weighted,33017,11.217510741803874
+new_england,forecast weighted,33019,12.339725010725
+new_england,forecast weighted,44001,11.834463599484154
+new_england,forecast weighted,44003,8.62874410456432
+new_england,forecast weighted,44005,9.054645741767306
+new_england,forecast weighted,44007,8.395906062854657
+new_england,forecast weighted,44009,9.467614614641468
+new_england,forecast weighted,50001,10.376650100032126
+new_england,forecast weighted,50003,9.468391504359824
+new_england,forecast weighted,50005,10.952833316787716
+new_england,forecast weighted,50007,8.795299491711775
+new_england,forecast weighted,50009,10.15839661655395
+new_england,forecast weighted,50011,8.43656191337166
+new_england,forecast weighted,50013,8.581449688422746
+new_england,forecast weighted,50015,8.450347301881543
+new_england,forecast weighted,50017,10.343131672451813
+new_england,forecast weighted,50019,7.7107714382433885
+new_england,forecast weighted,50021,9.167584909445207
+new_england,forecast weighted,50023,10.563767183156655
+new_england,forecast weighted,50025,10.834245595040324
+new_england,forecast weighted,50027,9.61569580359172
+new_england,early aid x1.5,9001,8.955747389634691
+new_england,early aid x1.5,9003,8.710401070232448
+new_england,early aid x1.5,9005,9.076838031226169
+new_england,early aid x1.5,9007,11.516558477921594
+new_england,early aid x1.5,9009,8.487704731074139
+new_england,early aid x1.5,9011,9.209113913925108
+new_england,early aid x1.5,9013,10.89833994177189
+new_england,early aid x1.5,9015,11.597730145558232
+new_england,early aid x1.5,23001,12.626421746028614
+new_england,early aid x1.5,23003,17.47185387996605
+new_england,early aid x1.5,23005,9.482134443038513
+new_england,early aid x1.5,23007,15.874987951153942
+new_england,early aid x1.5,23009,11.518883218604946
+new_england,early aid x1.5,23011,12.166340523070293
+new_england,early aid x1.5,23013,11.613955915588054
+new_england,early aid x1.5,23015,10.19831500333036
+new_england,early aid x1.5,23017,11.405879894429386
+new_england,early aid x1.5,23019,12.525990582080368
+new_england,early aid x1.5,23021,17.0160968997979
+new_england,early aid x1.5,23023,11.351509165501918
+new_england,early aid x1.5,23025,13.195120456341616
+new_england,early aid x1.5,23027,11.845842311299645
+new_england,early aid x1.5,23029,13.592904565181572
+new_england,early aid x1.5,23031,11.641047959401302
+new_england,early aid x1.5,25001,9.809359866001218
+new_england,early aid x1.5,25003,8.848507284512412
+new_england,early aid x1.5,25005,8.986912239598967
+new_england,early aid x1.5,25007,20.5659966911104
+new_england,early aid x1.5,25009,8.854092186736107
+new_england,early aid x1.5,25011,9.66374531693954
+new_england,early aid x1.5,25013,8.455155890649529
+new_england,early aid x1.5,25015,8.997732222032623
+new_england,early aid x1.5,25017,8.578988677550182
+new_england,early aid x1.5,25019,20.45583540468646
+new_england,early aid x1.5,25021,8.982985753935568
+new_england,early aid x1.5,25023,8.995738445903607
+new_england,early aid x1.5,25025,7.847654429588213
+new_england,early aid x1.5,25027,8.310598729572515
+new_england,early aid x1.5,33001,9.931857630751125
+new_england,early aid x1.5,33003,9.350393243687963
+new_england,early aid x1.5,33005,9.338747256882003
+new_england,early aid x1.5,33007,13.095857227022876
+new_england,early aid x1.5,33009,11.408674443704445
+new_england,early aid x1.5,33011,9.093982027569242
+new_england,early aid x1.5,33013,11.439421557286574
+new_england,early aid x1.5,33015,9.161373919629243
+new_england,early aid x1.5,33017,11.107354367450633
+new_england,early aid x1.5,33019,10.994150381994835
+new_england,early aid x1.5,44001,24.281517000023864
+new_england,early aid x1.5,44003,9.922485860944745
+new_england,early aid x1.5,44005,12.445351461148997
+new_england,early aid x1.5,44007,11.058445661413392
+new_england,early aid x1.5,44009,12.346079214812152
+new_england,early aid x1.5,50001,14.601155215692913
+new_england,early aid x1.5,50003,11.274249388665336
+new_england,early aid x1.5,50005,13.235238517831165
+new_england,early aid x1.5,50007,15.76080592658328
+new_england,early aid x1.5,50009,15.844139913388098
+new_england,early aid x1.5,50011,11.332953566650186
+new_england,early aid x1.5,50013,20.143962714109968
+new_england,early aid x1.5,50015,11.343053646404567
+new_england,early aid x1.5,50017,9.834476724477309
+new_england,early aid x1.5,50019,16.797428355089814
+new_england,early aid x1.5,50021,11.192907349868738
+new_england,early aid x1.5,50023,14.455509823573067
+new_england,early aid x1.5,50025,8.927177473538562
+new_england,early aid x1.5,50027,10.22527870888231
+new_england,"early aid, peak error 12 h",9001,9.00596936277592
+new_england,"early aid, peak error 12 h",9003,8.817966648018311
+new_england,"early aid, peak error 12 h",9005,9.153687192621291
+new_england,"early aid, peak error 12 h",9007,11.580429466742597
+new_england,"early aid, peak error 12 h",9009,8.6052050766321
+new_england,"early aid, peak error 12 h",9011,9.48852418447085
+new_england,"early aid, peak error 12 h",9013,11.38518792987737
+new_england,"early aid, peak error 12 h",9015,12.088320358824978
+new_england,"early aid, peak error 12 h",23001,13.119429726300528
+new_england,"early aid, peak error 12 h",23003,17.761090682697663
+new_england,"early aid, peak error 12 h",23005,9.904939194448692
+new_england,"early aid, peak error 12 h",23007,16.212695128069026
+new_england,"early aid, peak error 12 h",23009,11.891294960979844
+new_england,"early aid, peak error 12 h",23011,12.622137652993414
+new_england,"early aid, peak error 12 h",23013,12.179517452396999
+new_england,"early aid, peak error 12 h",23015,10.691636712436912
+new_england,"early aid, peak error 12 h",23017,11.458835513150694
+new_england,"early aid, peak error 12 h",23019,13.33422587185687
+new_england,"early aid, peak error 12 h",23021,17.439649874101054
+new_england,"early aid, peak error 12 h",23023,11.835911853061646
+new_england,"early aid, peak error 12 h",23025,13.47404520163336
+new_england,"early aid, peak error 12 h",23027,12.619757949015701
+new_england,"early aid, peak error 12 h",23029,13.961589913330123
+new_england,"early aid, peak error 12 h",23031,12.103500797789362
+new_england,"early aid, peak error 12 h",25001,10.249136615573136
+new_england,"early aid, peak error 12 h",25003,8.860683437472748
+new_england,"early aid, peak error 12 h",25005,9.280072131400003
+new_england,"early aid, peak error 12 h",25007,20.55150059195153
+new_england,"early aid, peak error 12 h",25009,9.27849175350393
+new_england,"early aid, peak error 12 h",25011,10.173374270188242
+new_england,"early aid, peak error 12 h",25013,8.765262457159688
+new_england,"early aid, peak error 12 h",25015,9.190912915588765
+new_england,"early aid, peak error 12 h",25017,8.782596071230971
+new_england,"early aid, peak error 12 h",25019,20.828683512544046
+new_england,"early aid, peak error 12 h",25021,9.454866230557382
+new_england,"early aid, peak error 12 h",25023,9.343092872038486
+new_england,"early aid, peak error 12 h",25025,7.941624224322527
+new_england,"early aid, peak error 12 h",25027,8.540600318826506
+new_england,"early aid, peak error 12 h",33001,10.180860836363438
+new_england,"early aid, peak error 12 h",33003,9.545267259050386
+new_england,"early aid, peak error 12 h",33005,9.481437954198332
+new_england,"early aid, peak error 12 h",33007,13.66920076994263
+new_england,"early aid, peak error 12 h",33009,11.67938868841179
+new_england,"early aid, peak error 12 h",33011,9.44769506190836
+new_england,"early aid, peak error 12 h",33013,11.392558852713918
+new_england,"early aid, peak error 12 h",33015,9.686617052494338
+new_england,"early aid, peak error 12 h",33017,11.459353017211365
+new_england,"early aid, peak error 12 h",33019,10.947844733090163
+new_england,"early aid, peak error 12 h",44001,24.255329555635555
+new_england,"early aid, peak error 12 h",44003,10.219767645168842
+new_england,"early aid, peak error 12 h",44005,13.237608012755693
+new_england,"early aid, peak error 12 h",44007,11.363224462878344
+new_england,"early aid, peak error 12 h",44009,12.174169322440905
+new_england,"early aid, peak error 12 h",50001,14.875683666224651
+new_england,"early aid, peak error 12 h",50003,11.546096645817945
+new_england,"early aid, peak error 12 h",50005,13.42329716822268
+new_england,"early aid, peak error 12 h",50007,16.15493932424764
+new_england,"early aid, peak error 12 h",50009,16.40277211411262
+new_england,"early aid, peak error 12 h",50011,11.503092099292834
+new_england,"early aid, peak error 12 h",50013,20.414310612966364
+new_england,"early aid, peak error 12 h",50015,11.834180070953467
+new_england,"early aid, peak error 12 h",50017,10.29092747633703
+new_england,"early aid, peak error 12 h",50019,16.66790390931058
+new_england,"early aid, peak error 12 h",50021,11.308919081629483
+new_england,"early aid, peak error 12 h",50023,15.080716848897902
+new_england,"early aid, peak error 12 h",50025,9.091294327636913
+new_england,"early aid, peak error 12 h",50027,10.473866711439493
+pennsylvania_west_virginia,current practice,42001,11.650801422377585
+pennsylvania_west_virginia,current practice,42003,8.47039861775921
+pennsylvania_west_virginia,current practice,42005,9.72389049366199
+pennsylvania_west_virginia,current practice,42007,11.664700159159178
+pennsylvania_west_virginia,current practice,42009,11.446101836383583
+pennsylvania_west_virginia,current practice,42011,8.95418351209562
+pennsylvania_west_virginia,current practice,42013,10.09188890277262
+pennsylvania_west_virginia,current practice,42015,11.4049552273445
+pennsylvania_west_virginia,current practice,42017,9.531479339151716
+pennsylvania_west_virginia,current practice,42019,8.54283327319404
+pennsylvania_west_virginia,current practice,42021,8.984749090059019
+pennsylvania_west_virginia,current practice,42023,18.473538397655933
+pennsylvania_west_virginia,current practice,42025,12.686322697024371
+pennsylvania_west_virginia,current practice,42027,11.235794439177663
+pennsylvania_west_virginia,current practice,42029,9.412739515593284
+pennsylvania_west_virginia,current practice,42031,12.559841154183387
+pennsylvania_west_virginia,current practice,42033,8.998242743935872
+pennsylvania_west_virginia,current practice,42035,11.407638345849128
+pennsylvania_west_virginia,current practice,42037,10.785591193956064
+pennsylvania_west_virginia,current practice,42039,9.705800066738512
+pennsylvania_west_virginia,current practice,42041,8.59897347405847
+pennsylvania_west_virginia,current practice,42043,7.9443306548331405
+pennsylvania_west_virginia,current practice,42045,8.617967346719738
+pennsylvania_west_virginia,current practice,42047,14.04641700851783
+pennsylvania_west_virginia,current practice,42049,8.117471434990403
+pennsylvania_west_virginia,current practice,42051,9.158014570588746
+pennsylvania_west_virginia,current practice,42053,12.112871614986613
+pennsylvania_west_virginia,current practice,42055,11.692157960393589
+pennsylvania_west_virginia,current practice,42057,19.41369142616255
+pennsylvania_west_virginia,current practice,42059,11.376344345363899
+pennsylvania_west_virginia,current practice,42061,17.609785042286305
+pennsylvania_west_virginia,current practice,42063,8.428421999730991
+pennsylvania_west_virginia,current practice,42065,11.514797082525078
+pennsylvania_west_virginia,current practice,42067,12.325578626267454
+pennsylvania_west_virginia,current practice,42069,10.660462311482862
+pennsylvania_west_virginia,current practice,42071,8.602075905685938
+pennsylvania_west_virginia,current practice,42073,13.116941284544746
+pennsylvania_west_virginia,current practice,42075,10.26278790712685
+pennsylvania_west_virginia,current practice,42077,9.490443917668793
+pennsylvania_west_virginia,current practice,42079,9.781586742451408
+pennsylvania_west_virginia,current practice,42081,10.859840223175317
+pennsylvania_west_virginia,current practice,42083,10.971523940611478
+pennsylvania_west_virginia,current practice,42085,8.88677387058642
+pennsylvania_west_virginia,current practice,42087,11.180534044614795
+pennsylvania_west_virginia,current practice,42089,9.458059001015453
+pennsylvania_west_virginia,current practice,42091,9.131598369480386
+pennsylvania_west_virginia,current practice,42093,16.442878525282037
+pennsylvania_west_virginia,current practice,42095,10.781802606442458
+pennsylvania_west_virginia,current practice,42097,10.947928456752116
+pennsylvania_west_virginia,current practice,42099,11.7192127596231
+pennsylvania_west_virginia,current practice,42101,8.41200355442884
+pennsylvania_west_virginia,current practice,42103,10.822453189883081
+pennsylvania_west_virginia,current practice,42105,19.57262742596132
+pennsylvania_west_virginia,current practice,42107,10.294017129824724
+pennsylvania_west_virginia,current practice,42109,15.881363345020516
+pennsylvania_west_virginia,current practice,42111,8.339422524471361
+pennsylvania_west_virginia,current practice,42113,18.84051775594616
+pennsylvania_west_virginia,current practice,42115,10.421111094981903
+pennsylvania_west_virginia,current practice,42117,13.19466282871698
+pennsylvania_west_virginia,current practice,42119,22.314836798549425
+pennsylvania_west_virginia,current practice,42121,8.848240550228265
+pennsylvania_west_virginia,current practice,42123,11.389229288206787
+pennsylvania_west_virginia,current practice,42125,8.118061888798705
+pennsylvania_west_virginia,current practice,42127,9.70397235843272
+pennsylvania_west_virginia,current practice,42129,7.7201347618495575
+pennsylvania_west_virginia,current practice,42131,13.083395135671259
+pennsylvania_west_virginia,current practice,42133,8.418692598307109
+pennsylvania_west_virginia,current practice,54001,12.929632267440653
+pennsylvania_west_virginia,current practice,54003,14.801860620709881
+pennsylvania_west_virginia,current practice,54005,10.854382685082227
+pennsylvania_west_virginia,current practice,54007,11.34759198887544
+pennsylvania_west_virginia,current practice,54009,11.817834346125466
+pennsylvania_west_virginia,current practice,54011,8.996643620728657
+pennsylvania_west_virginia,current practice,54013,13.65321379426072
+pennsylvania_west_virginia,current practice,54015,10.45612394415963
+pennsylvania_west_virginia,current practice,54017,13.529962586706356
+pennsylvania_west_virginia,current practice,54019,8.925208976463392
+pennsylvania_west_virginia,current practice,54021,14.267678242910998
+pennsylvania_west_virginia,current practice,54023,13.630904010106828
+pennsylvania_west_virginia,current practice,54025,8.83253256619367
+pennsylvania_west_virginia,current practice,54027,12.245588707212047
+pennsylvania_west_virginia,current practice,54029,12.753462002517345
+pennsylvania_west_virginia,current practice,54031,16.448233799287742
+pennsylvania_west_virginia,current practice,54033,8.920775855556608
+pennsylvania_west_virginia,current practice,54035,9.464405136471457
+pennsylvania_west_virginia,current practice,54037,12.343196657047415
+pennsylvania_west_virginia,current practice,54039,8.463955801122392
+pennsylvania_west_virginia,current practice,54041,10.33851473844425
+pennsylvania_west_virginia,current practice,54043,10.120552920410654
+pennsylvania_west_virginia,current practice,54045,9.76056971923955
+pennsylvania_west_virginia,current practice,54047,12.609141168795903
+pennsylvania_west_virginia,current practice,54049,9.84635054387349
+pennsylvania_west_virginia,current practice,54051,10.131029025942402
+pennsylvania_west_virginia,current practice,54053,10.027954236871139
+pennsylvania_west_virginia,current practice,54055,9.032448377469164
+pennsylvania_west_virginia,current practice,54057,14.87036981666385
+pennsylvania_west_virginia,current practice,54059,8.9362941699623
+pennsylvania_west_virginia,current practice,54061,7.612303929450327
+pennsylvania_west_virginia,current practice,54063,11.695523697687815
+pennsylvania_west_virginia,current practice,54065,11.381388306822195
+pennsylvania_west_virginia,current practice,54067,9.095465047383723
+pennsylvania_west_virginia,current practice,54069,8.562176237342547
+pennsylvania_west_virginia,current practice,54071,13.704427363353204
+pennsylvania_west_virginia,current practice,54073,15.831282499644763
+pennsylvania_west_virginia,current practice,54075,11.34233069511745
+pennsylvania_west_virginia,current practice,54077,8.653548966736876
+pennsylvania_west_virginia,current practice,54079,9.151073000863361
+pennsylvania_west_virginia,current practice,54081,8.478647169639231
+pennsylvania_west_virginia,current practice,54083,10.18958563507276
+pennsylvania_west_virginia,current practice,54085,12.135853752340921
+pennsylvania_west_virginia,current practice,54087,9.789322229504972
+pennsylvania_west_virginia,current practice,54089,14.750918649829453
+pennsylvania_west_virginia,current practice,54091,13.127359049837821
+pennsylvania_west_virginia,current practice,54093,17.297841629223864
+pennsylvania_west_virginia,current practice,54095,12.594964031272383
+pennsylvania_west_virginia,current practice,54097,9.774334113308619
+pennsylvania_west_virginia,current practice,54099,10.010073653169911
+pennsylvania_west_virginia,current practice,54101,10.309108138355588
+pennsylvania_west_virginia,current practice,54103,12.547127233094004
+pennsylvania_west_virginia,current practice,54105,13.515494230035042
+pennsylvania_west_virginia,current practice,54107,8.867096500111343
+pennsylvania_west_virginia,current practice,54109,13.097016073932599
+pennsylvania_west_virginia,forecast weighted,42001,6.782947339020347
+pennsylvania_west_virginia,forecast weighted,42003,7.4875916529859685
+pennsylvania_west_virginia,forecast weighted,42005,8.355317243442139
+pennsylvania_west_virginia,forecast weighted,42007,8.140327430680586
+pennsylvania_west_virginia,forecast weighted,42009,7.811026665185733
+pennsylvania_west_virginia,forecast weighted,42011,7.984149085178541
+pennsylvania_west_virginia,forecast weighted,42013,6.840661194171021
+pennsylvania_west_virginia,forecast weighted,42015,7.725606193118181
+pennsylvania_west_virginia,forecast weighted,42017,8.911913187147626
+pennsylvania_west_virginia,forecast weighted,42019,7.854539249754072
+pennsylvania_west_virginia,forecast weighted,42021,7.788308116303092
+pennsylvania_west_virginia,forecast weighted,42023,9.134304892708945
+pennsylvania_west_virginia,forecast weighted,42025,8.444424982293274
+pennsylvania_west_virginia,forecast weighted,42027,6.649021227828685
+pennsylvania_west_virginia,forecast weighted,42029,8.301288397176243
+pennsylvania_west_virginia,forecast weighted,42031,7.445255302026758
+pennsylvania_west_virginia,forecast weighted,42033,7.846703586373077
+pennsylvania_west_virginia,forecast weighted,42035,7.061450653064649
+pennsylvania_west_virginia,forecast weighted,42037,8.68023732916378
+pennsylvania_west_virginia,forecast weighted,42039,7.641506703747631
+pennsylvania_west_virginia,forecast weighted,42041,6.365818879955164
+pennsylvania_west_virginia,forecast weighted,42043,5.994464263816944
+pennsylvania_west_virginia,forecast weighted,42045,8.040730124272493
+pennsylvania_west_virginia,forecast weighted,42047,6.873522961888648
+pennsylvania_west_virginia,forecast weighted,42049,8.365441536520063
+pennsylvania_west_virginia,forecast weighted,42051,6.623294531476042
+pennsylvania_west_virginia,forecast weighted,42053,9.285221827984298
+pennsylvania_west_virginia,forecast weighted,42055,6.276702191815052
+pennsylvania_west_virginia,forecast weighted,42057,9.215469313969962
+pennsylvania_west_virginia,forecast weighted,42059,8.565279320933847
+pennsylvania_west_virginia,forecast weighted,42061,6.391098777344009
+pennsylvania_west_virginia,forecast weighted,42063,7.502036515364535
+pennsylvania_west_virginia,forecast weighted,42065,7.616280192604167
+pennsylvania_west_virginia,forecast weighted,42067,9.601308615124081
+pennsylvania_west_virginia,forecast weighted,42069,7.983866204609003
+pennsylvania_west_virginia,forecast weighted,42071,6.037529481374068
+pennsylvania_west_virginia,forecast weighted,42073,7.131987711172186
+pennsylvania_west_virginia,forecast weighted,42075,8.463679764881784
+pennsylvania_west_virginia,forecast weighted,42077,7.602198239815214
+pennsylvania_west_virginia,forecast weighted,42079,6.984216867306884
+pennsylvania_west_virginia,forecast weighted,42081,7.198659250539155
+pennsylvania_west_virginia,forecast weighted,42083,7.6911308288530895
+pennsylvania_west_virginia,forecast weighted,42085,7.40555339236095
+pennsylvania_west_virginia,forecast weighted,42087,7.35162022495933
+pennsylvania_west_virginia,forecast weighted,42089,8.722234188914658
+pennsylvania_west_virginia,forecast weighted,42091,8.25776146193928
+pennsylvania_west_virginia,forecast weighted,42093,8.950098515137386
+pennsylvania_west_virginia,forecast weighted,42095,8.289943648945341
+pennsylvania_west_virginia,forecast weighted,42097,7.435734949926622
+pennsylvania_west_virginia,forecast weighted,42099,9.399413747060702
+pennsylvania_west_virginia,forecast weighted,42101,6.625855470348706
+pennsylvania_west_virginia,forecast weighted,42103,9.172060586864925
+pennsylvania_west_virginia,forecast weighted,42105,7.294414793200675
+pennsylvania_west_virginia,forecast weighted,42107,7.279385165344842
+pennsylvania_west_virginia,forecast weighted,42109,8.177998854280562
+pennsylvania_west_virginia,forecast weighted,42111,6.092296820727105
+pennsylvania_west_virginia,forecast weighted,42113,10.264057414912704
+pennsylvania_west_virginia,forecast weighted,42115,9.48109399882128
+pennsylvania_west_virginia,forecast weighted,42117,7.2522617768665665
+pennsylvania_west_virginia,forecast weighted,42119,8.85590350044932
+pennsylvania_west_virginia,forecast weighted,42121,7.68529037837576
+pennsylvania_west_virginia,forecast weighted,42123,7.888427064884194
+pennsylvania_west_virginia,forecast weighted,42125,7.046162612649478
+pennsylvania_west_virginia,forecast weighted,42127,10.42177862563469
+pennsylvania_west_virginia,forecast weighted,42129,6.5842306399918575
+pennsylvania_west_virginia,forecast weighted,42131,8.990552443616107
+pennsylvania_west_virginia,forecast weighted,42133,6.675398530972517
+pennsylvania_west_virginia,forecast weighted,54001,7.75425463886626
+pennsylvania_west_virginia,forecast weighted,54003,6.978040414299523
+pennsylvania_west_virginia,forecast weighted,54005,9.986499746239621
+pennsylvania_west_virginia,forecast weighted,54007,10.229505525099402
+pennsylvania_west_virginia,forecast weighted,54009,9.090702079023853
+pennsylvania_west_virginia,forecast weighted,54011,11.04301687149529
+pennsylvania_west_virginia,forecast weighted,54013,11.37440948412399
+pennsylvania_west_virginia,forecast weighted,54015,10.438672006794095
+pennsylvania_west_virginia,forecast weighted,54017,10.151141334301457
+pennsylvania_west_virginia,forecast weighted,54019,9.607802259442586
+pennsylvania_west_virginia,forecast weighted,54021,10.16492138009346
+pennsylvania_west_virginia,forecast weighted,54023,8.179451731852666
+pennsylvania_west_virginia,forecast weighted,54025,8.91185605880575
+pennsylvania_west_virginia,forecast weighted,54027,8.65518094834086
+pennsylvania_west_virginia,forecast weighted,54029,7.925600165825714
+pennsylvania_west_virginia,forecast weighted,54031,9.284868526643223
+pennsylvania_west_virginia,forecast weighted,54033,7.945630102306073
+pennsylvania_west_virginia,forecast weighted,54035,11.771429756771719
+pennsylvania_west_virginia,forecast weighted,54037,7.713096519782516
+pennsylvania_west_virginia,forecast weighted,54039,10.153765861199284
+pennsylvania_west_virginia,forecast weighted,54041,8.579619856395778
+pennsylvania_west_virginia,forecast weighted,54043,12.10910107422248
+pennsylvania_west_virginia,forecast weighted,54045,10.200961758973197
+pennsylvania_west_virginia,forecast weighted,54047,9.600884501464673
+pennsylvania_west_virginia,forecast weighted,54049,8.308615097005237
+pennsylvania_west_virginia,forecast weighted,54051,10.077663871905136
+pennsylvania_west_virginia,forecast weighted,54053,10.85972832283427
+pennsylvania_west_virginia,forecast weighted,54055,8.965862023800712
+pennsylvania_west_virginia,forecast weighted,54057,7.721250974581187
+pennsylvania_west_virginia,forecast weighted,54059,10.298184502176541
+pennsylvania_west_virginia,forecast weighted,54061,7.270307073385807
+pennsylvania_west_virginia,forecast weighted,54063,9.066342299024507
+pennsylvania_west_virginia,forecast weighted,54065,9.765703914057358
+pennsylvania_west_virginia,forecast weighted,54067,8.694698457727023
+pennsylvania_west_virginia,forecast weighted,54069,9.672248794204231
+pennsylvania_west_virginia,forecast weighted,54071,8.995996106264931
+pennsylvania_west_virginia,forecast weighted,54073,12.15550746804199
+pennsylvania_west_virginia,forecast weighted,54075,9.021621056288332
+pennsylvania_west_virginia,forecast weighted,54077,8.153807215628794
+pennsylvania_west_virginia,forecast weighted,54079,10.598176016320885
+pennsylvania_west_virginia,forecast weighted,54081,7.778491153891345
+pennsylvania_west_virginia,forecast weighted,54083,7.467226401186215
+pennsylvania_west_virginia,forecast weighted,54085,12.95440007936859
+pennsylvania_west_virginia,forecast weighted,54087,10.632509834917288
+pennsylvania_west_virginia,forecast weighted,54089,9.52310086642842
+pennsylvania_west_virginia,forecast weighted,54091,7.043604082558245
+pennsylvania_west_virginia,forecast weighted,54093,8.008316044743035
+pennsylvania_west_virginia,forecast weighted,54095,10.570205838741265
+pennsylvania_west_virginia,forecast weighted,54097,8.065472630014778
+pennsylvania_west_virginia,forecast weighted,54099,12.155205585723374
+pennsylvania_west_virginia,forecast weighted,54101,10.16361152608124
+pennsylvania_west_virginia,forecast weighted,54103,9.594251966990251
+pennsylvania_west_virginia,forecast weighted,54105,11.80628195405361
+pennsylvania_west_virginia,forecast weighted,54107,9.012603105843695
+pennsylvania_west_virginia,forecast weighted,54109,9.06016678885287
+pennsylvania_west_virginia,early aid x1.5,42001,9.376242862497246
+pennsylvania_west_virginia,early aid x1.5,42003,7.318355298158368
+pennsylvania_west_virginia,early aid x1.5,42005,8.109635308607583
+pennsylvania_west_virginia,early aid x1.5,42007,9.606700419809405
+pennsylvania_west_virginia,early aid x1.5,42009,9.141908955808288
+pennsylvania_west_virginia,early aid x1.5,42011,7.571457230662702
+pennsylvania_west_virginia,early aid x1.5,42013,8.47708754722898
+pennsylvania_west_virginia,early aid x1.5,42015,9.231595745086167
+pennsylvania_west_virginia,early aid x1.5,42017,7.981711116100747
+pennsylvania_west_virginia,early aid x1.5,42019,7.3260475440895405
+pennsylvania_west_virginia,early aid x1.5,42021,7.214652268320558
+pennsylvania_west_virginia,early aid x1.5,42023,14.769004811941151
+pennsylvania_west_virginia,early aid x1.5,42025,10.22042550477402
+pennsylvania_west_virginia,early aid x1.5,42027,8.772906193292094
+pennsylvania_west_virginia,early aid x1.5,42029,7.727838117236738
+pennsylvania_west_virginia,early aid x1.5,42031,9.961922514433276
+pennsylvania_west_virginia,early aid x1.5,42033,7.292661588854379
+pennsylvania_west_virginia,early aid x1.5,42035,9.436521684107579
+pennsylvania_west_virginia,early aid x1.5,42037,8.953422362123066
+pennsylvania_west_virginia,early aid x1.5,42039,8.026338176344758
+pennsylvania_west_virginia,early aid x1.5,42041,7.134971711274675
+pennsylvania_west_virginia,early aid x1.5,42043,6.844297917194314
+pennsylvania_west_virginia,early aid x1.5,42045,7.362386231744221
+pennsylvania_west_virginia,early aid x1.5,42047,11.138683000030502
+pennsylvania_west_virginia,early aid x1.5,42049,6.9664181835145556
+pennsylvania_west_virginia,early aid x1.5,42051,7.587097218319201
+pennsylvania_west_virginia,early aid x1.5,42053,9.666611546478318
+pennsylvania_west_virginia,early aid x1.5,42055,9.218372712352718
+pennsylvania_west_virginia,early aid x1.5,42057,14.544090398940863
+pennsylvania_west_virginia,early aid x1.5,42059,8.950522880409318
+pennsylvania_west_virginia,early aid x1.5,42061,12.12916013831105
+pennsylvania_west_virginia,early aid x1.5,42063,6.972309928664344
+pennsylvania_west_virginia,early aid x1.5,42065,9.28613956587279
+pennsylvania_west_virginia,early aid x1.5,42067,9.509218975126519
+pennsylvania_west_virginia,early aid x1.5,42069,8.654511117184223
+pennsylvania_west_virginia,early aid x1.5,42071,7.0418244172072155
+pennsylvania_west_virginia,early aid x1.5,42073,9.841397586872121
+pennsylvania_west_virginia,early aid x1.5,42075,8.663598535785148
+pennsylvania_west_virginia,early aid x1.5,42077,7.685504327601164
+pennsylvania_west_virginia,early aid x1.5,42079,7.992372961428388
+pennsylvania_west_virginia,early aid x1.5,42081,8.5233792252566
+pennsylvania_west_virginia,early aid x1.5,42083,9.113906554429398
+pennsylvania_west_virginia,early aid x1.5,42085,7.319118028414661
+pennsylvania_west_virginia,early aid x1.5,42087,9.453261430972596
+pennsylvania_west_virginia,early aid x1.5,42089,7.761111014374142
+pennsylvania_west_virginia,early aid x1.5,42091,7.550657192657085
+pennsylvania_west_virginia,early aid x1.5,42093,12.858466258551227
+pennsylvania_west_virginia,early aid x1.5,42095,8.392421113732032
+pennsylvania_west_virginia,early aid x1.5,42097,8.468130009517097
+pennsylvania_west_virginia,early aid x1.5,42099,8.935845286253173
+pennsylvania_west_virginia,early aid x1.5,42101,7.1222406979286355
+pennsylvania_west_virginia,early aid x1.5,42103,8.575103187796906
+pennsylvania_west_virginia,early aid x1.5,42105,14.503343417917344
+pennsylvania_west_virginia,early aid x1.5,42107,7.714187069945109
+pennsylvania_west_virginia,early aid x1.5,42109,12.426693092762548
+pennsylvania_west_virginia,early aid x1.5,42111,6.83170544429505
+pennsylvania_west_virginia,early aid x1.5,42113,15.57494973235912
+pennsylvania_west_virginia,early aid x1.5,42115,8.306096018978458
+pennsylvania_west_virginia,early aid x1.5,42117,10.565064759169061
+pennsylvania_west_virginia,early aid x1.5,42119,16.921042225250584
+pennsylvania_west_virginia,early aid x1.5,42121,7.333504755112116
+pennsylvania_west_virginia,early aid x1.5,42123,9.151924714899046
+pennsylvania_west_virginia,early aid x1.5,42125,6.856144469267694
+pennsylvania_west_virginia,early aid x1.5,42127,8.141783631230647
+pennsylvania_west_virginia,early aid x1.5,42129,6.538495111178799
+pennsylvania_west_virginia,early aid x1.5,42131,10.102538694617271
+pennsylvania_west_virginia,early aid x1.5,42133,6.915928259163113
+pennsylvania_west_virginia,early aid x1.5,54001,10.859197876777802
+pennsylvania_west_virginia,early aid x1.5,54003,11.142251378590215
+pennsylvania_west_virginia,early aid x1.5,54005,9.304358525655328
+pennsylvania_west_virginia,early aid x1.5,54007,9.178212024969207
+pennsylvania_west_virginia,early aid x1.5,54009,9.37344636670654
+pennsylvania_west_virginia,early aid x1.5,54011,7.836302390355869
+pennsylvania_west_virginia,early aid x1.5,54013,10.712667220582185
+pennsylvania_west_virginia,early aid x1.5,54015,9.123812045149501
+pennsylvania_west_virginia,early aid x1.5,54017,10.96381179382521
+pennsylvania_west_virginia,early aid x1.5,54019,7.6521277322379
+pennsylvania_west_virginia,early aid x1.5,54021,10.968675217136322
+pennsylvania_west_virginia,early aid x1.5,54023,11.007048975835676
+pennsylvania_west_virginia,early aid x1.5,54025,7.8390673378949725
+pennsylvania_west_virginia,early aid x1.5,54027,10.122104399054786
+pennsylvania_west_virginia,early aid x1.5,54029,9.87072241644353
+pennsylvania_west_virginia,early aid x1.5,54031,13.324751740450605
+pennsylvania_west_virginia,early aid x1.5,54033,7.446079440043525
+pennsylvania_west_virginia,early aid x1.5,54035,7.990457458277067
+pennsylvania_west_virginia,early aid x1.5,54037,9.577912539132287
+pennsylvania_west_virginia,early aid x1.5,54039,7.098535312474122
+pennsylvania_west_virginia,early aid x1.5,54041,8.450449796917672
+pennsylvania_west_virginia,early aid x1.5,54043,9.076498659835432
+pennsylvania_west_virginia,early aid x1.5,54045,8.24302036266741
+pennsylvania_west_virginia,early aid x1.5,54047,10.3115902850147
+pennsylvania_west_virginia,early aid x1.5,54049,8.061777659191714
+pennsylvania_west_virginia,early aid x1.5,54051,8.334792852148553
+pennsylvania_west_virginia,early aid x1.5,54053,8.457852368112766
+pennsylvania_west_virginia,early aid x1.5,54055,7.9365917361237
+pennsylvania_west_virginia,early aid x1.5,54057,11.440369237673229
+pennsylvania_west_virginia,early aid x1.5,54059,8.096269992208297
+pennsylvania_west_virginia,early aid x1.5,54061,6.642491853925557
+pennsylvania_west_virginia,early aid x1.5,54063,9.634257010901656
+pennsylvania_west_virginia,early aid x1.5,54065,9.391523342821856
+pennsylvania_west_virginia,early aid x1.5,54067,8.052293207406557
+pennsylvania_west_virginia,early aid x1.5,54069,7.131571559297155
+pennsylvania_west_virginia,early aid x1.5,54071,10.292547600939278
+pennsylvania_west_virginia,early aid x1.5,54073,12.269596005905612
+pennsylvania_west_virginia,early aid x1.5,54075,9.162927901310818
+pennsylvania_west_virginia,early aid x1.5,54077,7.312066717070041
+pennsylvania_west_virginia,early aid x1.5,54079,8.202177131007835
+pennsylvania_west_virginia,early aid x1.5,54081,7.3168178979113625
+pennsylvania_west_virginia,early aid x1.5,54083,8.750957576930343
+pennsylvania_west_virginia,early aid x1.5,54085,10.190773853428361
+pennsylvania_west_virginia,early aid x1.5,54087,8.13368783707929
+pennsylvania_west_virginia,early aid x1.5,54089,11.964118534015897
+pennsylvania_west_virginia,early aid x1.5,54091,10.320894019985374
+pennsylvania_west_virginia,early aid x1.5,54093,13.80693376356183
+pennsylvania_west_virginia,early aid x1.5,54095,9.53041091633038
+pennsylvania_west_virginia,early aid x1.5,54097,8.096798107959543
+pennsylvania_west_virginia,early aid x1.5,54099,8.664521368384111
+pennsylvania_west_virginia,early aid x1.5,54101,8.779314187563507
+pennsylvania_west_virginia,early aid x1.5,54103,10.320739711485155
+pennsylvania_west_virginia,early aid x1.5,54105,10.609689745162067
+pennsylvania_west_virginia,early aid x1.5,54107,7.421422937086423
+pennsylvania_west_virginia,early aid x1.5,54109,10.99150997995095
+pennsylvania_west_virginia,"early aid, peak error 12 h",42001,9.792114426871922
+pennsylvania_west_virginia,"early aid, peak error 12 h",42003,7.547463598992986
+pennsylvania_west_virginia,"early aid, peak error 12 h",42005,8.207588987778955
+pennsylvania_west_virginia,"early aid, peak error 12 h",42007,9.796834134183916
+pennsylvania_west_virginia,"early aid, peak error 12 h",42009,9.457242364692856
+pennsylvania_west_virginia,"early aid, peak error 12 h",42011,7.761826947571372
+pennsylvania_west_virginia,"early aid, peak error 12 h",42013,8.459286783314846
+pennsylvania_west_virginia,"early aid, peak error 12 h",42015,9.316423835751218
+pennsylvania_west_virginia,"early aid, peak error 12 h",42017,8.310489187587358
+pennsylvania_west_virginia,"early aid, peak error 12 h",42019,7.403001236576163
+pennsylvania_west_virginia,"early aid, peak error 12 h",42021,7.418442263607312
+pennsylvania_west_virginia,"early aid, peak error 12 h",42023,15.466735895482328
+pennsylvania_west_virginia,"early aid, peak error 12 h",42025,10.772605784331567
+pennsylvania_west_virginia,"early aid, peak error 12 h",42027,9.093033096274377
+pennsylvania_west_virginia,"early aid, peak error 12 h",42029,8.115557920376856
+pennsylvania_west_virginia,"early aid, peak error 12 h",42031,10.334579923444544
+pennsylvania_west_virginia,"early aid, peak error 12 h",42033,7.511135572187653
+pennsylvania_west_virginia,"early aid, peak error 12 h",42035,9.490656869592486
+pennsylvania_west_virginia,"early aid, peak error 12 h",42037,9.27448329909804
+pennsylvania_west_virginia,"early aid, peak error 12 h",42039,8.232651042828744
+pennsylvania_west_virginia,"early aid, peak error 12 h",42041,7.368596288076622
+pennsylvania_west_virginia,"early aid, peak error 12 h",42043,6.997768556853796
+pennsylvania_west_virginia,"early aid, peak error 12 h",42045,7.685021488198781
+pennsylvania_west_virginia,"early aid, peak error 12 h",42047,11.968648517597227
+pennsylvania_west_virginia,"early aid, peak error 12 h",42049,7.106995162328261
+pennsylvania_west_virginia,"early aid, peak error 12 h",42051,7.644696114059381
+pennsylvania_west_virginia,"early aid, peak error 12 h",42053,10.107467488753157
+pennsylvania_west_virginia,"early aid, peak error 12 h",42055,9.264499086446074
+pennsylvania_west_virginia,"early aid, peak error 12 h",42057,15.312621485630862
+pennsylvania_west_virginia,"early aid, peak error 12 h",42059,8.936282930158306
+pennsylvania_west_virginia,"early aid, peak error 12 h",42061,12.675844396156647
+pennsylvania_west_virginia,"early aid, peak error 12 h",42063,7.097745734167041
+pennsylvania_west_virginia,"early aid, peak error 12 h",42065,9.718646711250244
+pennsylvania_west_virginia,"early aid, peak error 12 h",42067,9.602596872196207
+pennsylvania_west_virginia,"early aid, peak error 12 h",42069,9.122780416584378
+pennsylvania_west_virginia,"early aid, peak error 12 h",42071,7.393187017580546
+pennsylvania_west_virginia,"early aid, peak error 12 h",42073,9.783313394830257
+pennsylvania_west_virginia,"early aid, peak error 12 h",42075,8.712871156702173
+pennsylvania_west_virginia,"early aid, peak error 12 h",42077,8.054002746572916
+pennsylvania_west_virginia,"early aid, peak error 12 h",42079,8.433555662627041
+pennsylvania_west_virginia,"early aid, peak error 12 h",42081,8.975848677289859
+pennsylvania_west_virginia,"early aid, peak error 12 h",42083,9.46185922492114
+pennsylvania_west_virginia,"early aid, peak error 12 h",42085,7.543894944671804
+pennsylvania_west_virginia,"early aid, peak error 12 h",42087,9.612366674078542
+pennsylvania_west_virginia,"early aid, peak error 12 h",42089,8.113244765684586
+pennsylvania_west_virginia,"early aid, peak error 12 h",42091,7.942764876701892
+pennsylvania_west_virginia,"early aid, peak error 12 h",42093,13.075397908544447
+pennsylvania_west_virginia,"early aid, peak error 12 h",42095,8.98001125107974
+pennsylvania_west_virginia,"early aid, peak error 12 h",42097,8.760781975258112
+pennsylvania_west_virginia,"early aid, peak error 12 h",42099,9.592243623635056
+pennsylvania_west_virginia,"early aid, peak error 12 h",42101,7.359993973914994
+pennsylvania_west_virginia,"early aid, peak error 12 h",42103,9.180374078197532
+pennsylvania_west_virginia,"early aid, peak error 12 h",42105,15.228604982775328
+pennsylvania_west_virginia,"early aid, peak error 12 h",42107,8.195165655122965
+pennsylvania_west_virginia,"early aid, peak error 12 h",42109,13.307017837869862
+pennsylvania_west_virginia,"early aid, peak error 12 h",42111,7.004367129646333
+pennsylvania_west_virginia,"early aid, peak error 12 h",42113,15.788944188918967
+pennsylvania_west_virginia,"early aid, peak error 12 h",42115,8.921277159446424
+pennsylvania_west_virginia,"early aid, peak error 12 h",42117,10.900673175825355
+pennsylvania_west_virginia,"early aid, peak error 12 h",42119,17.835054490012748
+pennsylvania_west_virginia,"early aid, peak error 12 h",42121,7.450602055874741
+pennsylvania_west_virginia,"early aid, peak error 12 h",42123,9.345546374521915
+pennsylvania_west_virginia,"early aid, peak error 12 h",42125,6.95939446236102
+pennsylvania_west_virginia,"early aid, peak error 12 h",42127,8.474036437335561
+pennsylvania_west_virginia,"early aid, peak error 12 h",42129,6.641547556110019
+pennsylvania_west_virginia,"early aid, peak error 12 h",42131,10.71876238915319
+pennsylvania_west_virginia,"early aid, peak error 12 h",42133,7.172615521507654
+pennsylvania_west_virginia,"early aid, peak error 12 h",54001,11.134952491353905
+pennsylvania_west_virginia,"early aid, peak error 12 h",54003,11.743677005175968
+pennsylvania_west_virginia,"early aid, peak error 12 h",54005,9.524385059962402
+pennsylvania_west_virginia,"early aid, peak error 12 h",54007,9.695300733926754
+pennsylvania_west_virginia,"early aid, peak error 12 h",54009,9.755082856072011
+pennsylvania_west_virginia,"early aid, peak error 12 h",54011,8.123701759357694
+pennsylvania_west_virginia,"early aid, peak error 12 h",54013,10.798723082817185
+pennsylvania_west_virginia,"early aid, peak error 12 h",54015,8.812640071804275
+pennsylvania_west_virginia,"early aid, peak error 12 h",54017,10.930832027138
+pennsylvania_west_virginia,"early aid, peak error 12 h",54019,7.702314213222195
+pennsylvania_west_virginia,"early aid, peak error 12 h",54021,11.249857258893499
+pennsylvania_west_virginia,"early aid, peak error 12 h",54023,11.403914159451007
+pennsylvania_west_virginia,"early aid, peak error 12 h",54025,7.807608389298342
+pennsylvania_west_virginia,"early aid, peak error 12 h",54027,10.164471649012789
+pennsylvania_west_virginia,"early aid, peak error 12 h",54029,10.365778322768751
+pennsylvania_west_virginia,"early aid, peak error 12 h",54031,13.3256420261775
+pennsylvania_west_virginia,"early aid, peak error 12 h",54033,7.771880626055623
+pennsylvania_west_virginia,"early aid, peak error 12 h",54035,8.186892782754276
+pennsylvania_west_virginia,"early aid, peak error 12 h",54037,9.864820120480125
+pennsylvania_west_virginia,"early aid, peak error 12 h",54039,7.419895429707484
+pennsylvania_west_virginia,"early aid, peak error 12 h",54041,8.449222399066658
+pennsylvania_west_virginia,"early aid, peak error 12 h",54043,9.041816968589966
+pennsylvania_west_virginia,"early aid, peak error 12 h",54045,8.336611550164859
+pennsylvania_west_virginia,"early aid, peak error 12 h",54047,10.665966876615983
+pennsylvania_west_virginia,"early aid, peak error 12 h",54049,8.129669394175231
+pennsylvania_west_virginia,"early aid, peak error 12 h",54051,8.405322405863101
+pennsylvania_west_virginia,"early aid, peak error 12 h",54053,8.601218974421405
+pennsylvania_west_virginia,"early aid, peak error 12 h",54055,8.018029523462669
+pennsylvania_west_virginia,"early aid, peak error 12 h",54057,11.615795426705603
+pennsylvania_west_virginia,"early aid, peak error 12 h",54059,8.219072909908705
+pennsylvania_west_virginia,"early aid, peak error 12 h",54061,6.661437466358212
+pennsylvania_west_virginia,"early aid, peak error 12 h",54063,9.892129191682432
+pennsylvania_west_virginia,"early aid, peak error 12 h",54065,9.349706790827723
+pennsylvania_west_virginia,"early aid, peak error 12 h",54067,7.896098548331121
+pennsylvania_west_virginia,"early aid, peak error 12 h",54069,7.288057299831463
+pennsylvania_west_virginia,"early aid, peak error 12 h",54071,10.389772065685634
+pennsylvania_west_virginia,"early aid, peak error 12 h",54073,11.995736315592346
+pennsylvania_west_virginia,"early aid, peak error 12 h",54075,9.691842480414069
+pennsylvania_west_virginia,"early aid, peak error 12 h",54077,7.58206370893706
+pennsylvania_west_virginia,"early aid, peak error 12 h",54079,8.24028850676669
+pennsylvania_west_virginia,"early aid, peak error 12 h",54081,7.324205497796693
+pennsylvania_west_virginia,"early aid, peak error 12 h",54083,8.747963198957924
+pennsylvania_west_virginia,"early aid, peak error 12 h",54085,10.381232971044518
+pennsylvania_west_virginia,"early aid, peak error 12 h",54087,8.255084660309473
+pennsylvania_west_virginia,"early aid, peak error 12 h",54089,12.229379610952781
+pennsylvania_west_virginia,"early aid, peak error 12 h",54091,10.63616372129719
+pennsylvania_west_virginia,"early aid, peak error 12 h",54093,14.174324142160877
+pennsylvania_west_virginia,"early aid, peak error 12 h",54095,10.195934164724145
+pennsylvania_west_virginia,"early aid, peak error 12 h",54097,8.20640433825845
+pennsylvania_west_virginia,"early aid, peak error 12 h",54099,8.796178160010887
+pennsylvania_west_virginia,"early aid, peak error 12 h",54101,8.831071752790612
+pennsylvania_west_virginia,"early aid, peak error 12 h",54103,10.310082915239455
+pennsylvania_west_virginia,"early aid, peak error 12 h",54105,10.820790669509924
+pennsylvania_west_virginia,"early aid, peak error 12 h",54107,7.592325209013743
+pennsylvania_west_virginia,"early aid, peak error 12 h",54109,11.257336622485111
+stress_test,current practice,9001,14.243423622672701
+stress_test,current practice,9003,15.294381238219984
+stress_test,current practice,9005,15.70684324845469
+stress_test,current practice,9007,24.588640784558358
+stress_test,current practice,9009,18.517191195982466
+stress_test,current practice,9011,19.521298737907713
+stress_test,current practice,9013,20.491217512867397
+stress_test,current practice,9015,23.84742016692332
+stress_test,current practice,23001,28.89914404069546
+stress_test,current practice,23003,37.03927380329974
+stress_test,current practice,23005,17.62691295099332
+stress_test,current practice,23007,35.918883869020334
+stress_test,current practice,23009,25.76755339955193
+stress_test,current practice,23011,23.98975086141776
+stress_test,current practice,23013,25.19035856493098
+stress_test,current practice,23015,21.15871553405577
+stress_test,current practice,23017,22.596907714778023
+stress_test,current practice,23019,26.57321220391628
+stress_test,current practice,23021,37.57985694562652
+stress_test,current practice,23023,27.817382522295173
+stress_test,current practice,23025,26.801492387624915
+stress_test,current practice,23027,27.56446251725382
+stress_test,current practice,23029,32.56480874672532
+stress_test,current practice,23031,23.672179301769905
+stress_test,current practice,25001,17.919715553946084
+stress_test,current practice,25003,15.047325761338694
+stress_test,current practice,25005,17.98384748734962
+stress_test,current practice,25007,50.407445907988276
+stress_test,current practice,25009,18.248703564688984
+stress_test,current practice,25011,24.895834740555195
+stress_test,current practice,25013,14.489646651495104
+stress_test,current practice,25015,18.452538313644247
+stress_test,current practice,25017,16.248205613111228
+stress_test,current practice,25019,54.914974111671064
+stress_test,current practice,25021,19.289974206719844
+stress_test,current practice,25023,18.601987068907377
+stress_test,current practice,25025,14.793554348178727
+stress_test,current practice,25027,15.33192864238944
+stress_test,current practice,33001,19.344755117190196
+stress_test,current practice,33003,18.621938816872664
+stress_test,current practice,33005,16.26552759654476
+stress_test,current practice,33007,36.846733398365046
+stress_test,current practice,33009,20.689334478925744
+stress_test,current practice,33011,18.32125857787312
+stress_test,current practice,33013,23.868878377270715
+stress_test,current practice,33015,17.88797775850864
+stress_test,current practice,33017,23.984326543732703
+stress_test,current practice,33019,22.215078934659555
+stress_test,current practice,44001,52.57705930165113
+stress_test,current practice,44003,22.11983511841882
+stress_test,current practice,44005,39.37620906356991
+stress_test,current practice,44007,23.561386442936673
+stress_test,current practice,44009,31.78795766054865
+stress_test,current practice,50001,33.374295813452584
+stress_test,current practice,50003,24.17635259940109
+stress_test,current practice,50005,34.79007526196704
+stress_test,current practice,50007,36.714465626513736
+stress_test,current practice,50009,34.03478722552801
+stress_test,current practice,50011,25.115567033439103
+stress_test,current practice,50013,53.252507755231676
+stress_test,current practice,50015,25.075097393021462
+stress_test,current practice,50017,26.118604924713043
+stress_test,current practice,50019,38.67988086608927
+stress_test,current practice,50021,25.344568187280817
+stress_test,current practice,50023,32.908903895747976
+stress_test,current practice,50025,16.922291547756082
+stress_test,current practice,50027,21.254967715899475
+stress_test,forecast weighted,9001,11.910077489974057
+stress_test,forecast weighted,9003,9.22418418707559
+stress_test,forecast weighted,9005,11.946280826847207
+stress_test,forecast weighted,9007,11.79281732589534
+stress_test,forecast weighted,9009,9.167658543931795
+stress_test,forecast weighted,9011,10.27873235823834
+stress_test,forecast weighted,9013,14.920142245467678
+stress_test,forecast weighted,9015,14.140221912709501
+stress_test,forecast weighted,23001,22.643724064300994
+stress_test,forecast weighted,23003,16.40685306616446
+stress_test,forecast weighted,23005,21.034275506964214
+stress_test,forecast weighted,23007,19.16923554703734
+stress_test,forecast weighted,23009,19.58121532258863
+stress_test,forecast weighted,23011,19.155577330011322
+stress_test,forecast weighted,23013,22.075727058664626
+stress_test,forecast weighted,23015,21.919235553795907
+stress_test,forecast weighted,23017,16.44360563273289
+stress_test,forecast weighted,23019,17.528112257682377
+stress_test,forecast weighted,23021,17.31634303517904
+stress_test,forecast weighted,23023,24.255538522864263
+stress_test,forecast weighted,23025,18.3431018252894
+stress_test,forecast weighted,23027,20.79621251443674
+stress_test,forecast weighted,23029,20.600484004041093
+stress_test,forecast weighted,23031,20.60548783105267
+stress_test,forecast weighted,25001,12.452355780359879
+stress_test,forecast weighted,25003,11.29549480182614
+stress_test,forecast weighted,25005,10.880103049708707
+stress_test,forecast weighted,25007,13.091939119567536
+stress_test,forecast weighted,25009,12.284528460711545
+stress_test,forecast weighted,25011,12.327619784927178
+stress_test,forecast weighted,25013,9.348900603526578
+stress_test,forecast weighted,25015,12.472888216056909
+stress_test,forecast weighted,25017,9.16225152407546
+stress_test,forecast weighted,25019,13.12695367528808
+stress_test,forecast weighted,25021,11.20969022191508
+stress_test,forecast weighted,25023,14.962139916374324
+stress_test,forecast weighted,25025,7.9682416312102635
+stress_test,forecast weighted,25027,11.756389677742565
+stress_test,forecast weighted,33001,18.079405271863315
+stress_test,forecast weighted,33003,17.17991133763165
+stress_test,forecast weighted,33005,17.227285685029848
+stress_test,forecast weighted,33007,12.445343075059625
+stress_test,forecast weighted,33009,11.365066220972704
+stress_test,forecast weighted,33011,14.347374310997306
+stress_test,forecast weighted,33013,16.631719607030735
+stress_test,forecast weighted,33015,14.769601199039469
+stress_test,forecast weighted,33017,16.481250724828445
+stress_test,forecast weighted,33019,17.976169128035018
+stress_test,forecast weighted,44001,20.536509212818945
+stress_test,forecast weighted,44003,12.009427050955129
+stress_test,forecast weighted,44005,13.306766146316233
+stress_test,forecast weighted,44007,11.597523791820707
+stress_test,forecast weighted,44009,13.256741432658998
+stress_test,forecast weighted,50001,14.027057293342136
+stress_test,forecast weighted,50003,13.749851493038234
+stress_test,forecast weighted,50005,16.230595946332993
+stress_test,forecast weighted,50007,13.014526220569843
+stress_test,forecast weighted,50009,14.197643983504419
+stress_test,forecast weighted,50011,11.931626061397932
+stress_test,forecast weighted,50013,12.511333515346877
+stress_test,forecast weighted,50015,11.300223838412437
+stress_test,forecast weighted,50017,15.327770162408191
+stress_test,forecast weighted,50019,10.335641509380563
+stress_test,forecast weighted,50021,13.018905408466258
+stress_test,forecast weighted,50023,15.915235473361324
+stress_test,forecast weighted,50025,15.240935838665395
+stress_test,forecast weighted,50027,14.602360269157849
+stress_test,early aid x1.5,9001,14.243423622672701
+stress_test,early aid x1.5,9003,15.294381238219984
+stress_test,early aid x1.5,9005,15.70684324845469
+stress_test,early aid x1.5,9007,24.588640784558358
+stress_test,early aid x1.5,9009,18.517191195982466
+stress_test,early aid x1.5,9011,19.521298737907713
+stress_test,early aid x1.5,9013,20.491217512867397
+stress_test,early aid x1.5,9015,23.84742016692332
+stress_test,early aid x1.5,23001,28.89914404069546
+stress_test,early aid x1.5,23003,37.03927380329974
+stress_test,early aid x1.5,23005,17.62691295099332
+stress_test,early aid x1.5,23007,35.918883869020334
+stress_test,early aid x1.5,23009,25.76755339955193
+stress_test,early aid x1.5,23011,23.98975086141776
+stress_test,early aid x1.5,23013,25.19035856493098
+stress_test,early aid x1.5,23015,21.15871553405577
+stress_test,early aid x1.5,23017,22.596907714778023
+stress_test,early aid x1.5,23019,26.57321220391628
+stress_test,early aid x1.5,23021,37.57985694562652
+stress_test,early aid x1.5,23023,27.817382522295173
+stress_test,early aid x1.5,23025,26.801492387624915
+stress_test,early aid x1.5,23027,27.56446251725382
+stress_test,early aid x1.5,23029,32.56480874672532
+stress_test,early aid x1.5,23031,23.672179301769905
+stress_test,early aid x1.5,25001,17.919715553946084
+stress_test,early aid x1.5,25003,15.047325761338694
+stress_test,early aid x1.5,25005,17.98384748734962
+stress_test,early aid x1.5,25007,50.407445907988276
+stress_test,early aid x1.5,25009,18.248703564688984
+stress_test,early aid x1.5,25011,24.895834740555195
+stress_test,early aid x1.5,25013,14.489646651495104
+stress_test,early aid x1.5,25015,18.452538313644247
+stress_test,early aid x1.5,25017,16.248205613111228
+stress_test,early aid x1.5,25019,54.914974111671064
+stress_test,early aid x1.5,25021,19.289974206719844
+stress_test,early aid x1.5,25023,18.601987068907377
+stress_test,early aid x1.5,25025,14.793554348178727
+stress_test,early aid x1.5,25027,15.33192864238944
+stress_test,early aid x1.5,33001,19.344755117190196
+stress_test,early aid x1.5,33003,18.621938816872664
+stress_test,early aid x1.5,33005,16.26552759654476
+stress_test,early aid x1.5,33007,36.846733398365046
+stress_test,early aid x1.5,33009,20.689334478925744
+stress_test,early aid x1.5,33011,18.32125857787312
+stress_test,early aid x1.5,33013,23.868878377270715
+stress_test,early aid x1.5,33015,17.88797775850864
+stress_test,early aid x1.5,33017,23.984326543732703
+stress_test,early aid x1.5,33019,22.215078934659555
+stress_test,early aid x1.5,44001,52.57705930165113
+stress_test,early aid x1.5,44003,22.11983511841882
+stress_test,early aid x1.5,44005,39.37620906356991
+stress_test,early aid x1.5,44007,23.561386442936673
+stress_test,early aid x1.5,44009,31.78795766054865
+stress_test,early aid x1.5,50001,33.374295813452584
+stress_test,early aid x1.5,50003,24.17635259940109
+stress_test,early aid x1.5,50005,34.79007526196704
+stress_test,early aid x1.5,50007,36.714465626513736
+stress_test,early aid x1.5,50009,34.03478722552801
+stress_test,early aid x1.5,50011,25.115567033439103
+stress_test,early aid x1.5,50013,53.252507755231676
+stress_test,early aid x1.5,50015,25.075097393021462
+stress_test,early aid x1.5,50017,26.118604924713043
+stress_test,early aid x1.5,50019,38.67988086608927
+stress_test,early aid x1.5,50021,25.344568187280817
+stress_test,early aid x1.5,50023,32.908903895747976
+stress_test,early aid x1.5,50025,16.922291547756082
+stress_test,early aid x1.5,50027,21.254967715899475
+stress_test,"early aid, peak error 12 h",9001,14.243423622672701
+stress_test,"early aid, peak error 12 h",9003,15.294381238219984
+stress_test,"early aid, peak error 12 h",9005,15.70684324845469
+stress_test,"early aid, peak error 12 h",9007,24.588640784558358
+stress_test,"early aid, peak error 12 h",9009,18.517191195982466
+stress_test,"early aid, peak error 12 h",9011,19.521298737907713
+stress_test,"early aid, peak error 12 h",9013,20.491217512867397
+stress_test,"early aid, peak error 12 h",9015,23.84742016692332
+stress_test,"early aid, peak error 12 h",23001,28.89914404069546
+stress_test,"early aid, peak error 12 h",23003,37.03927380329974
+stress_test,"early aid, peak error 12 h",23005,17.62691295099332
+stress_test,"early aid, peak error 12 h",23007,35.918883869020334
+stress_test,"early aid, peak error 12 h",23009,25.76755339955193
+stress_test,"early aid, peak error 12 h",23011,23.98975086141776
+stress_test,"early aid, peak error 12 h",23013,25.19035856493098
+stress_test,"early aid, peak error 12 h",23015,21.15871553405577
+stress_test,"early aid, peak error 12 h",23017,22.596907714778023
+stress_test,"early aid, peak error 12 h",23019,26.57321220391628
+stress_test,"early aid, peak error 12 h",23021,37.57985694562652
+stress_test,"early aid, peak error 12 h",23023,27.817382522295173
+stress_test,"early aid, peak error 12 h",23025,26.801492387624915
+stress_test,"early aid, peak error 12 h",23027,27.56446251725382
+stress_test,"early aid, peak error 12 h",23029,32.56480874672532
+stress_test,"early aid, peak error 12 h",23031,23.672179301769905
+stress_test,"early aid, peak error 12 h",25001,17.919715553946084
+stress_test,"early aid, peak error 12 h",25003,15.047325761338694
+stress_test,"early aid, peak error 12 h",25005,17.98384748734962
+stress_test,"early aid, peak error 12 h",25007,50.407445907988276
+stress_test,"early aid, peak error 12 h",25009,18.248703564688984
+stress_test,"early aid, peak error 12 h",25011,24.895834740555195
+stress_test,"early aid, peak error 12 h",25013,14.489646651495104
+stress_test,"early aid, peak error 12 h",25015,18.452538313644247
+stress_test,"early aid, peak error 12 h",25017,16.248205613111228
+stress_test,"early aid, peak error 12 h",25019,54.914974111671064
+stress_test,"early aid, peak error 12 h",25021,19.289974206719844
+stress_test,"early aid, peak error 12 h",25023,18.601987068907377
+stress_test,"early aid, peak error 12 h",25025,14.793554348178727
+stress_test,"early aid, peak error 12 h",25027,15.33192864238944
+stress_test,"early aid, peak error 12 h",33001,19.344755117190196
+stress_test,"early aid, peak error 12 h",33003,18.621938816872664
+stress_test,"early aid, peak error 12 h",33005,16.26552759654476
+stress_test,"early aid, peak error 12 h",33007,36.846733398365046
+stress_test,"early aid, peak error 12 h",33009,20.689334478925744
+stress_test,"early aid, peak error 12 h",33011,18.32125857787312
+stress_test,"early aid, peak error 12 h",33013,23.868878377270715
+stress_test,"early aid, peak error 12 h",33015,17.88797775850864
+stress_test,"early aid, peak error 12 h",33017,23.984326543732703
+stress_test,"early aid, peak error 12 h",33019,22.215078934659555
+stress_test,"early aid, peak error 12 h",44001,52.57705930165113
+stress_test,"early aid, peak error 12 h",44003,22.11983511841882
+stress_test,"early aid, peak error 12 h",44005,39.37620906356991
+stress_test,"early aid, peak error 12 h",44007,23.561386442936673
+stress_test,"early aid, peak error 12 h",44009,31.78795766054865
+stress_test,"early aid, peak error 12 h",50001,33.374295813452584
+stress_test,"early aid, peak error 12 h",50003,24.17635259940109
+stress_test,"early aid, peak error 12 h",50005,34.79007526196704
+stress_test,"early aid, peak error 12 h",50007,36.714465626513736
+stress_test,"early aid, peak error 12 h",50009,34.03478722552801
+stress_test,"early aid, peak error 12 h",50011,25.115567033439103
+stress_test,"early aid, peak error 12 h",50013,53.252507755231676
+stress_test,"early aid, peak error 12 h",50015,25.075097393021462
+stress_test,"early aid, peak error 12 h",50017,26.118604924713043
+stress_test,"early aid, peak error 12 h",50019,38.67988086608927
+stress_test,"early aid, peak error 12 h",50021,25.344568187280817
+stress_test,"early aid, peak error 12 h",50023,32.908903895747976
+stress_test,"early aid, peak error 12 h",50025,16.922291547756082
+stress_test,"early aid, peak error 12 h",50027,21.254967715899475

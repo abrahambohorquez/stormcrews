@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+results/*_log.txt
+results/log_*.txt
+
+# LaTeX build files
+paper_gtdla/*.aux
+paper_gtdla/*.log
+paper_gtdla/*.out
+paper_gtdla/*.bbl
+paper_gtdla/*.blg
+paper_gtdla/*.synctex.gz
+paper_gtdla/*.fls
+paper_gtdla/*.fdb_latexmk
+paper_gtdla/build.txt
+docs/figures/_tikz/
+
+# notebooks
+.ipynb_checkpoints/
+*.nbconvert.ipynb

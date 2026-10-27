@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+message: "If you use StormCrews, please cite the software and the EAGLE-I outage data it is built from."
+title: "StormCrews: an open simulator of distribution restoration after storms"
+type: software
+version: 0.3.0
+date-released: 2026-10-31
+license: MIT
+repository-code: "https://github.com/abrahambohorquez/stormcrews"
+url: "https://github.com/abrahambohorquez/stormcrews"
+keywords:
+  - power distribution
+  - reliability
+  - SAIDI
+  - storm restoration
+  - repair crews
+  - mutual assistance
+  - discrete-event simulation
+authors:
+  - family-names: "Bohórquez Gómez"
+    given-names: "Abraham Jesús"
+    email: a.bohorquezg@uniandes.edu.co
+    affiliation: "Department of Industrial Engineering, Universidad de los Andes"
+  - family-names: "Murillo Aristizábal"
+    given-names: "Juan José"
+    email: j.murilloa@uniandes.edu.co
+    affiliation: "Department of Industrial Engineering, Universidad de los Andes"
+  - family-names: "Tabares Pozos"
+    given-names: "Alejandra"
+    email: a.tabaresp@uniandes.edu.co
+    affiliation: "Department of Industrial Engineering, Universidad de los Andes"
+  - family-names: "Cortés Sanabria"
+    given-names: "Pablo José"
+    email: pj.cortes716@uniandes.edu.co
+    affiliation: "Department of Industrial Engineering, Universidad de los Andes"
+references:
+  - type: article
+    title: "A dataset of recorded electricity outages by United States county 2014-2022"
+    authors:
+      - family-names: Brelsford
+        given-names: Christa
+      - name: "and others"
+    journal: "Scientific Data"
+    volume: 11
+    start: 271
+    year: 2024
+    doi: 10.1038/s41597-024-03095-5
+  - type: dataset
+    title: "The Environment for Analysis of Geo-Located Energy Information's Recorded Electricity Outages 2014-2025"
+    authors:
+      - family-names: Brelsford
+        given-names: Christa
+      - name: "and others"
+    publisher:
+      name: figshare
+    doi: 10.6084/m9.figshare.24237376.v4
+    version: 4

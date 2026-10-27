@@ -1,0 +1,8 @@
+numpy>=1.24
+pandas>=2.0
+pyyaml>=6.0
+matplotlib>=3.7
+geopandas>=0.14        # county maps (optional: the renderer falls back to county centroids)
+pillow>=10             # animated figures
+pytest>=7
+statsmodels>=0.14     # only to refit the damage model (scripts/fit_damage_model.py)

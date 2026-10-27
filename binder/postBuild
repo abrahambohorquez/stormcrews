@@ -1,0 +1,4 @@
+#!/bin/bash
+# Install StormCrews from the repository checkout that Binder built.
+set -euo pipefail
+pip install --no-cache-dir .

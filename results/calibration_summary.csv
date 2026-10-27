@@ -1,0 +1,7 @@
+region,calibration,storms,chi_ratio_median,chi_within_10pct,peak_ratio_median,t50_abs_error_h,t90_abs_error_h
+ne,anchored,39,0.987,1.0,0.909,2.0,2.0
+ne,equal,39,0.998,1.0,0.896,3.0,9.0
+ne,shape,39,0.974,0.949,0.876,1.0,1.0
+pawv,anchored,46,0.997,1.0,0.937,2.0,6.5
+pawv,equal,46,0.997,1.0,0.945,3.0,14.5
+pawv,shape,46,1.002,1.0,0.939,2.0,3.5

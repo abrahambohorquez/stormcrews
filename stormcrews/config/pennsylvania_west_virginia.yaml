@@ -1,0 +1,16 @@
+# StormCrews scenario: Pennsylvania and West Virginia, 122 counties, 46 storms from 2018 to 2025 replayed from
+# EAGLE-I. A second region, less densely populated than New England.
+#
+#   sim = stormcrews.Simulator("pennsylvania_west_virginia")
+
+region: pawv               # ne (New England) | pawv (Pennsylvania and West Virginia)
+storms: all                # all | a list of storm ids
+calibration: shape         # shape | equal | anchored
+decision_h: 6.0            # hours between decision points (also when mutual aid arrives)
+
+fleet_factor: 1.0          # scales the calibrated local fleet
+aid: normal                # normal | none
+reactive_aid: true         # usual request when 1 % of customers are out (reactive_trigger: 0.01)
+
+job_order: largest         # largest | oldest | guard | sweep
+damage_scale: 1.0          # multiplies the replayed damage; {fips: factor} for single counties

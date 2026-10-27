@@ -1,0 +1,24 @@
+# StormCrews scenario: New England, 67 counties of Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island and
+# Vermont, 39 storms from 2018 to 2025 replayed from EAGLE-I county-hourly outages.
+#
+#   sim = stormcrews.Simulator("new_england")
+
+region: ne                 # ne | pawv
+storms: all                # all | a list of storm ids
+
+# Crew fleet, repair time and job-size dispersion of every storm, fitted so that current practice reproduces the
+# observed customer-hours:
+#   shape     also matches the shape of the observed restoration curve (hours from the peak to 50 % and 10 % of it)
+#   equal     equal jobs of 35 customers and 3 hours on site; only the fleet is fitted
+#   anchored  fleet fixed by the crews utilities reported in public filings; the repair time is fitted
+calibration: shape         # shape | equal | anchored | anchored_low | anchored_high
+
+decision_h: 6.0            # hours between decision points (decisions also come when mutual aid arrives)
+
+fleet_factor: 1.0          # scales the calibrated local fleet
+aid: normal                # normal (the requested crews come) | none (nobody comes)
+reactive_aid: true         # request aid when 1 % of the region is out, if the rule has not asked yet
+
+job_order: largest         # largest first (utility practice) | oldest first | guard (largest, but a job waiting 48 h jumps the queue)
+
+damage_scale: 1.0          # multiplies the replayed damage; a mapping {fips: factor} scales single counties

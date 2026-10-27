@@ -1,0 +1,1562 @@
+[
+ {
+  "id": 0,
+  "start": "2018-02-28 18:00:00",
+  "peak": "2018-03-03 03:00:00",
+  "end": "2018-03-05 19:00:00",
+  "name": "riley_2018",
+  "type": "High Wind",
+  "hours": 122,
+  "peak_hour": 57,
+  "observed_customer_hours": 23427113.0,
+  "peak_customers_out": 671837.25,
+  "auto_share": 0.13534203222936883,
+  "calibrations": {
+   "shape": {
+    "fleet": 384,
+    "repair_mean_h": 4.0,
+    "size_sigma": 1.5
+   },
+   "anchored": {
+    "fleet": 1809,
+    "repair_mean_h": 20.08069647272598,
+    "size_sigma": 2.5
+   },
+   "equal": {
+    "fleet": 864,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 1369,
+    "repair_mean_h": 20.80967347199926,
+    "size_sigma": 3.0
+   },
+   "anchored_high": {
+    "fleet": 2288,
+    "repair_mean_h": 15.644918806994202,
+    "size_sigma": 1.5
+   }
+  }
+ },
+ {
+  "id": 1,
+  "start": "2018-04-03 00:00:00",
+  "peak": "2018-04-05 06:00:00",
+  "end": "2018-04-06 06:00:00",
+  "name": "",
+  "type": "High Wind",
+  "hours": 79,
+  "peak_hour": 54,
+  "observed_customer_hours": 1088296.5,
+  "peak_customers_out": 78156.0,
+  "auto_share": 0.22184078664808046,
+  "calibrations": {
+   "shape": {
+    "fleet": 152,
+    "repair_mean_h": 2.0,
+    "size_sigma": 2.5
+   },
+   "anchored": {
+    "fleet": 210,
+    "repair_mean_h": 2.1238784050137243,
+    "size_sigma": 2.0
+   },
+   "equal": {
+    "fleet": 704,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 159,
+    "repair_mean_h": 1.714788984869965,
+    "size_sigma": 2.0
+   },
+   "anchored_high": {
+    "fleet": 266,
+    "repair_mean_h": 2.2009802380408363,
+    "size_sigma": 1.5
+   }
+  }
+ },
+ {
+  "id": 2,
+  "start": "2018-05-03 01:00:00",
+  "peak": "2018-05-05 11:00:00",
+  "end": "2018-05-06 13:00:00",
+  "name": "",
+  "type": "Thunderstorm Wind",
+  "hours": 85,
+  "peak_hour": 58,
+  "observed_customer_hours": 1312821.25,
+  "peak_customers_out": 78710.5,
+  "auto_share": 0.22671961846650185,
+  "calibrations": {
+   "shape": {
+    "fleet": 200,
+    "repair_mean_h": 2.0,
+    "size_sigma": 2.5
+   },
+   "anchored": {
+    "fleet": 212,
+    "repair_mean_h": 1.200454613576085,
+    "size_sigma": 1.5
+   },
+   "equal": {
+    "fleet": 992,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 160,
+    "repair_mean_h": 1.5967528393503303,
+    "size_sigma": 2.5
+   },
+   "anchored_high": {
+    "fleet": 268,
+    "repair_mean_h": 1.4868416186885434,
+    "size_sigma": 1.5
+   }
+  }
+ },
+ {
+  "id": 3,
+  "start": "2018-05-13 20:00:00",
+  "peak": "2018-05-15 23:00:00",
+  "end": "2018-05-16 11:00:00",
+  "name": "",
+  "type": "Thunderstorm Wind",
+  "hours": 64,
+  "peak_hour": 51,
+  "observed_customer_hours": 1571635.25,
+  "peak_customers_out": 139047.5,
+  "auto_share": 0.12259095824541905,
+  "calibrations": {
+   "shape": {
+    "fleet": 704,
+    "repair_mean_h": 2.0,
+    "size_sigma": 0.0
+   },
+   "anchored": {
+    "fleet": 374,
+    "repair_mean_h": 0.9025136788499108,
+    "size_sigma": 0.0
+   },
+   "equal": {
+    "fleet": 1088,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 283,
+    "repair_mean_h": 0.5101171079442749,
+    "size_sigma": 0.0
+   },
+   "anchored_high": {
+    "fleet": 474,
+    "repair_mean_h": 1.289195357895309,
+    "size_sigma": 0.0
+   }
+  }
+ },
+ {
+  "id": 4,
+  "start": "2018-06-16 21:00:00",
+  "peak": "2018-06-18 23:00:00",
+  "end": "2018-06-19 12:00:00",
+  "name": "",
+  "type": "Thunderstorm Wind",
+  "hours": 64,
+  "peak_hour": 50,
+  "observed_customer_hours": 812336.0,
+  "peak_customers_out": 113704.5,
+  "auto_share": 0.2079078486507819,
+  "calibrations": {
+   "shape": {
+    "fleet": 1280,
+    "repair_mean_h": 3.0,
+    "size_sigma": 2.5
+   },
+   "anchored": {
+    "fleet": 306,
+    "repair_mean_h": 1.040877855269724,
+    "size_sigma": 2.0
+   },
+   "equal": {
+    "fleet": 1920,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 232,
+    "repair_mean_h": 0.7825422900366437,
+    "size_sigma": 2.0
+   },
+   "anchored_high": {
+    "fleet": 387,
+    "repair_mean_h": 1.1178222683091086,
+    "size_sigma": 1.5
+   }
+  }
+ },
+ {
+  "id": 5,
+  "start": "2019-02-23 15:00:00",
+  "peak": "2019-02-26 00:00:00",
+  "end": "2019-02-26 20:00:00",
+  "name": "",
+  "type": "Strong Wind",
+  "hours": 78,
+  "peak_hour": 57,
+  "observed_customer_hours": 1950361.0,
+  "peak_customers_out": 125589.75,
+  "auto_share": 0.24190265602284303,
+  "calibrations": {
+   "shape": {
+    "fleet": 768,
+    "repair_mean_h": 4.0,
+    "size_sigma": 2.5
+   },
+   "anchored": {
+    "fleet": 338,
+    "repair_mean_h": 2.8250204841464206,
+    "size_sigma": 2.5
+   },
+   "equal": {
+    "fleet": 1088,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 256,
+    "repair_mean_h": 1.8415506709402585,
+    "size_sigma": 2.0
+   },
+   "anchored_high": {
+    "fleet": 428,
+    "repair_mean_h": 3.143989473176104,
+    "size_sigma": 2.5
+   }
+  }
+ },
+ {
+  "id": 6,
+  "start": "2019-10-15 03:00:00",
+  "peak": "2019-10-17 13:00:00",
+  "end": "2019-10-18 22:00:00",
+  "name": "",
+  "type": "High Wind",
+  "hours": 92,
+  "peak_hour": 58,
+  "observed_customer_hours": 8424974.0,
+  "peak_customers_out": 396688.5,
+  "auto_share": 0.15429340349256399,
+  "calibrations": {
+   "shape": {
+    "fleet": 288,
+    "repair_mean_h": 4.0,
+    "size_sigma": 2.5
+   },
+   "anchored": {
+    "fleet": 1068,
+    "repair_mean_h": 7.94565908684075,
+    "size_sigma": 2.5
+   },
+   "equal": {
+    "fleet": 1344,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 808,
+    "repair_mean_h": 7.139543523246384,
+    "size_sigma": 2.5
+   },
+   "anchored_high": {
+    "fleet": 1351,
+    "repair_mean_h": 8.842791996257471,
+    "size_sigma": 2.5
+   }
+  }
+ },
+ {
+  "id": 7,
+  "start": "2019-10-30 03:00:00",
+  "peak": "2019-11-01 16:00:00",
+  "end": "2019-11-02 23:00:00",
+  "name": "",
+  "type": "Strong Wind",
+  "hours": 93,
+  "peak_hour": 61,
+  "observed_customer_hours": 5594331.25,
+  "peak_customers_out": 244432.25,
+  "auto_share": 0.1785743335112281,
+  "calibrations": {
+   "shape": {
+    "fleet": 416,
+    "repair_mean_h": 4.0,
+    "size_sigma": 2.0
+   },
+   "anchored": {
+    "fleet": 658,
+    "repair_mean_h": 6.190482060745183,
+    "size_sigma": 2.5
+   },
+   "equal": {
+    "fleet": 1216,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 498,
+    "repair_mean_h": 6.190482060745183,
+    "size_sigma": 3.0
+   },
+   "anchored_high": {
+    "fleet": 832,
+    "repair_mean_h": 7.66731725095527,
+    "size_sigma": 3.0
+   }
+  }
+ },
+ {
+  "id": 8,
+  "start": "2020-02-05 19:00:00",
+  "peak": "2020-02-08 00:00:00",
+  "end": "2020-02-08 19:00:00",
+  "name": "",
+  "type": "Winter Storm",
+  "hours": 73,
+  "peak_hour": 53,
+  "observed_customer_hours": 2669195.5,
+  "peak_customers_out": 216831.5,
+  "auto_share": 0.20953825970564685,
+  "calibrations": {
+   "shape": {
+    "fleet": 224,
+    "repair_mean_h": 2.0,
+    "size_sigma": 2.5
+   },
+   "anchored": {
+    "fleet": 584,
+    "repair_mean_h": 2.449489742783178,
+    "size_sigma": 1.5
+   },
+   "equal": {
+    "fleet": 1600,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 442,
+    "repair_mean_h": 1.8415506709402585,
+    "size_sigma": 1.5
+   },
+   "anchored_high": {
+    "fleet": 738,
+    "repair_mean_h": 2.6305624301789576,
+    "size_sigma": 1.5
+   }
+  }
+ },
+ {
+  "id": 9,
+  "start": "2020-04-07 23:00:00",
+  "peak": "2020-04-10 15:00:00",
+  "end": "2020-04-12 23:00:00",
+  "name": "",
+  "type": "Winter Storm",
+  "hours": 121,
+  "peak_hour": 64,
+  "observed_customer_hours": 11263728.75,
+  "peak_customers_out": 274132.25,
+  "auto_share": 0.1408727693033458,
+  "calibrations": {
+   "shape": {
+    "fleet": 192,
+    "repair_mean_h": 4.0,
+    "size_sigma": 1.5
+   },
+   "anchored": {
+    "fleet": 738,
+    "repair_mean_h": 9.841218888761318,
+    "size_sigma": 1.0
+   },
+   "equal": {
+    "fleet": 384,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 558,
+    "repair_mean_h": 7.66731725095527,
+    "size_sigma": 1.0
+   },
+   "anchored_high": {
+    "fleet": 934,
+    "repair_mean_h": 11.762005050525454,
+    "size_sigma": 1.0
+   }
+  }
+ },
+ {
+  "id": 10,
+  "start": "2020-08-02 19:00:00",
+  "peak": "2020-08-05 02:00:00",
+  "end": "2020-08-09 23:00:00",
+  "name": "isaias_2020",
+  "type": "Tropical Storm",
+  "hours": 173,
+  "peak_hour": 55,
+  "observed_customer_hours": 68492219.75,
+  "peak_customers_out": 1219741.0,
+  "auto_share": 0.09448524091975172,
+  "calibrations": {
+   "shape": {
+    "fleet": 800,
+    "repair_mean_h": 4.0,
+    "size_sigma": 1.0
+   },
+   "anchored": {
+    "fleet": 3284,
+    "repair_mean_h": 14.568013176482896,
+    "size_sigma": 1.0
+   },
+   "equal": {
+    "fleet": 1184,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 2485,
+    "repair_mean_h": 11.762005050525454,
+    "size_sigma": 1.0
+   },
+   "anchored_high": {
+    "fleet": 4154,
+    "repair_mean_h": 13.565235494562064,
+    "size_sigma": 0.5
+   }
+  }
+ },
+ {
+  "id": 11,
+  "start": "2020-09-28 09:00:00",
+  "peak": "2020-09-30 15:00:00",
+  "end": "2020-10-01 16:00:00",
+  "name": "",
+  "type": "High Wind",
+  "hours": 80,
+  "peak_hour": 54,
+  "observed_customer_hours": 2680658.0,
+  "peak_customers_out": 201033.0,
+  "auto_share": 0.1670788987158347,
+  "calibrations": {
+   "shape": {
+    "fleet": 1216,
+    "repair_mean_h": 3.0,
+    "size_sigma": 2.0
+   },
+   "anchored": {
+    "fleet": 541,
+    "repair_mean_h": 1.3844960500986694,
+    "size_sigma": 1.5
+   },
+   "equal": {
+    "fleet": 2176,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 410,
+    "repair_mean_h": 1.040877855269724,
+    "size_sigma": 1.5
+   },
+   "anchored_high": {
+    "fleet": 685,
+    "repair_mean_h": 1.200454613576085,
+    "size_sigma": 1.0
+   }
+  }
+ },
+ {
+  "id": 12,
+  "start": "2020-10-05 22:00:00",
+  "peak": "2020-10-08 00:00:00",
+  "end": "2020-10-09 02:00:00",
+  "name": "",
+  "type": "Thunderstorm Wind",
+  "hours": 77,
+  "peak_hour": 50,
+  "observed_customer_hours": 3771782.25,
+  "peak_customers_out": 317241.25,
+  "auto_share": 0.1774729157415763,
+  "calibrations": {
+   "shape": {
+    "fleet": 272,
+    "repair_mean_h": 2.0,
+    "size_sigma": 2.5
+   },
+   "anchored": {
+    "fleet": 854,
+    "repair_mean_h": 2.8250204841464206,
+    "size_sigma": 1.5
+   },
+   "equal": {
+    "fleet": 1792,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 646,
+    "repair_mean_h": 2.280881050822207,
+    "size_sigma": 1.5
+   },
+   "anchored_high": {
+    "fleet": 1080,
+    "repair_mean_h": 3.2581237620448,
+    "size_sigma": 1.5
+   }
+  }
+ },
+ {
+  "id": 13,
+  "start": "2020-11-14 01:00:00",
+  "peak": "2020-11-16 05:00:00",
+  "end": "2020-11-16 23:00:00",
+  "name": "",
+  "type": "Thunderstorm Wind",
+  "hours": 71,
+  "peak_hour": 52,
+  "observed_customer_hours": 991690.25,
+  "peak_customers_out": 86044.75,
+  "auto_share": 0.1889988809223282,
+  "calibrations": {
+   "shape": {
+    "fleet": 1280,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored": {
+    "fleet": 232,
+    "repair_mean_h": 0.9025136788499108,
+    "size_sigma": 1.5
+   },
+   "equal": {
+    "fleet": 1280,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 175,
+    "repair_mean_h": 0.6907248613470083,
+    "size_sigma": 1.5
+   },
+   "anchored_high": {
+    "fleet": 293,
+    "repair_mean_h": 0.7825422900366437,
+    "size_sigma": 1.0
+   }
+  }
+ },
+ {
+  "id": 14,
+  "start": "2020-12-03 20:00:00",
+  "peak": "2020-12-06 11:00:00",
+  "end": "2020-12-08 14:00:00",
+  "name": "",
+  "type": "Winter Storm",
+  "hours": 115,
+  "peak_hour": 63,
+  "observed_customer_hours": 8903180.75,
+  "peak_customers_out": 285966.5,
+  "auto_share": 0.1456235215700153,
+  "calibrations": {
+   "shape": {
+    "fleet": 120,
+    "repair_mean_h": 3.0,
+    "size_sigma": 2.5
+   },
+   "anchored": {
+    "fleet": 770,
+    "repair_mean_h": 10.952376721911149,
+    "size_sigma": 2.5
+   },
+   "equal": {
+    "fleet": 640,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 583,
+    "repair_mean_h": 9.496474305220692,
+    "size_sigma": 2.5
+   },
+   "anchored_high": {
+    "fleet": 974,
+    "repair_mean_h": 12.631483222432992,
+    "size_sigma": 3.0
+   }
+  }
+ },
+ {
+  "id": 15,
+  "start": "2021-02-28 03:00:00",
+  "peak": "2021-03-02 07:00:00",
+  "end": "2021-03-03 18:00:00",
+  "name": "",
+  "type": "Strong Wind",
+  "hours": 88,
+  "peak_hour": 52,
+  "observed_customer_hours": 2537137.75,
+  "peak_customers_out": 121868.25,
+  "auto_share": 0.22927143418449314,
+  "calibrations": {
+   "shape": {
+    "fleet": 184,
+    "repair_mean_h": 2.0,
+    "size_sigma": 2.5
+   },
+   "anchored": {
+    "fleet": 328,
+    "repair_mean_h": 2.92757544075441,
+    "size_sigma": 2.5
+   },
+   "equal": {
+    "fleet": 1088,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 248,
+    "repair_mean_h": 3.2581237620448,
+    "size_sigma": 3.5
+   },
+   "anchored_high": {
+    "fleet": 415,
+    "repair_mean_h": 2.8250204841464206,
+    "size_sigma": 2.0
+   }
+  }
+ },
+ {
+  "id": 16,
+  "start": "2021-03-27 13:00:00",
+  "peak": "2021-03-29 17:00:00",
+  "end": "2021-03-30 12:00:00",
+  "name": "",
+  "type": "Strong Wind",
+  "hours": 72,
+  "peak_hour": 52,
+  "observed_customer_hours": 884363.25,
+  "peak_customers_out": 83769.25,
+  "auto_share": 0.2841860458278757,
+  "calibrations": {
+   "shape": {
+    "fleet": 384,
+    "repair_mean_h": 2.0,
+    "size_sigma": 2.0
+   },
+   "anchored": {
+    "fleet": 226,
+    "repair_mean_h": 1.5967528393503303,
+    "size_sigma": 2.5
+   },
+   "equal": {
+    "fleet": 1280,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 171,
+    "repair_mean_h": 0.4423071020333733,
+    "size_sigma": 1.0
+   },
+   "anchored_high": {
+    "fleet": 285,
+    "repair_mean_h": 1.8415506709402585,
+    "size_sigma": 3.5
+   }
+  }
+ },
+ {
+  "id": 17,
+  "start": "2021-08-20 14:00:00",
+  "peak": "2021-08-22 18:00:00",
+  "end": "2021-08-24 12:00:00",
+  "name": "",
+  "type": "Tropical Storm",
+  "hours": 95,
+  "peak_hour": 52,
+  "observed_customer_hours": 2552326.5,
+  "peak_customers_out": 126861.75,
+  "auto_share": 0.22464332832203235,
+  "calibrations": {
+   "shape": {
+    "fleet": 136,
+    "repair_mean_h": 2.0,
+    "size_sigma": 1.5
+   },
+   "anchored": {
+    "fleet": 342,
+    "repair_mean_h": 4.333706838363602,
+    "size_sigma": 1.5
+   },
+   "equal": {
+    "fleet": 520,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 258,
+    "repair_mean_h": 3.4989727907862607,
+    "size_sigma": 1.5
+   },
+   "anchored_high": {
+    "fleet": 432,
+    "repair_mean_h": 5.973625268505302,
+    "size_sigma": 2.0
+   }
+  }
+ },
+ {
+  "id": 18,
+  "start": "2021-10-25 06:00:00",
+  "peak": "2021-10-27 13:00:00",
+  "end": "2021-10-28 15:00:00",
+  "name": "noreaster_2021",
+  "type": "High Wind",
+  "hours": 82,
+  "peak_hour": 55,
+  "observed_customer_hours": 14847433.75,
+  "peak_customers_out": 624923.25,
+  "auto_share": 0.09712066162115987,
+  "calibrations": {
+   "shape": {
+    "fleet": 1792,
+    "repair_mean_h": 4.0,
+    "size_sigma": 0.0
+   },
+   "anchored": {
+    "fleet": 1683,
+    "repair_mean_h": 3.7576260095715344,
+    "size_sigma": 0.0
+   },
+   "equal": {
+    "fleet": 1344,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 1273,
+    "repair_mean_h": 2.8250204841464206,
+    "size_sigma": 0.0
+   },
+   "anchored_high": {
+    "fleet": 2128,
+    "repair_mean_h": 4.654065780841291,
+    "size_sigma": 0.0
+   }
+  }
+ },
+ {
+  "id": 19,
+  "start": "2022-01-27 13:00:00",
+  "peak": "2022-01-29 16:00:00",
+  "end": "2022-01-31 01:00:00",
+  "name": "",
+  "type": "Blizzard",
+  "hours": 85,
+  "peak_hour": 51,
+  "observed_customer_hours": 2745017.5,
+  "peak_customers_out": 118850.75,
+  "auto_share": 0.2517022827151133,
+  "calibrations": {
+   "shape": {
+    "fleet": 120,
+    "repair_mean_h": 2.0,
+    "size_sigma": 1.5
+   },
+   "anchored": {
+    "fleet": 320,
+    "repair_mean_h": 2.538412041114316,
+    "size_sigma": 0.5
+   },
+   "equal": {
+    "fleet": 480,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 242,
+    "repair_mean_h": 3.7576260095715344,
+    "size_sigma": 1.5
+   },
+   "anchored_high": {
+    "fleet": 405,
+    "repair_mean_h": 3.2581237620448,
+    "size_sigma": 0.5
+   }
+  }
+ },
+ {
+  "id": 20,
+  "start": "2022-10-12 12:00:00",
+  "peak": "2022-10-14 17:00:00",
+  "end": "2022-10-15 17:00:00",
+  "name": "",
+  "type": "Strong Wind",
+  "hours": 78,
+  "peak_hour": 53,
+  "observed_customer_hours": 1083274.5,
+  "peak_customers_out": 78119.75,
+  "auto_share": 0.2982260348367065,
+  "calibrations": {
+   "shape": {
+    "fleet": 120,
+    "repair_mean_h": 2.0,
+    "size_sigma": 2.5
+   },
+   "anchored": {
+    "fleet": 210,
+    "repair_mean_h": 2.1238784050137243,
+    "size_sigma": 1.5
+   },
+   "equal": {
+    "fleet": 608,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 159,
+    "repair_mean_h": 2.1238784050137243,
+    "size_sigma": 2.0
+   },
+   "anchored_high": {
+    "fleet": 266,
+    "repair_mean_h": 2.6305624301789576,
+    "size_sigma": 1.5
+   }
+  }
+ },
+ {
+  "id": 21,
+  "start": "2022-11-28 21:00:00",
+  "peak": "2022-12-01 02:00:00",
+  "end": "2022-12-01 18:00:00",
+  "name": "",
+  "type": "Strong Wind",
+  "hours": 70,
+  "peak_hour": 53,
+  "observed_customer_hours": 1123035.25,
+  "peak_customers_out": 129417.75,
+  "auto_share": 0.25141728603030333,
+  "calibrations": {
+   "shape": {
+    "fleet": 1152,
+    "repair_mean_h": 2.0,
+    "size_sigma": 1.0
+   },
+   "anchored": {
+    "fleet": 348,
+    "repair_mean_h": 0.7031505728392559,
+    "size_sigma": 1.5
+   },
+   "equal": {
+    "fleet": 1920,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 264,
+    "repair_mean_h": 0.5101171079442749,
+    "size_sigma": 1.5
+   },
+   "anchored_high": {
+    "fleet": 441,
+    "repair_mean_h": 1.040877855269724,
+    "size_sigma": 1.5
+   }
+  }
+ },
+ {
+  "id": 22,
+  "start": "2022-12-15 00:00:00",
+  "peak": "2022-12-17 16:00:00",
+  "end": "2022-12-19 20:00:00",
+  "name": "",
+  "type": "Winter Storm",
+  "hours": 117,
+  "peak_hour": 64,
+  "observed_customer_hours": 5913926.0,
+  "peak_customers_out": 189255.5,
+  "auto_share": 0.18610126412948966,
+  "calibrations": {
+   "shape": {
+    "fleet": 148,
+    "repair_mean_h": 4.0,
+    "size_sigma": 2.0
+   },
+   "anchored": {
+    "fleet": 510,
+    "repair_mean_h": 8.533022985066433,
+    "size_sigma": 1.5
+   },
+   "equal": {
+    "fleet": 352,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 386,
+    "repair_mean_h": 8.842791996257471,
+    "size_sigma": 2.0
+   },
+   "anchored_high": {
+    "fleet": 644,
+    "repair_mean_h": 11.762005050525454,
+    "size_sigma": 2.0
+   }
+  }
+ },
+ {
+  "id": 23,
+  "start": "2022-12-21 10:00:00",
+  "peak": "2022-12-24 01:00:00",
+  "end": "2022-12-25 23:00:00",
+  "name": "winter_2022",
+  "type": "High Wind",
+  "hours": 110,
+  "peak_hour": 63,
+  "observed_customer_hours": 17243325.0,
+  "peak_customers_out": 554053.25,
+  "auto_share": 0.14020334020692463,
+  "calibrations": {
+   "shape": {
+    "fleet": 368,
+    "repair_mean_h": 2.0,
+    "size_sigma": 1.5
+   },
+   "anchored": {
+    "fleet": 1492,
+    "repair_mean_h": 5.179549636736634,
+    "size_sigma": 1.0
+   },
+   "equal": {
+    "fleet": 1536,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 1129,
+    "repair_mean_h": 4.035399550688022,
+    "size_sigma": 1.0
+   },
+   "anchored_high": {
+    "fleet": 1887,
+    "repair_mean_h": 6.190482060745183,
+    "size_sigma": 1.0
+   }
+  }
+ },
+ {
+  "id": 24,
+  "start": "2023-01-21 07:00:00",
+  "peak": "2023-01-24 06:00:00",
+  "end": "2023-01-25 10:00:00",
+  "name": "",
+  "type": "Winter Storm",
+  "hours": 100,
+  "peak_hour": 71,
+  "observed_customer_hours": 3786340.0,
+  "peak_customers_out": 132811.0,
+  "auto_share": 0.17564549801634807,
+  "calibrations": {
+   "shape": {
+    "fleet": 80,
+    "repair_mean_h": 4.0,
+    "size_sigma": 2.5
+   },
+   "anchored": {
+    "fleet": 358,
+    "repair_mean_h": 13.565235494562064,
+    "size_sigma": 3.5
+   },
+   "equal": {
+    "fleet": 272,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 271,
+    "repair_mean_h": 10.198478519893367,
+    "size_sigma": 2.5
+   },
+   "anchored_high": {
+    "fleet": 452,
+    "repair_mean_h": 13.090036079320532,
+    "size_sigma": 2.5
+   }
+  }
+ },
+ {
+  "id": 25,
+  "start": "2023-03-12 09:00:00",
+  "peak": "2023-03-15 02:00:00",
+  "end": "2023-03-16 19:00:00",
+  "name": "",
+  "type": "Winter Storm",
+  "hours": 107,
+  "peak_hour": 65,
+  "observed_customer_hours": 7140245.25,
+  "peak_customers_out": 219897.75,
+  "auto_share": 0.17049689100420015,
+  "calibrations": {
+   "shape": {
+    "fleet": 352,
+    "repair_mean_h": 4.0,
+    "size_sigma": 1.5
+   },
+   "anchored": {
+    "fleet": 592,
+    "repair_mean_h": 6.190482060745183,
+    "size_sigma": 1.5
+   },
+   "equal": {
+    "fleet": 672,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 448,
+    "repair_mean_h": 4.998106494110882,
+    "size_sigma": 1.5
+   },
+   "anchored_high": {
+    "fleet": 749,
+    "repair_mean_h": 5.562435490815818,
+    "size_sigma": 1.0
+   }
+  }
+ },
+ {
+  "id": 26,
+  "start": "2023-09-06 19:00:00",
+  "peak": "2023-09-08 22:00:00",
+  "end": "2023-09-11 00:00:00",
+  "name": "",
+  "type": "Thunderstorm Wind",
+  "hours": 102,
+  "peak_hour": 51,
+  "observed_customer_hours": 2505798.25,
+  "peak_customers_out": 115516.75,
+  "auto_share": 0.22636960179120905,
+  "calibrations": {
+   "shape": {
+    "fleet": 100,
+    "repair_mean_h": 2.0,
+    "size_sigma": 2.5
+   },
+   "anchored": {
+    "fleet": 311,
+    "repair_mean_h": 4.491030694687573,
+    "size_sigma": 2.5
+   },
+   "equal": {
+    "fleet": 544,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 235,
+    "repair_mean_h": 3.2581237620448,
+    "size_sigma": 2.0
+   },
+   "anchored_high": {
+    "fleet": 393,
+    "repair_mean_h": 4.491030694687573,
+    "size_sigma": 2.0
+   }
+  }
+ },
+ {
+  "id": 27,
+  "start": "2023-09-14 11:00:00",
+  "peak": "2023-09-16 20:00:00",
+  "end": "2023-09-17 21:00:00",
+  "name": "",
+  "type": "Tropical Storm",
+  "hours": 83,
+  "peak_hour": 57,
+  "observed_customer_hours": 1863222.25,
+  "peak_customers_out": 102180.0,
+  "auto_share": 0.254721433628192,
+  "calibrations": {
+   "shape": {
+    "fleet": 272,
+    "repair_mean_h": 3.0,
+    "size_sigma": 1.5
+   },
+   "anchored": {
+    "fleet": 275,
+    "repair_mean_h": 3.0338533859863364,
+    "size_sigma": 1.5
+   },
+   "equal": {
+    "fleet": 576,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 208,
+    "repair_mean_h": 3.0338533859863364,
+    "size_sigma": 2.0
+   },
+   "anchored_high": {
+    "fleet": 348,
+    "repair_mean_h": 3.7576260095715344,
+    "size_sigma": 1.5
+   }
+  }
+ },
+ {
+  "id": 28,
+  "start": "2023-12-16 11:00:00",
+  "peak": "2023-12-18 21:00:00",
+  "end": "2023-12-21 23:00:00",
+  "name": "",
+  "type": "Flood",
+  "hours": 133,
+  "peak_hour": 58,
+  "observed_customer_hours": 30678345.0,
+  "peak_customers_out": 760650.0,
+  "auto_share": 0.09506366115603179,
+  "calibrations": {
+   "shape": {
+    "fleet": 416,
+    "repair_mean_h": 3.0,
+    "size_sigma": 1.5
+   },
+   "anchored": {
+    "fleet": 2048,
+    "repair_mean_h": 8.842791996257471,
+    "size_sigma": 1.0
+   },
+   "equal": {
+    "fleet": 1216,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 1549,
+    "repair_mean_h": 7.139543523246384,
+    "size_sigma": 1.0
+   },
+   "anchored_high": {
+    "fleet": 2590,
+    "repair_mean_h": 13.090036079320532,
+    "size_sigma": 1.5
+   }
+  }
+ },
+ {
+  "id": 29,
+  "start": "2024-01-08 04:00:00",
+  "peak": "2024-01-10 16:00:00",
+  "end": "2024-01-11 18:00:00",
+  "name": "",
+  "type": "High Wind",
+  "hours": 87,
+  "peak_hour": 60,
+  "observed_customer_hours": 1491065.75,
+  "peak_customers_out": 94439.0,
+  "auto_share": 0.22574148663493226,
+  "calibrations": {
+   "shape": {
+    "fleet": 192,
+    "repair_mean_h": 2.0,
+    "size_sigma": 2.5
+   },
+   "anchored": {
+    "fleet": 254,
+    "repair_mean_h": 2.449489742783178,
+    "size_sigma": 2.5
+   },
+   "equal": {
+    "fleet": 960,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 192,
+    "repair_mean_h": 1.5967528393503303,
+    "size_sigma": 2.0
+   },
+   "anchored_high": {
+    "fleet": 322,
+    "repair_mean_h": 2.1238784050137243,
+    "size_sigma": 1.5
+   }
+  }
+ },
+ {
+  "id": 30,
+  "start": "2024-02-27 02:00:00",
+  "peak": "2024-02-29 07:00:00",
+  "end": "2024-02-29 22:00:00",
+  "name": "",
+  "type": "Strong Wind",
+  "hours": 69,
+  "peak_hour": 53,
+  "observed_customer_hours": 1047916.75,
+  "peak_customers_out": 83934.25,
+  "auto_share": 0.3032339155077655,
+  "calibrations": {
+   "shape": {
+    "fleet": 832,
+    "repair_mean_h": 2.0,
+    "size_sigma": 0.5
+   },
+   "anchored": {
+    "fleet": 226,
+    "repair_mean_h": 0.7417850493978759,
+    "size_sigma": 1.5
+   },
+   "equal": {
+    "fleet": 1280,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 171,
+    "repair_mean_h": 1.1379311970344073,
+    "size_sigma": 3.0
+   },
+   "anchored_high": {
+    "fleet": 286,
+    "repair_mean_h": 0.9692298501350872,
+    "size_sigma": 1.5
+   }
+  }
+ },
+ {
+  "id": 31,
+  "start": "2024-03-22 00:00:00",
+  "peak": "2024-03-24 12:00:00",
+  "end": "2024-03-25 23:00:00",
+  "name": "",
+  "type": "Winter Storm",
+  "hours": 96,
+  "peak_hour": 60,
+  "observed_customer_hours": 8223951.75,
+  "peak_customers_out": 280386.75,
+  "auto_share": 0.10020159859259106,
+  "calibrations": {
+   "shape": {
+    "fleet": 84,
+    "repair_mean_h": 3.0,
+    "size_sigma": 2.5
+   },
+   "anchored": {
+    "fleet": 755,
+    "repair_mean_h": 11.349974022806236,
+    "size_sigma": 2.0
+   },
+   "equal": {
+    "fleet": 520,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 571,
+    "repair_mean_h": 12.18899378365107,
+    "size_sigma": 2.5
+   },
+   "anchored_high": {
+    "fleet": 955,
+    "repair_mean_h": 15.644918806994202,
+    "size_sigma": 3.0
+   }
+  }
+ },
+ {
+  "id": 32,
+  "start": "2024-04-02 07:00:00",
+  "peak": "2024-04-04 16:00:00",
+  "end": "2024-04-07 14:00:00",
+  "name": "",
+  "type": "Winter Storm",
+  "hours": 128,
+  "peak_hour": 57,
+  "observed_customer_hours": 21736925.25,
+  "peak_customers_out": 574856.25,
+  "auto_share": 0.11401066307529444,
+  "calibrations": {
+   "shape": {
+    "fleet": 192,
+    "repair_mean_h": 2.0,
+    "size_sigma": 1.5
+   },
+   "anchored": {
+    "fleet": 1548,
+    "repair_mean_h": 10.198478519893367,
+    "size_sigma": 1.0
+   },
+   "equal": {
+    "fleet": 800,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 1171,
+    "repair_mean_h": 8.2341053927864,
+    "size_sigma": 1.0
+   },
+   "anchored_high": {
+    "fleet": 1958,
+    "repair_mean_h": 11.762005050525454,
+    "size_sigma": 1.0
+   }
+  }
+ },
+ {
+  "id": 33,
+  "start": "2024-06-25 02:00:00",
+  "peak": "2024-06-27 05:00:00",
+  "end": "2024-06-28 04:00:00",
+  "name": "",
+  "type": "Thunderstorm Wind",
+  "hours": 75,
+  "peak_hour": 51,
+  "observed_customer_hours": 1384415.25,
+  "peak_customers_out": 90190.25,
+  "auto_share": 0.22452299109837534,
+  "calibrations": {
+   "shape": {
+    "fleet": 208,
+    "repair_mean_h": 2.0,
+    "size_sigma": 1.0
+   },
+   "anchored": {
+    "fleet": 243,
+    "repair_mean_h": 2.449489742783178,
+    "size_sigma": 1.0
+   },
+   "equal": {
+    "fleet": 496,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 184,
+    "repair_mean_h": 2.449489742783178,
+    "size_sigma": 1.5
+   },
+   "anchored_high": {
+    "fleet": 307,
+    "repair_mean_h": 3.7576260095715344,
+    "size_sigma": 1.5
+   }
+  }
+ },
+ {
+  "id": 34,
+  "start": "2024-08-07 17:00:00",
+  "peak": "2024-08-10 05:00:00",
+  "end": "2024-08-11 15:00:00",
+  "name": "",
+  "type": "Strong Wind",
+  "hours": 95,
+  "peak_hour": 60,
+  "observed_customer_hours": 1438886.25,
+  "peak_customers_out": 74812.75,
+  "auto_share": 0.2892528468738349,
+  "calibrations": {
+   "shape": {
+    "fleet": 896,
+    "repair_mean_h": 4.0,
+    "size_sigma": 2.0
+   },
+   "anchored": {
+    "fleet": 201,
+    "repair_mean_h": 1.8415506709402585,
+    "size_sigma": 2.5
+   },
+   "equal": {
+    "fleet": 896,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 152,
+    "repair_mean_h": 1.8415506709402585,
+    "size_sigma": 3.5
+   },
+   "anchored_high": {
+    "fleet": 255,
+    "repair_mean_h": 2.8250204841464206,
+    "size_sigma": 3.5
+   }
+  }
+ },
+ {
+  "id": 35,
+  "start": "2024-10-10 11:00:00",
+  "peak": "2024-10-12 15:00:00",
+  "end": "2024-10-13 16:00:00",
+  "name": "",
+  "type": "High Wind",
+  "hours": 78,
+  "peak_hour": 52,
+  "observed_customer_hours": 1345363.5,
+  "peak_customers_out": 111295.0,
+  "auto_share": 0.18624270803358883,
+  "calibrations": {
+   "shape": {
+    "fleet": 528,
+    "repair_mean_h": 2.0,
+    "size_sigma": 1.0
+   },
+   "anchored": {
+    "fleet": 300,
+    "repair_mean_h": 1.5967528393503303,
+    "size_sigma": 1.5
+   },
+   "equal": {
+    "fleet": 1152,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 227,
+    "repair_mean_h": 1.200454613576085,
+    "size_sigma": 1.5
+   },
+   "anchored_high": {
+    "fleet": 379,
+    "repair_mean_h": 1.3844960500986694,
+    "size_sigma": 1.0
+   }
+  }
+ },
+ {
+  "id": 36,
+  "start": "2024-11-26 20:00:00",
+  "peak": "2024-11-29 05:00:00",
+  "end": "2024-11-30 16:00:00",
+  "name": "",
+  "type": "Winter Storm",
+  "hours": 93,
+  "peak_hour": 57,
+  "observed_customer_hours": 1934388.5,
+  "peak_customers_out": 88325.75,
+  "auto_share": 0.19916524889536236,
+  "calibrations": {
+   "shape": {
+    "fleet": 84,
+    "repair_mean_h": 2.0,
+    "size_sigma": 2.0
+   },
+   "anchored": {
+    "fleet": 238,
+    "repair_mean_h": 4.035399550688022,
+    "size_sigma": 1.5
+   },
+   "equal": {
+    "fleet": 368,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 180,
+    "repair_mean_h": 3.2581237620448,
+    "size_sigma": 1.5
+   },
+   "anchored_high": {
+    "fleet": 301,
+    "repair_mean_h": 4.823019428039046,
+    "size_sigma": 1.5
+   }
+  }
+ },
+ {
+  "id": 37,
+  "start": "2024-12-09 19:00:00",
+  "peak": "2024-12-12 12:00:00",
+  "end": "2024-12-13 02:00:00",
+  "name": "",
+  "type": "High Wind",
+  "hours": 80,
+  "peak_hour": 65,
+  "observed_customer_hours": 1710213.5,
+  "peak_customers_out": 89061.0,
+  "auto_share": 0.20664957649870958,
+  "calibrations": {
+   "shape": {
+    "fleet": 864,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored": {
+    "fleet": 240,
+    "repair_mean_h": 1.040877855269724,
+    "size_sigma": 1.0
+   },
+   "equal": {
+    "fleet": 864,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 181,
+    "repair_mean_h": 1.1178222683091086,
+    "size_sigma": 1.5
+   },
+   "anchored_high": {
+    "fleet": 303,
+    "repair_mean_h": 1.3844960500986694,
+    "size_sigma": 1.0
+   }
+  }
+ },
+ {
+  "id": 38,
+  "start": "2025-03-05 09:00:00",
+  "peak": "2025-03-07 19:00:00",
+  "end": "2025-03-08 14:00:00",
+  "name": "",
+  "type": "Strong Wind",
+  "hours": 78,
+  "peak_hour": 58,
+  "observed_customer_hours": 1325803.5,
+  "peak_customers_out": 103372.5,
+  "auto_share": 0.292117528429177,
+  "calibrations": {
+   "shape": {
+    "fleet": 176,
+    "repair_mean_h": 2.0,
+    "size_sigma": 2.5
+   },
+   "anchored": {
+    "fleet": 278,
+    "repair_mean_h": 1.8415506709402585,
+    "size_sigma": 1.5
+   },
+   "equal": {
+    "fleet": 960,
+    "repair_mean_h": 3.0,
+    "size_sigma": 0.0
+   },
+   "anchored_low": {
+    "fleet": 211,
+    "repair_mean_h": 2.280881050822207,
+    "size_sigma": 2.5
+   },
+   "anchored_high": {
+    "fleet": 352,
+    "repair_mean_h": 2.1238784050137243,
+    "size_sigma": 1.5
+   }
+  }
+ }
+]

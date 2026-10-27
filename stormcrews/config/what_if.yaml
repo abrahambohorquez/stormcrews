@@ -1,0 +1,32 @@
+# StormCrews scenario: what-if. The New England storms as they happened, with stronger and wetter weather, fewer
+# crews and slower repairs. Every knob at its neutral value replays the real storms exactly.
+#
+#   sim = stormcrews.Simulator("what_if")
+#   stormcrews whatif --storm isaias --gust +3 --rain 1.2 --fleet 0.9      (the same from the command line)
+
+region: ne                 # ne (New England) | pawv (Pennsylvania and West Virginia)
+storms: all                # all | a list of storm ids
+calibration: shape         # shape | equal | anchored | anchored_low | anchored_high
+decision_h: 6.0            # hours between decision points (also when mutual aid arrives)
+
+# operations (neutral values: 1, 1, 35, 60, 24, 0.5)
+fleet_factor: 0.9          # 90 % of the calibrated local fleet
+repair_factor: 1.1         # repairs 10 % slower
+customers_per_job: 35.0
+speed_kmh: 60.0
+aid_lead_h: 24.0
+aid_share: 0.5
+aid: normal
+job_order: largest         # largest | oldest | guard | sweep
+
+# weather and network, through the damage model (stormcrews/damage.py); numbers apply to every county, a mapping
+# {fips: value} to single counties
+what_if:
+  gust_change: 3.0             # m/s added to the peak gust (neutral 0)
+  precip_factor: 1.2           # multiplies accumulated precipitation (neutral 1)
+  soil_moisture_change: 0.0    # m3/m3 (neutral 0)
+  customer_growth: 0.0         # share (neutral 0)
+  footprint_shift_km: [0, 0]   # east, north (neutral 0, 0)
+  footprint_scale: 1.0         # > 1 spreads the damage (neutral 1)
+  duration_factor: 1.0         # > 1 makes the damage arrive more slowly (neutral 1)
+  auto_share: null             # share restored automatically within the hour; null keeps each storm's measured share
