@@ -19,8 +19,7 @@
   chosen among seven input-based candidate sets (`CANDIDATES`). With the territories, the median error of held-out customer-hours goes from 34 to 16 % in New England and from
   29 to 17 % in Pennsylvania and West Virginia. The new `holdout_select` runs
   every candidate so that the choice can itself be held out (nested selection: 16 and 17 %) and compared with a
-  regression of customer-hours on the same inputs without the simulator (25 and 27 %); `make_macros.py` of the digest
-  computes both. `holdout.csv`, `holdout_parameters.csv`, `holdout_candidates*.csv`, `macros.tex`, the validation
+  regression of customer-hours on the same inputs without the simulator (25 and 27 %). `holdout.csv`, `holdout_parameters.csv`, `holdout_candidates*.csv`, `macros.tex`, the validation
   figures and the README numbers are regenerated.
 
 ## 0.3.0 (2026-10-31)
