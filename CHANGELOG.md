@@ -12,14 +12,15 @@
   territories is unchanged bit for bit (`tests/test_territories.py`). The papers now use `anchored_territory`.
 
 **Changed**
-- Every experiment behind the papers now runs 5 seeds per storm (`SEEDS` in `paper_gtdla/experiments.py`), the
+- Every experiment behind the papers now runs 5 seeds per storm (`SEEDS` in `experiments/experiments.py`), the
   held-out check included, and the macros average seeds per storm before taking medians.
-- Leave-one-storm-out check (`paper_gtdla/experiments.py holdout`): the repair time and the job-size dispersion of a held-out storm are now
+- Leave-one-storm-out check (`experiments/experiments.py holdout`): the repair time and the job-size dispersion of a held-out storm are now
   regressed on the log peak and on the hours over which the middle 80 % of the damage arrives (`arrival_hours`),
   chosen among seven input-based candidate sets (`CANDIDATES`). With the territories, the median error of held-out customer-hours goes from 34 to 16 % in New England and from
   29 to 17 % in Pennsylvania and West Virginia. The new `holdout_select` runs
   every candidate so that the choice can itself be held out (nested selection: 16 and 17 %) and compared with a
-  regression of customer-hours on the same inputs without the simulator (25 and 27 %). `holdout.csv`, `holdout_parameters.csv`, `holdout_candidates*.csv`, `macros.tex`, the validation
+  regression of customer-hours on the same inputs without the simulator (25 and 27 %); `make_macros.py` of the digest
+  computes both. `holdout.csv`, `holdout_parameters.csv`, `holdout_candidates*.csv`, `macros.tex`, the validation
   figures and the README numbers are regenerated.
 
 ## 0.3.0 (2026-10-31)
@@ -37,8 +38,7 @@ First public release.
 - `notebooks/explore.ipynb` and `stormcrews.explore`: storms, what-if weather, crews, rules and seeds from menus and
   sliders, with a pinned baseline, synthetic storms and two rules side by side. Binder and Colab launch it without
   installing anything; `pip install "stormcrews[notebook]"` locally.
-- `paper_gtdla/`, the paper for IEEE PES GT&D Latin America 2027 with the scripts behind every number and figure,
-  including a leave-one-storm-out check of the anchored calibration and a sensitivity to the customers per repair job.
+- `experiments/`, the scripts behind every number and figure of the papers, including a leave-one-storm-out check of the anchored calibration and a sensitivity to the customers per repair job.
 - `scripts/make_figures.py` rebuilds every README image; `CITATION.cff`; project URLs and a fourth author in
   `pyproject.toml`.
 - `DATA_LICENSE.md` ships inside the package, as a license file of the distribution and as

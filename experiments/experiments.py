@@ -1,14 +1,14 @@
-"""Runs behind the GT&D Latin America 2027 paper. Every run uses the anchored calibration (the local fleet set from the
+"""Runs behind the papers. Every run uses the anchored calibration (the local fleet set from the
 line crews per customer out that utilities reported in public filings), current practice unless stated, and fixed
-seeds. Results go to paper_gtdla/results/.
+seeds. Results go to experiments/results/.
 
-    python paper_gtdla/experiments.py gust        # (a) peak gust changed from -5 to +10 m/s, every New England storm
-    python paper_gtdla/experiments.py crews       # (b) local fleet and mutual-aid lag, every New England storm
-    python paper_gtdla/experiments.py rules       # (c) job order and dispatch rules, every New England storm
-    python paper_gtdla/experiments.py perjob      # customers per repair job 20, 35, 55, with the repair time refitted
-    python paper_gtdla/experiments.py trigger     # the reactive aid trigger at 0.5, 1 and 2 % of customers out
-    python paper_gtdla/experiments.py holdout     # leave-one-storm-out check of the anchored calibration, both regions
-    python paper_gtdla/experiments.py all
+    python experiments/experiments.py gust        # (a) peak gust changed from -5 to +10 m/s, every New England storm
+    python experiments/experiments.py crews       # (b) local fleet and mutual-aid lag, every New England storm
+    python experiments/experiments.py rules       # (c) job order and dispatch rules, every New England storm
+    python experiments/experiments.py perjob      # customers per repair job 20, 35, 55, with the repair time refitted
+    python experiments/experiments.py trigger     # the reactive aid trigger at 0.5, 1 and 2 % of customers out
+    python experiments/experiments.py holdout     # leave-one-storm-out check of the anchored calibration, both regions
+    python experiments/experiments.py all
 
 At most four worker processes (--workers).
 """

@@ -1,11 +1,11 @@
-"""Figures of the GT&D Latin America 2027 paper, as PDF in paper_gtdla/figures. Run from the repository root after
-paper_gtdla/experiments.py.
+"""Figures of the papers, as PDF in experiments/figures. Run from the repository root after
+experiments/experiments.py.
 
-    python paper_gtdla/make_figures.py              # every figure of the paper
-    python paper_gtdla/make_figures.py problem      # Fig. 1, Tropical Storm Isaias as EAGLE-I recorded it
-    python paper_gtdla/make_figures.py validation   # Fig. 3, observed, fitted and held-out restoration of six storms
-    python paper_gtdla/make_figures.py isaias_maps  # Fig. 4, Isaias by county, observed and simulated
-    python paper_gtdla/make_figures.py demos        # Fig. 5, gust what-if, crews per 1,000 customers out, aid lag
+    python experiments/make_figures.py              # every figure
+    python experiments/make_figures.py problem      # Tropical Storm Isaias as EAGLE-I recorded it
+    python experiments/make_figures.py validation   # observed, fitted and held-out restoration of six storms
+    python experiments/make_figures.py isaias_maps  # Isaias by county, observed and simulated
+    python experiments/make_figures.py demos        # gust what-if, crews per 1,000 customers out, aid lag
 
 Fig. 2 is drawn in TikZ inside main.tex. `explore` and `study_area` draw two README images (scripts/make_figures.py).
 

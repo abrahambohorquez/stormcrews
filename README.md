@@ -362,7 +362,7 @@ storms closely and predicts an unseen one roughly; its purpose is the what-if ru
 dashed) for six storms.</em></p>
 
 `python scripts/calibration_check.py` compares every storm under every calibration;
-`python paper_gtdla/experiments.py holdout` runs the leave-one-storm-out check.
+`python experiments/experiments.py holdout` runs the leave-one-storm-out check.
 
 ## Data and licenses
 
@@ -386,22 +386,23 @@ county's pre-storm baseline. **Neither Oak Ridge National Laboratory nor the US 
 work.** Full attributions and terms, including ERA5, Open-Meteo, the Census and NOAA, are in
 [DATA_LICENSE.md](DATA_LICENSE.md), which also ships inside the package.
 
-## Reproducing the paper
+## Reproducing the experiments
 
-`paper_gtdla/` holds the five-page paper for IEEE PES GT&D Latin America 2027. Every number in it comes from
-`paper_gtdla/macros.tex`, written by a script, and every figure from a script. With at most four processes:
+`experiments/` holds the runs behind the papers. Every number comes from `experiments/macros.tex`, written by a
+script, and every figure from a script. With at most four processes:
 
 | Output | Command |
 |---|---|
-| Runs: gust what-if, crews and aid lag, rules, customers per job, trigger, leave-one-storm-out | `python paper_gtdla/experiments.py all` (or one of `gust`, `crews`, `rules`, `perjob`, `trigger`, `holdout`) |
-| Fig. 1, Isaias as recorded | `python paper_gtdla/make_figures.py problem` |
-| Fig. 2, the restoration loop | drawn in TikZ in `paper_gtdla/main.tex` |
-| Fig. 3, validation | `python paper_gtdla/make_figures.py validation` |
-| Fig. 4, Isaias maps | `python paper_gtdla/make_figures.py isaias_maps` |
-| Fig. 5, illustrations | `python paper_gtdla/make_figures.py demos` |
-| Every number in the text and tables | `python paper_gtdla/make_macros.py` |
+| Runs: gust what-if, crews and aid lag, rules, customers per job, trigger, leave-one-storm-out | `python experiments/experiments.py all` (or one of `gust`, `crews`, `rules`, `perjob`, `trigger`, `holdout`) |
+| Isaias as recorded | `python experiments/make_figures.py problem` |
+| The restoration loop | drawn in TikZ in `docs/figures/engine.tex` |
+
+| Validation | `python experiments/make_figures.py validation` |
+| Isaias maps | `python experiments/make_figures.py isaias_maps` |
+| Illustrations | `python experiments/make_figures.py demos` |
+| Every number of the papers | `python experiments/make_macros.py` |
 | The calibration summary it reads | `python scripts/calibration_check.py` |
-| The PDF | `cd paper_gtdla && pdflatex main && bibtex main && pdflatex main && pdflatex main` |
+
 | Every image of this README | `python scripts/make_figures.py` |
 
 `evaluator.py` compares the reference rules under the shipped scenarios with paired intervals, and `whatif_sweep.py`

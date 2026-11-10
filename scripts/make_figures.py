@@ -1,7 +1,7 @@
 """Builds every image of the README in docs/figures, in the palette of the paper: navy for the simulator, red tile for
 observed data, gray for alternatives and baselines.
 
-    python scripts/make_figures.py            # every image (runs paper_gtdla/experiments.py results; needs pdflatex
+    python scripts/make_figures.py            # every image (runs experiments/experiments.py results; needs pdflatex
                                               # and pdftoppm only for the two diagrams)
     python scripts/make_figures.py hero rules # some of them
 
@@ -22,12 +22,12 @@ import pandas as pd  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "paper_gtdla"))
+sys.path.insert(0, str(ROOT / "experiments"))
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import importlib.util  # noqa: E402
 
-_spec = importlib.util.spec_from_file_location("paper_figures", ROOT / "paper_gtdla" / "make_figures.py")
+_spec = importlib.util.spec_from_file_location("paper_figures", ROOT / "experiments" / "make_figures.py")
 PF = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(PF)      # the paper's figure functions
 from stormcrews import Simulator  # noqa: E402
 from stormcrews.core.data import region  # noqa: E402
@@ -88,7 +88,7 @@ def hero():
 def rules():
     """Three restoration rules on the 39 New England storms: the SAIDI contribution and the worst county."""
     style()
-    d = pd.read_csv(ROOT / "paper_gtdla" / "results" / "rules.csv")
+    d = pd.read_csv(ROOT / "experiments" / "results" / "rules.csv")
     d = d[d["rule"] != "largest first, 48 h guard"]
     per_seed = d.groupby(["rule", "seed"]).agg(saidi=("saidi_min", "sum"), worst=("worst_county_h", "mean"),
                                                travel=("travel_crew_hours", "sum"))
