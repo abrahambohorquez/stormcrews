@@ -105,6 +105,27 @@ def rule_name(rule):
     return getattr(rule, "name", None) or getattr(rule, "__name__", None) or type(rule).__name__
 
 
+def split_fleet(n_local, territory, weights, at_least_one=True):
+    """Crews per territory: `n_local` split in proportion to `weights` per county (largest remainders); with
+    `at_least_one`, every territory with positive weight keeps at least one crew."""
+    T = int(territory.max()) + 1
+    d = np.bincount(territory, weights=np.asarray(weights, float), minlength=T)
+    if d.sum() <= 0:
+        d = np.bincount(territory, minlength=T).astype(float)
+    share = d / d.sum()
+    alloc = np.floor(n_local * share).astype(int)
+    alloc[np.argsort(-(n_local * share - alloc))[: n_local - alloc.sum()]] += 1
+    if not at_least_one:
+        return alloc
+    need = (d > 0) & (alloc == 0)
+    while need.any() and alloc.sum() >= n_local:
+        donor = int(np.argmax(alloc)); alloc[donor] -= 1; alloc[int(np.flatnonzero(need)[0])] += 1
+        need = (d > 0) & (alloc == 0)
+        if alloc[donor] <= 1 and need.any():
+            break
+    return alloc
+
+
 @dataclass
 class Result:
     """What one rule did in one storm with one seed."""
@@ -178,8 +199,18 @@ class Session:
                                 reactive_aid=sc.reactive_aid and sc.aid != "none",
                                 aid_comes=sc.aid != "none", **ex)
         self._crew_rises = self.rises * (1 - phi)
+        self.territory, self.fleet_t, self.aid_t = None, None, None
+        if sc.territories:
+            self.territory = self.region.territory_ids
+            if self.territory is None:
+                raise ValueError("territories: true needs a `territory` column in the county table")
+            # standing fleets follow the customers served; the usual aid, aid_share times the regional fleet, joins
+            # the territories in proportion to the crew-job customers each one receives in the storm
+            self.fleet_t = split_fleet(self.local_crews, self.territory, self.customers)
+            self.aid_t = split_fleet(int(round(sc.aid_share * self.local_crews)), self.territory,
+                                     self._crew_rises.sum(0), at_least_one=False)
         self._gen = run(self._crew_rises, self.customers, self.region.dist_km, self.local_crews, self.cfg,
-                        seed=self.engine_seed)
+                        seed=self.engine_seed, territory=self.territory, fleet=self.fleet_t, aid_fleet=self.aid_t)
         self._point = next(self._gen)
         self.outcome = None; self.metrics = None; self.history = []; self.last_decision = None
         self._fig = None

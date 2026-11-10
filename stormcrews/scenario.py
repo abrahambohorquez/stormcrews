@@ -18,7 +18,7 @@ import numpy as np
 import yaml
 
 CONFIG_DIR = Path(__file__).resolve().parent / "config"
-CALIBRATIONS = ("shape", "equal", "anchored", "anchored_low", "anchored_high")
+CALIBRATIONS = ("shape", "equal", "anchored", "anchored_low", "anchored_high", "anchored_territory")
 AID_MODES = ("normal", "none")
 
 
@@ -42,6 +42,7 @@ class Scenario:
     speed_kmh: float = 60.0                 # crew travel speed between counties
     aid_lead_h: float = 24.0                # hours from the aid request to arrival
     aid_share: float = 0.5                  # aid crews per local crew at multiplier 1
+    territories: bool = False               # True: each utility territory keeps its own crews and asks for its own aid
     # weather and network knobs applied to the real storm through the damage model (see whatif.py)
     what_if: object = None
 

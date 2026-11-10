@@ -36,6 +36,11 @@
     "fleet": 2339,
     "repair_mean_h": 11.349974022806236,
     "size_sigma": 1.0
+   },
+   "anchored_territory": {
+    "fleet": 1602,
+    "repair_mean_h": 7.372323785435597,
+    "size_sigma": 1.0
    }
   }
  },
@@ -71,6 +76,11 @@
     "fleet": 332,
     "repair_mean_h": 0.309641364586731,
     "size_sigma": 1.0
+   },
+   "anchored_territory": {
+    "fleet": 228,
+    "repair_mean_h": 1.357446382942427,
+    "size_sigma": 2.5
    }
   }
  },
@@ -110,6 +120,11 @@
    "anchored_high": {
     "fleet": 663,
     "repair_mean_h": 4.998106494110882,
+    "size_sigma": 3.0
+   },
+   "anchored_territory": {
+    "fleet": 454,
+    "repair_mean_h": 5.4577131953103235,
     "size_sigma": 3.0
    }
   }
@@ -151,6 +166,11 @@
     "fleet": 491,
     "repair_mean_h": 7.66731725095527,
     "size_sigma": 2.0
+   },
+   "anchored_territory": {
+    "fleet": 337,
+    "repair_mean_h": 7.870508432795114,
+    "size_sigma": 2.5
    }
   }
  },
@@ -190,6 +210,11 @@
    "anchored_high": {
     "fleet": 1056,
     "repair_mean_h": 4.998106494110882,
+    "size_sigma": 1.5
+   },
+   "anchored_territory": {
+    "fleet": 723,
+    "repair_mean_h": 3.4086405812910194,
     "size_sigma": 1.5
    }
   }
@@ -231,6 +256,11 @@
     "fleet": 439,
     "repair_mean_h": 2.460432397635312,
     "size_sigma": 3.5
+   },
+   "anchored_territory": {
+    "fleet": 301,
+    "repair_mean_h": 3.3751780804989004,
+    "size_sigma": 3.0
    }
   }
  },
@@ -270,6 +300,11 @@
    "anchored_high": {
     "fleet": 303,
     "repair_mean_h": 1.3844960500986694,
+    "size_sigma": 2.0
+   },
+   "anchored_territory": {
+    "fleet": 207,
+    "repair_mean_h": 1.7161859277025493,
     "size_sigma": 2.0
    }
   }
@@ -311,6 +346,11 @@
     "fleet": 1005,
     "repair_mean_h": 1.5967528393503303,
     "size_sigma": 1.0
+   },
+   "anchored_territory": {
+    "fleet": 688,
+    "repair_mean_h": 6.100653819725968,
+    "size_sigma": 3.0
    }
   }
  },
@@ -346,6 +386,11 @@
     "fleet": 286,
     "repair_mean_h": 1.200454613576085,
     "size_sigma": 2.0
+   },
+   "anchored_territory": {
+    "fleet": 196,
+    "repair_mean_h": 1.0676093354579115,
+    "size_sigma": 3.5
    }
   }
  },
@@ -386,6 +431,11 @@
     "fleet": 408,
     "repair_mean_h": 1.8415506709402585,
     "size_sigma": 2.5
+   },
+   "anchored_territory": {
+    "fleet": 280,
+    "repair_mean_h": 1.7784875550126804,
+    "size_sigma": 2.0
    }
   }
  },
@@ -421,6 +471,11 @@
     "fleet": 311,
     "repair_mean_h": 0.4423071020333733,
     "size_sigma": 1.5
+   },
+   "anchored_territory": {
+    "fleet": 213,
+    "repair_mean_h": 1.3054270826652519,
+    "size_sigma": 3.0
    }
   }
  },
@@ -460,6 +515,11 @@
    "anchored_high": {
     "fleet": 1468,
     "repair_mean_h": 7.66731725095527,
+    "size_sigma": 1.0
+   },
+   "anchored_territory": {
+    "fleet": 1006,
+    "repair_mean_h": 3.7784295387427176,
     "size_sigma": 1.0
    }
   }
@@ -501,6 +561,11 @@
     "fleet": 1504,
     "repair_mean_h": 7.66731725095527,
     "size_sigma": 1.5
+   },
+   "anchored_territory": {
+    "fleet": 1030,
+    "repair_mean_h": 4.62090925516746,
+    "size_sigma": 1.5
    }
   }
  },
@@ -541,6 +606,11 @@
     "fleet": 363,
     "repair_mean_h": 1.9776829123366944,
     "size_sigma": 1.5
+   },
+   "anchored_territory": {
+    "fleet": 249,
+    "repair_mean_h": 3.3898730608066847,
+    "size_sigma": 3.5
    }
   }
  },
@@ -581,6 +651,11 @@
     "fleet": 751,
     "repair_mean_h": 1.3844960500986694,
     "size_sigma": 1.5
+   },
+   "anchored_territory": {
+    "fleet": 515,
+    "repair_mean_h": 2.8094662980888225,
+    "size_sigma": 2.5
    }
   }
  },
@@ -621,6 +696,11 @@
     "fleet": 365,
     "repair_mean_h": 2.280881050822207,
     "size_sigma": 1.5
+   },
+   "anchored_territory": {
+    "fleet": 250,
+    "repair_mean_h": 3.229937284967325,
+    "size_sigma": 2.0
    }
   }
  },
@@ -661,6 +741,11 @@
     "fleet": 368,
     "repair_mean_h": 13.090036079320532,
     "size_sigma": 1.0
+   },
+   "anchored_territory": {
+    "fleet": 252,
+    "repair_mean_h": 4.7395067232367385,
+    "size_sigma": 0.5
    }
   }
  },
@@ -701,6 +786,11 @@
     "fleet": 402,
     "repair_mean_h": 0.9025136788499108,
     "size_sigma": 2.5
+   },
+   "anchored_territory": {
+    "fleet": 275,
+    "repair_mean_h": 1.2912966844029616,
+    "size_sigma": 2.0
    }
   }
  },
@@ -736,6 +826,11 @@
     "fleet": 316,
     "repair_mean_h": 0.4423071020333733,
     "size_sigma": 1.0
+   },
+   "anchored_territory": {
+    "fleet": 217,
+    "repair_mean_h": 1.4044357495024782,
+    "size_sigma": 3.0
    }
   }
  },
@@ -771,6 +866,11 @@
     "fleet": 345,
     "repair_mean_h": 1.8415506709402585,
     "size_sigma": 1.5
+   },
+   "anchored_territory": {
+    "fleet": 237,
+    "repair_mean_h": 2.2827391572504827,
+    "size_sigma": 2.0
    }
   }
  },
@@ -810,6 +910,11 @@
    "anchored_high": {
     "fleet": 471,
     "repair_mean_h": 3.2581237620448,
+    "size_sigma": 1.0
+   },
+   "anchored_territory": {
+    "fleet": 323,
+    "repair_mean_h": 2.6233106716253785,
     "size_sigma": 1.0
    }
   }
@@ -851,6 +956,11 @@
     "fleet": 567,
     "repair_mean_h": 2.1238784050137243,
     "size_sigma": 3.5
+   },
+   "anchored_territory": {
+    "fleet": 389,
+    "repair_mean_h": 2.8839198205874195,
+    "size_sigma": 3.0
    }
   }
  },
@@ -886,6 +996,11 @@
     "fleet": 347,
     "repair_mean_h": 1.8415506709402585,
     "size_sigma": 3.5
+   },
+   "anchored_territory": {
+    "fleet": 238,
+    "repair_mean_h": 1.721630902730788,
+    "size_sigma": 3.0
    }
   }
  },
@@ -926,6 +1041,11 @@
     "fleet": 400,
     "repair_mean_h": 7.139543523246384,
     "size_sigma": 3.0
+   },
+   "anchored_territory": {
+    "fleet": 274,
+    "repair_mean_h": 3.2554717110265545,
+    "size_sigma": 2.0
    }
   }
  },
@@ -966,6 +1086,11 @@
     "fleet": 400,
     "repair_mean_h": 6.53061693839548,
     "size_sigma": 2.5
+   },
+   "anchored_territory": {
+    "fleet": 274,
+    "repair_mean_h": 3.2554717110265545,
+    "size_sigma": 2.0
    }
   }
  },
@@ -1006,6 +1131,11 @@
     "fleet": 338,
     "repair_mean_h": 1.3359962128732237,
     "size_sigma": 1.0
+   },
+   "anchored_territory": {
+    "fleet": 231,
+    "repair_mean_h": 0.8026265481621842,
+    "size_sigma": 1.5
    }
   }
  },
@@ -1046,6 +1176,11 @@
     "fleet": 486,
     "repair_mean_h": 2.538412041114316,
     "size_sigma": 2.0
+   },
+   "anchored_territory": {
+    "fleet": 333,
+    "repair_mean_h": 3.4114174104349573,
+    "size_sigma": 3.0
    }
   }
  },
@@ -1086,6 +1221,11 @@
     "fleet": 505,
     "repair_mean_h": 4.181894143608383,
     "size_sigma": 2.0
+   },
+   "anchored_territory": {
+    "fleet": 346,
+    "repair_mean_h": 4.388967664029027,
+    "size_sigma": 3.5
    }
   }
  },
@@ -1126,6 +1266,11 @@
     "fleet": 846,
     "repair_mean_h": 5.764365117024429,
     "size_sigma": 2.0
+   },
+   "anchored_territory": {
+    "fleet": 580,
+    "repair_mean_h": 1.7242826552294672,
+    "size_sigma": 1.0
    }
   }
  },
@@ -1165,6 +1310,11 @@
    "anchored_high": {
     "fleet": 1322,
     "repair_mean_h": 3.4989727907862607,
+    "size_sigma": 1.5
+   },
+   "anchored_territory": {
+    "fleet": 905,
+    "repair_mean_h": 2.918316443867848,
     "size_sigma": 1.5
    }
   }
@@ -1206,6 +1356,11 @@
     "fleet": 333,
     "repair_mean_h": 3.2581237620448,
     "size_sigma": 2.0
+   },
+   "anchored_territory": {
+    "fleet": 228,
+    "repair_mean_h": 1.3391440270571384,
+    "size_sigma": 1.5
    }
   }
  },
@@ -1245,6 +1400,11 @@
    "anchored_high": {
     "fleet": 736,
     "repair_mean_h": 2.449489742783178,
+    "size_sigma": 1.0
+   },
+   "anchored_territory": {
+    "fleet": 504,
+    "repair_mean_h": 2.31184727538431,
     "size_sigma": 1.0
    }
   }
@@ -1286,6 +1446,11 @@
     "fleet": 241,
     "repair_mean_h": 1.200454613576085,
     "size_sigma": 1.0
+   },
+   "anchored_territory": {
+    "fleet": 165,
+    "repair_mean_h": 0.24295156403997004,
+    "size_sigma": 1.0
    }
   }
  },
@@ -1325,6 +1490,11 @@
    "anchored_high": {
     "fleet": 597,
     "repair_mean_h": 4.998106494110882,
+    "size_sigma": 0.5
+   },
+   "anchored_territory": {
+    "fleet": 409,
+    "repair_mean_h": 2.3928482498725114,
     "size_sigma": 0.5
    }
   }
@@ -1366,6 +1536,11 @@
     "fleet": 427,
     "repair_mean_h": 4.035399550688022,
     "size_sigma": 1.5
+   },
+   "anchored_territory": {
+    "fleet": 292,
+    "repair_mean_h": 1.6364010494723797,
+    "size_sigma": 1.5
    }
   }
  },
@@ -1406,6 +1581,11 @@
     "fleet": 446,
     "repair_mean_h": 2.6305624301789576,
     "size_sigma": 1.5
+   },
+   "anchored_territory": {
+    "fleet": 306,
+    "repair_mean_h": 4.221824483906636,
+    "size_sigma": 3.5
    }
   }
  },
@@ -1446,6 +1626,11 @@
     "fleet": 572,
     "repair_mean_h": 1.714788984869965,
     "size_sigma": 0.5
+   },
+   "anchored_territory": {
+    "fleet": 392,
+    "repair_mean_h": 1.496291245592056,
+    "size_sigma": 1.0
    }
   }
  },
@@ -1486,6 +1671,11 @@
     "fleet": 622,
     "repair_mean_h": 3.7576260095715344,
     "size_sigma": 0.5
+   },
+   "anchored_territory": {
+    "fleet": 426,
+    "repair_mean_h": 1.3476549614207591,
+    "size_sigma": 0.0
    }
   }
  },
@@ -1526,6 +1716,11 @@
     "fleet": 277,
     "repair_mean_h": 2.1238784050137243,
     "size_sigma": 1.5
+   },
+   "anchored_territory": {
+    "fleet": 190,
+    "repair_mean_h": 2.3191821162546224,
+    "size_sigma": 2.0
    }
   }
  },
@@ -1566,6 +1761,11 @@
     "fleet": 430,
     "repair_mean_h": 4.333706838363602,
     "size_sigma": 1.0
+   },
+   "anchored_territory": {
+    "fleet": 294,
+    "repair_mean_h": 4.022636855880669,
+    "size_sigma": 1.5
    }
   }
  },
@@ -1606,6 +1806,11 @@
     "fleet": 443,
     "repair_mean_h": 1.3844960500986694,
     "size_sigma": 1.0
+   },
+   "anchored_territory": {
+    "fleet": 303,
+    "repair_mean_h": 0.714958034736249,
+    "size_sigma": 0.5
    }
   }
  },
@@ -1646,6 +1851,11 @@
     "fleet": 916,
     "repair_mean_h": 1.5967528393503303,
     "size_sigma": 1.0
+   },
+   "anchored_territory": {
+    "fleet": 628,
+    "repair_mean_h": 3.9878364708093152,
+    "size_sigma": 2.0
    }
   }
  },
@@ -1686,6 +1896,11 @@
     "fleet": 780,
     "repair_mean_h": 1.9776829123366944,
     "size_sigma": 1.5
+   },
+   "anchored_territory": {
+    "fleet": 534,
+    "repair_mean_h": 3.7845881973962987,
+    "size_sigma": 3.0
    }
   }
  },
@@ -1726,6 +1941,11 @@
     "fleet": 333,
     "repair_mean_h": 0.9025136788499108,
     "size_sigma": 3.0
+   },
+   "anchored_territory": {
+    "fleet": 228,
+    "repair_mean_h": 2.0078000804032663,
+    "size_sigma": 2.5
    }
   }
  },
@@ -1766,6 +1986,11 @@
     "fleet": 408,
     "repair_mean_h": 3.2581237620448,
     "size_sigma": 1.0
+   },
+   "anchored_territory": {
+    "fleet": 279,
+    "repair_mean_h": 1.5919555985563956,
+    "size_sigma": 1.5
    }
   }
  },
@@ -1806,6 +2031,11 @@
     "fleet": 2284,
     "repair_mean_h": 11.762005050525454,
     "size_sigma": 1.0
+   },
+   "anchored_territory": {
+    "fleet": 1565,
+    "repair_mean_h": 7.964380291386922,
+    "size_sigma": 1.5
    }
   }
  }

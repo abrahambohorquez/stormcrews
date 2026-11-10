@@ -34,7 +34,7 @@ DEFAULTS = {
     "auto_share": None,
     # operations
     "fleet_factor": 1.0, "aid": "normal", "aid_lead_h": 24.0, "aid_share": 0.5,
-    "job_order": "largest", "decision_h": 6.0,
+    "job_order": "largest", "decision_h": 6.0, "territories": False,
 }
 
 
@@ -73,7 +73,8 @@ def what_if(s):
 def scenario(s):
     return Scenario(name="explore", region=s["region"], calibration=s["calibration"], decision_h=float(s["decision_h"]),
                     fleet_factor=float(s["fleet_factor"]), aid=s["aid"], aid_lead_h=float(s["aid_lead_h"]),
-                    aid_share=float(s["aid_share"]), job_order=s["job_order"], what_if=what_if(s))
+                    aid_share=float(s["aid_share"]), job_order=s["job_order"], what_if=what_if(s),
+                    territories=bool(s.get("territories", False)))
 
 
 def run_case(s, storm=None):

@@ -22,6 +22,11 @@ Options, all off by default so that a default run is unchanged:
     replan_after_aid  a second decision point right after aid crews join, so a rule can replan with the larger fleet
     queue_view        decision points also carry the jobs waiting in each county (customers and arrival hour), what a
                       control room sees
+
+Territories (`territory`, an integer id per county, with `fleet` crews per territory): each utility territory keeps
+its own crews, which only serve its counties; targets are set within each territory, and mutual aid is requested and
+joins territory by territory (the reactive trigger counts the territory's customers). With `territory=None` (the
+default) one pooled fleet serves the region and every result is unchanged.
 """
 import heapq
 from dataclasses import dataclass
@@ -92,9 +97,11 @@ def make_jobs(rises, cfg, rng):
     return t[o], cty[o], cust[o]
 
 
-def run(rises, customers, dist_km, n_local, cfg, seed=0):
+def run(rises, customers, dist_km, n_local, cfg, seed=0, territory=None, fleet=None, aid_fleet=None):
     """Generator. `rises` are the crew jobs' customers per hour and county (automatic restorations removed). The
-    local crews start in proportion to customers."""
+    local crews start in proportion to customers. With `territory` (an integer id per county) and `fleet` (local
+    crews per territory, summing to `n_local`), every territory keeps its own fleet; `aid_fleet` gives the aid crews
+    each territory's usual request brings (by default `aid_share` times its local fleet)."""
     if cfg.job_order not in ("largest", "oldest", "guard", "sweep"):
         raise ValueError(f"job_order must be largest, oldest, guard or sweep, not {cfg.job_order!r}")
     if cfg.dispatch not in ("absolute", "relative"):
@@ -106,10 +113,20 @@ def run(rises, customers, dist_km, n_local, cfg, seed=0):
     s2 = np.log(1 + cfg.repair_cv ** 2); mu = np.log(cfg.repair_mean_h) - s2 / 2
     repair = rng.lognormal(mu, np.sqrt(s2), n)
 
+    pooled = territory is None
+    terr = np.zeros(K, int) if pooled else np.asarray(territory, int)
+    T = 1 if pooled else int(terr.max()) + 1
+    fleet_t = np.array([int(n_local)]) if pooled else np.asarray(fleet, int)
+    if not pooled and (len(fleet_t) != T or fleet_t.sum() != n_local):
+        raise ValueError("fleet must give the local crews of every territory and sum to n_local")
+    aid_t = None if pooled else (np.rint(cfg.aid_share * fleet_t).astype(int) if aid_fleet is None else np.asarray(aid_fleet, int))
+    cust_t = np.bincount(terr, weights=customers.astype(float), minlength=T)
+
     queues = [[] for _ in range(K)]; waitq = [[] for _ in range(K)]; started = np.zeros(n, bool)
     waiting = np.zeros(K); qn = np.zeros(K, int); inrepair = np.zeros(K); working = np.zeros(K, int)
-    idle = [[] for _ in range(K)]; loc = []; arrived = np.zeros(K); restored = np.zeros(K)
-    S = {"crews": 0, "target": np.zeros(K), "seq": 0, "ch": 0.0, "aid_at": None, "aid_n": 0}
+    idle = [[] for _ in range(K)]; loc = []; crew_terr = []; arrived = np.zeros(K); restored = np.zeros(K)
+    S = {"crews": 0, "target": np.zeros(K), "seq": 0, "ch": 0.0, "aid_at": None, "aid_n": 0,
+         "crews_t": np.zeros(T, int), "aid_at_t": [None] * T, "aid_n_t": np.zeros(T, int)}
     done = []
     ev = []
     sweep_every = max(1, int(round(1 / cfg.sweep_share))) if cfg.job_order == "sweep" else 0
@@ -157,21 +174,44 @@ def run(rises, customers, dist_km, n_local, cfg, seed=0):
 
     def set_target(w, t):
         w = np.asarray(w, float)
-        S["target"] = S["crews"] * w / w.sum() if w.sum() > 0 else np.zeros(K)
+        if pooled:
+            S["target"] = S["crews"] * w / w.sum() if w.sum() > 0 else np.zeros(K)
+            return
+        tot = np.bincount(terr, weights=w, minlength=T)
+        with np.errstate(divide="ignore", invalid="ignore"):
+            S["target"] = np.where(tot[terr] > 0, S["crews_t"][terr] * w / tot[terr], 0.0)
 
-    def add_crews(m, weights):
-        w = np.asarray(weights, float); w = w / w.sum()
+    def add_crews(m, weights, t_idx=0):
+        w = np.asarray(weights, float)
+        if not pooled:
+            w = np.where(terr == t_idx, w, 0.0)
+            if w.sum() <= 0:
+                w = np.where(terr == t_idx, start_w, 0.0)
+        w = w / w.sum()
         alloc = np.floor(m * w).astype(int); alloc[np.argsort(-(m * w - alloc))[: m - alloc.sum()]] += 1
         for k, a in enumerate(alloc):
             for _ in range(a):
-                loc.append(k); idle[k].append(len(loc) - 1)
-        S["crews"] += m
+                loc.append(k); crew_terr.append(t_idx); idle[k].append(len(loc) - 1)
+        S["crews"] += m; S["crews_t"][t_idx] += m
 
-    def request(t, mult):
-        m = int(round(cfg.aid_share * n_local * mult)) if cfg.aid_comes else 0
-        S["aid_at"], S["aid_n"] = t, m
-        if m > 0:
-            push(t + cfg.aid_lead_h, "aid", m)
+    def request(t, mult, t_idx=None):
+        """An aid request at hour t: for the region (pooled), or for one territory, or for every territory that has
+        not asked yet (t_idx None with territories)."""
+        if pooled:
+            m = int(round(cfg.aid_share * n_local * mult)) if cfg.aid_comes else 0
+            S["aid_at"], S["aid_n"] = t, m
+            if m > 0:
+                push(t + cfg.aid_lead_h, "aid", (m, 0))
+            return
+        for ti in (range(T) if t_idx is None else [t_idx]):
+            if S["aid_at_t"][ti] is not None:
+                continue
+            m = int(round(aid_t[ti] * mult)) if cfg.aid_comes else 0
+            S["aid_at_t"][ti] = t; S["aid_n_t"][ti] = m; S["aid_n"] += m
+            if S["aid_at"] is None:
+                S["aid_at"] = t
+            if m > 0:
+                push(t + cfg.aid_lead_h, "aid", (m, ti))
 
     def start(c, k, t):
         i = None
@@ -196,7 +236,7 @@ def run(rises, customers, dist_km, n_local, cfg, seed=0):
         push(t + travel + cfg.setup_h + repair[i], "free", (c, k, i))
 
     def choose(c):
-        has = qn > 0
+        has = qn > 0 if pooled else (qn > 0) & (terr == crew_terr[c])
         if not has.any():
             return None
         deficit = S["target"] - working; here = loc[c]
@@ -216,11 +256,18 @@ def run(rises, customers, dist_km, n_local, cfg, seed=0):
         for j in range(K):
             while idle[j] and (qn > 0).any():
                 c = idle[j][-1]; dest = choose(c)
-                if dest is None:
-                    return
+                if dest is None:                     # nothing for this crew (pooled: no job anywhere; territories:
+                    if pooled:                       # none in its territory), move on to the next county's crews
+                        return
+                    break
                 idle[j].pop(); start(c, dest, t)
 
-    add_crews(n_local, start_w)
+    if pooled:
+        add_crews(n_local, start_w)
+    else:
+        for ti in range(T):
+            if fleet_t[ti] > 0:
+                add_crews(int(fleet_t[ti]), start_w, ti)
     d = yield point(0.0)
     set_target(d.weights, 0.0)
     for i in range(n):
@@ -229,6 +276,7 @@ def run(rises, customers, dist_km, n_local, cfg, seed=0):
     if d.aid > 0:
         request(0.0 if getattr(d, "aid_at", None) is None else float(d.aid_at), d.aid)
     remaining = n; t_end = 0.0; trigger = cfg.reactive_trigger * customers.sum()
+    trigger_t = cfg.reactive_trigger * cust_t
 
     while ev and remaining > 0:
         t, _, kind, data = heapq.heappop(ev)
@@ -236,8 +284,14 @@ def run(rises, customers, dist_km, n_local, cfg, seed=0):
             i = data; k = c_arr[i]
             heapq.heappush(queues[k], (t, 0.0, i) if cfg.job_order == "oldest" else (-k_arr[i], t, i))
             heapq.heappush(waitq[k], (t, i)); waiting[k] += k_arr[i]; qn[k] += 1; arrived[k] += k_arr[i]
-            if cfg.reactive_aid and S["aid_at"] is None and (waiting + inrepair).sum() >= trigger:
-                request(t, 1.0)
+            if cfg.reactive_aid:
+                if pooled:
+                    if S["aid_at"] is None and (waiting + inrepair).sum() >= trigger:
+                        request(t, 1.0)
+                else:
+                    ti = terr[k]
+                    if S["aid_at_t"][ti] is None and (waiting + inrepair)[terr == ti].sum() >= trigger_t[ti]:
+                        request(t, 1.0, ti)
             dispatch_idle(t, k)
         elif kind == "free":
             c, k, i = data
@@ -255,17 +309,23 @@ def run(rises, customers, dist_km, n_local, cfg, seed=0):
                 request(t, d.aid)
             dispatch_idle(t); push(t + cfg.rebalance_h, "reb", None)
         elif kind == "aid":
+            m, ti = data
             d = yield point(t)
             set_target(d.weights, t)
             tg = S["target"]
-            add_crews(data, np.maximum(tg, 0) + 1e-9 if tg.sum() > 0 else start_w)
+            add_crews(m, np.maximum(tg, 0) + 1e-9 if tg.sum() > 0 else start_w, ti)
             if cfg.replan_after_aid:
                 d = yield point(t, after_aid=True)
             set_target(d.weights, t); dispatch_idle(t)
 
     dur = finish - t_arr
-    aid_hours = 0.0 if S["aid_at"] is None else max(0.0, t_end - S["aid_at"]) * S["aid_n"]
+    if pooled:
+        aid_hours = 0.0 if S["aid_at"] is None else max(0.0, t_end - S["aid_at"]) * S["aid_n"]
+    else:
+        aid_hours = float(sum(max(0.0, t_end - a) * m for a, m in zip(S["aid_at_t"], S["aid_n_t"]) if a is not None))
     return {"customer_hours": float((k_arr * dur).sum()), "t_end": t_end, "jobs": n,
             "aid_requested_at": S["aid_at"], "aid_crews": S["aid_n"], "crews_local": n_local, "aid_hours": aid_hours,
             "t_arr": t_arr, "finish": finish, "customers": k_arr, "county": c_arr,
-            "t_start": t_start, "t_travel": t_travel, "crew_hours": crew_hours, "travel_hours": travel_hours}
+            "t_start": t_start, "t_travel": t_travel, "crew_hours": crew_hours, "travel_hours": travel_hours,
+            "territory": None if pooled else terr, "crews_local_t": None if pooled else fleet_t,
+            "aid_crews_t": None if pooled else S["aid_n_t"], "aid_requested_at_t": None if pooled else S["aid_at_t"]}

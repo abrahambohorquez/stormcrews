@@ -18,7 +18,7 @@ sys.path.insert(0, str(HERE))
 import stormcrews as sc  # noqa: E402
 from stormcrews.core.engine import EngineConfig  # noqa: E402
 from stormcrews.scenario import Scenario  # noqa: E402
-from experiments import ANCHOR_PER_1000, ANCHORS, SEEDS  # noqa: E402
+from experiments import ANCHOR_PER_1000, ANCHORS, CAL, SEEDS, base  # noqa: E402
 
 RES = HERE / "results"
 M = {}
@@ -72,9 +72,9 @@ put("decisionH", f"{S.decision_h:g}")
 put("anchorRatio", f"{ANCHOR_PER_1000:.1f}")
 put("anchorMin", f"{min(ANCHORS.values()):.1f}"); put("anchorMax", f"{max(ANCHORS.values()):.1f}")
 put("nAnchors", {5: "five"}.get(len(ANCHORS), str(len(ANCHORS))))
-fl = {k: np.median([x["calibrations"]["anchored"]["fleet"] for x in r.meta]) for k, r in R.items()}
+fl = {k: np.median([x["calibrations"][CAL]["fleet"] for x in r.meta]) for k, r in R.items()}
 put("fleetNE", num(fl["NE"])); put("fleetPA", num(fl["PA"]))
-rep = np.concatenate([[x["calibrations"]["anchored"]["repair_mean_h"] for x in r.meta] for r in R.values()])
+rep = np.concatenate([[x["calibrations"][CAL]["repair_mean_h"] for x in r.meta] for r in R.values()])
 put("repairMed", f"{np.median(rep):.1f}"); put("repairMax", f"{rep.max():.0f}")
 put("nSeeds", str(len(SEEDS)))
 
@@ -82,6 +82,9 @@ put("nSeeds", str(len(SEEDS)))
 cal = pd.read_csv(ROOT / "results" / "calibration_summary.csv")
 put("peakAllMin", f"{cal['peak_ratio_median'].min():.2f}"); put("peakAllMax", f"{cal['peak_ratio_median'].max():.2f}")
 h = pd.read_csv(RES / "holdout.csv")
+# one row per storm: the simulated quantities averaged over the seeds, the observed ones unchanged
+h = h.groupby(["region", "fit", "storm"], as_index=False)[["customer_hours", "observed_customer_hours", "peak_sim",
+                                                             "peak_obs", "t50_sim", "t50_obs", "t90_sim", "t90_obs"]].mean()
 h["chr"] = h["customer_hours"] / h["observed_customer_hours"]; h["pk"] = h["peak_sim"] / h["peak_obs"]
 h["ech"] = np.abs(np.log(h["chr"]))
 for key, reg in (("NE", "ne"), ("PA", "pawv")):
@@ -174,12 +177,20 @@ for d, lab in ((24, "TwentyFour"), (72, "SeventyTwo"), (96, "NinetySix")):
     put(f"isaiasOut{lab}", num(fi["out"][d] / 1e3))
 put("isaiasAidAfterPeak", f"{fi['aid_arrival_h'] - fi['peak_h']:.0f}")
 RN = R["NE"]; ist = RN.storm(10); ct = (RN.counties["state"] == "CT").to_numpy()
-ires = sc.Simulator(sc.Scenario(region="ne", calibration="anchored")).run(sc.rules.CurrentPractice(), 10, seed=1)
+ires = sc.Simulator(base("ne")).run(sc.rules.CurrentPractice(), 10, seed=1)
 chs = customer_hours_per_customer(ires) * RN.customers
 put("isaiasCHObsCT", f"{ist.observed_county[ct].sum() / RN.customers[ct].sum():.1f}")
 put("isaiasCHObsRest", f"{ist.observed_county[~ct].sum() / RN.customers[~ct].sum():.1f}")
 put("isaiasCHSimCT", f"{chs[ct].sum() / RN.customers[ct].sum():.1f}")
 put("isaiasCHSimRest", f"{chs[~ct].sum() / RN.customers[~ct].sum():.1f}")
+from scipy.stats import spearmanr  # noqa: E402
+put("isaiasCountyRho", f"{spearmanr(chs / RN.customers, ist.observed_county / RN.customers).correlation:.2f}")
+# the same contrast with one pooled fleet, for the comparison in the papers
+ipool = sc.Simulator(base("ne").with_(territories=False, calibration="anchored")).run(sc.rules.CurrentPractice(), 10, seed=1)
+chp = customer_hours_per_customer(ipool) * RN.customers
+put("isaiasCHPoolCT", f"{chp[ct].sum() / RN.customers[ct].sum():.1f}")
+put("isaiasCHPoolRest", f"{chp[~ct].sum() / RN.customers[~ct].sum():.1f}")
+put("isaiasCountyRhoPool", f"{spearmanr(chp / RN.customers, ist.observed_county / RN.customers).correlation:.2f}")
 
 out_ = subprocess.run([sys.executable, "-m", "pytest", "--collect-only", "-q", "-p", "no:cacheprovider"], cwd=ROOT,
                       capture_output=True, text=True).stdout

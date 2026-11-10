@@ -30,8 +30,9 @@ from stormcrews.core.data import region as load_region  # noqa: E402
 from stormcrews.rules import CurrentPractice  # noqa: E402
 
 OUT = Path(__file__).resolve().parent / "results"
-SEEDS = (0, 1, 2)
-CAL = "anchored"
+SEEDS = (0, 1, 2, 3, 4)
+CAL = "anchored_territory"     # the anchored fleet, each utility territory with its own crews (scripts/calibrate_territories.py)
+TERRITORIES = True
 # Line crews at work per 1,000 customers out at the utility's peak, from the five public filings that anchor the fleet
 # (line crews internal and external, tree crews excluded, with the same utility's peak customers out)
 ANCHORS = {"Central Maine Power, Oct. 2019 (press release)": 3.06,
@@ -90,7 +91,7 @@ def run(jobs, workers):
 
 
 def base(region="ne", **kw):
-    return Scenario(name=region, region=region, calibration=CAL, **kw)
+    return Scenario(name=region, region=region, calibration=CAL, territories=TERRITORIES, **kw)
 
 
 def storms(sc):
@@ -187,37 +188,101 @@ def perjob(workers):
 
 
 # ------------------------------------------------------------------ leave one storm out
+def arrival_hours(storm):
+    """Hours over which the middle 80 % of the storm's damage arrives (from the 10th to the 90th percentile of the
+    cumulative regional rises). An input of the simulator, not an outcome of the restoration."""
+    by_h = storm.rises.sum(1); cs = np.cumsum(by_h) / by_h.sum()
+    return float(np.searchsorted(cs, 0.9) - np.searchsorted(cs, 0.1))
+
+
+def storm_features(storm):
+    """Per-storm quantities read from the simulator inputs only (rises, weather, the peak of customers out)."""
+    r = storm.rises; tot = r.sum(); by_c = r.sum(0)
+    return {"log_peak": float(np.log(storm.meta["peak_customers_out"])), "log_tot": float(np.log(tot)),
+            "arrival_h": arrival_hours(storm), "log_ncty": float(np.log((by_c > 0.01 * by_c.max()).sum())),
+            "gust_w": float((storm.weather[:, 0] * by_c).sum() / tot)}
+
+
+# Candidate predictors of the held-out repair time, all from the inputs: (features, whether sigma is regressed too)
+CANDIDATES = {"peak": (["log_peak"], False),
+              "peak+tot": (["log_peak", "log_tot"], False),
+              "peak+arrival": (["log_peak", "arrival_h"], False),
+              "tot+arrival+ncty": (["log_tot", "arrival_h", "log_ncty"], False),
+              "peak+arrival+gust": (["log_peak", "arrival_h", "gust_w"], False),
+              "peak+arrival, sigma regressed": (["log_peak", "arrival_h"], True),
+              "peak+arrival+tot": (["log_peak", "arrival_h", "log_tot"], False)}
+CHOSEN = "peak+arrival, sigma regressed"
+
+
+def _holdout_jobs(reg, candidate, label):
+    """Leave-one-storm-out jobs of one candidate predictor in one region, every seed; returns (jobs, parameter rows)."""
+    feats, sig_reg = CANDIDATES[candidate]
+    R = load_region(reg); sc = base(reg); ids = storms(sc)
+    m = {x["id"]: x for x in R.meta}
+    S = {s: R.storm(s) for s in ids}
+    F = pd.DataFrame([storm_features(S[s]) for s in ids], index=ids)
+    X = np.column_stack([np.ones(len(ids))] + [F[f].to_numpy(float) for f in feats])
+    lr = np.log([m[s]["calibrations"][CAL]["repair_mean_h"] for s in ids])
+    sg = np.array([m[s]["calibrations"][CAL]["size_sigma"] for s in ids])
+    jobs, pred = [], []
+    for i, s in enumerate(ids):
+        keep = np.arange(len(ids)) != i
+        b = np.linalg.lstsq(X[keep], lr[keep], rcond=None)[0]
+        r_hat = float(np.exp(X[i] @ b))
+        if sig_reg:
+            bs = np.linalg.lstsq(X[keep], sg[keep], rcond=None)[0]
+            s_hat = float(np.clip(np.round((X[i] @ bs) * 2) / 2, 0, 3.5))
+        else:
+            s_hat = float(np.round(np.median(sg[keep]) * 2) / 2)
+        row = {"region": reg, "candidate": candidate, "storm": s, "repair_pred_h": r_hat,
+               "repair_fit_h": float(np.exp(lr[i])), "sigma_pred": s_hat, "sigma_fit": float(sg[i]),
+               "log_customer_hours_obs": float(np.log(S[s].observed.sum()))}
+        row.update({f: float(F.loc[s, f]) for f in F.columns})
+        row.update({f"coef_{f}": float(c) for f, c in zip(feats, b[1:])})
+        pred.append(row)
+        for k in SEEDS:
+            jobs.append((dict(label, storm_id=s), sc, _with_cal(S[s], repair_mean_h=r_hat, size_sigma=s_hat), k, None))
+    return jobs, pred, sc, ids
+
+
 def holdout(workers):
     """For each storm, the repair time and job-size dispersion come from the other storms of its region: log repair
-    time regressed on log peak customers out, and the median dispersion. The fleet keeps the anchor (public filings
-    times the storm's peak). Current practice is then simulated on the held-out storm and compared with what was
-    observed; the in-sample anchored calibration is run alongside with the same seed."""
+    time and the job-size dispersion both regressed on the log peak customers out and on the hours over which the
+    damage arrives (arrival_hours). The fleet keeps the anchor (public filings times the storm's peak). Current practice is
+    then simulated on the held-out storm with every seed in SEEDS and compared with what was observed; the in-sample
+    anchored calibration is run alongside with the same seeds.
+
+    The two predictors (CHOSEN) were picked by this same leave-one-out check among the CANDIDATES, all built from
+    the simulator inputs; holdout_select() runs every candidate and lets the selection itself be held out."""
     jobs, pred = [], []
     for reg in ("ne", "pawv"):
-        R = load_region(reg); sc = base(reg); ids = storms(sc)
-        m = {x["id"]: x for x in R.meta}
-        lp = np.log([m[s]["peak_customers_out"] for s in ids])
-        lr = np.log([m[s]["calibrations"][CAL]["repair_mean_h"] for s in ids])
-        sg = np.array([m[s]["calibrations"][CAL]["size_sigma"] for s in ids])
-        for i, s in enumerate(ids):
-            keep = np.arange(len(ids)) != i
-            b, a = np.polyfit(lp[keep], lr[keep], 1)
-            r_hat = float(np.exp(a + b * lp[i])); s_hat = float(np.round(np.median(sg[keep]) * 2) / 2)
-            pred.append({"region": reg, "storm": s, "repair_pred_h": r_hat, "repair_fit_h": float(np.exp(lr[i])),
-                         "sigma_pred": s_hat, "sigma_fit": float(sg[i]), "slope": b})
-            st = R.storm(s)
-            jobs.append(({"region": reg, "fit": "held out"}, sc, _with_cal(st, repair_mean_h=r_hat, size_sigma=s_hat), 0, None))
-            jobs.append(({"region": reg, "fit": "in sample"}, sc, s, 0, None))
+        j, p, sc, ids = _holdout_jobs(reg, CHOSEN, {"region": reg, "fit": "held out"})
+        jobs += j; pred += p
+        jobs += [({"region": reg, "fit": "in sample"}, sc, s, k, None) for s in ids for k in SEEDS]
     pd.DataFrame(pred).to_csv(OUT / "holdout_parameters.csv", index=False)
-    run(jobs, workers).to_csv(OUT / "holdout.csv", index=False)
+    df = run(jobs, workers)
+    df.drop(columns=["storm_id"], errors="ignore").to_csv(OUT / "holdout.csv", index=False)
+
+
+def holdout_select(workers):
+    """Every candidate predictor of the repair time under the same leave-one-storm-out check, so that the choice of
+    predictors can itself be held out (nested selection, computed in make_macros) and compared with a regression of
+    customer-hours on the same inputs that uses no simulator."""
+    jobs, pred = [], []
+    for reg in ("ne", "pawv"):
+        for c in CANDIDATES:
+            j, p, _, _ = _holdout_jobs(reg, c, {"region": reg, "candidate": c})
+            jobs += j; pred += p
+    pd.DataFrame(pred).to_csv(OUT / "holdout_candidates_parameters.csv", index=False)
+    run(jobs, workers).drop(columns=["storm_id"], errors="ignore").to_csv(OUT / "holdout_candidates.csv", index=False)
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("what", choices=("gust", "crews", "rules", "perjob", "trigger", "holdout", "all"))
+    ap.add_argument("what", choices=("gust", "crews", "rules", "perjob", "trigger", "holdout", "holdout_select", "all"))
     ap.add_argument("--workers", type=int, default=4)
     a = ap.parse_args()
     OUT.mkdir(exist_ok=True)
-    todo = ("gust", "crews", "rules", "trigger", "holdout", "perjob") if a.what == "all" else (a.what,)
+    todo = ("gust", "crews", "rules", "trigger", "holdout", "holdout_select", "perjob") if a.what == "all" else (a.what,)
     for w in todo:
         t0 = time.time(); globals()[w](min(a.workers, 4)); print(f"{w}: {time.time() - t0:.0f} s", flush=True)

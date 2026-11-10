@@ -61,7 +61,7 @@ def hero():
     fig = plt.figure(figsize=(8.6, 2.6))
     gs = fig.add_gridspec(1, 3, width_ratios=[1.35, 0.85, 1.2], wspace=0.08)
     ax = fig.add_subplot(gs[0])
-    res = Simulator("new_england", calibration="anchored").run(CurrentPractice(), 10, seed=1)
+    res = Simulator("new_england", calibration="anchored_territory", territories=True).run(CurrentPractice(), 10, seed=1)
     st = res.storm; obs = st.observed / 1e3; c = res.curve() / 1e3
     ax.plot(np.arange(len(obs)) + 1, obs, color=RED, lw=0.9, drawstyle="steps-pre")
     ax.plot(np.arange(len(c)) + 1, c, color=NAVY, lw=0.9)
@@ -138,7 +138,7 @@ def explore():
 def frames():
     """An animation of Isaias under current practice, as Session.render() draws its frames."""
     fr = []
-    Simulator("new_england", calibration="anchored").run(CurrentPractice(), 10, seed=1, frames=fr)
+    Simulator("new_england", calibration="anchored_territory", territories=True).run(CurrentPractice(), 10, seed=1, frames=fr)
     try:
         from PIL import Image
     except ImportError:

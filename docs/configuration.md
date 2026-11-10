@@ -23,7 +23,7 @@ in [`stormcrews/config/`](../stormcrews/config) and every key below is read by t
 | `name` | text | | file name | Label of the scenario in result tables |
 | `region` | `ne` or `pawv` | | `ne` | New England (67 counties, 39 storms) or Pennsylvania and West Virginia (122 counties, 46 storms) |
 | `storms` | `all` or list of ids | | `all` | Storms to run; `stormcrews storms --region ne` lists the ids |
-| `calibration` | `shape`, `equal`, `anchored`, `anchored_low`, `anchored_high` | | `shape` | Fleet, repair time and job-size dispersion of every storm (see the README) |
+| `calibration` | `shape`, `equal`, `anchored`, `anchored_low`, `anchored_high`, `anchored_territory` | | `shape` | Fleet, repair time and job-size dispersion of every storm (see the README); `anchored_territory` is the anchored fleet with the repair time refitted under `territories: true` |
 | `decision_h` | number | h | 6 | Hours between decision points; decisions also come when mutual aid arrives |
 | `fleet_factor` | number > 0 | | 1 | Multiplies the calibrated local fleet |
 | `aid` | `normal`, `none` | | `normal` | Mutual aid comes in full, or nobody comes |
@@ -36,6 +36,7 @@ in [`stormcrews/config/`](../stormcrews/config) and every key below is read by t
 | `speed_kmh` | number > 0 | km/h | 60 | Crew travel speed between area centroids |
 | `aid_lead_h` | number ≥ 0 | h | 24 | Hours from an aid request to the arrival of the crews |
 | `aid_share` | number ≥ 0 | crews per local crew | 0.5 | Aid crews per local crew at multiplier 1 |
+| `territories` | true or false | | false | Each utility territory (the `territory` column of the county table) keeps its own crews, which serve only its counties, and requests its own aid; the calibrated fleet is split across territories in proportion to the customers each serves, and the usual aid (`aid_share` times the regional fleet) joins the territories in proportion to the damage each receives |
 | `what_if` | null or mapping | | null | Weather and network changes applied to the real storm through the damage model (keys below) |
 
 ## `what_if`

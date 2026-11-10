@@ -1,0 +1,123 @@
+fips,name,state,territory,source,hifld_top,hifld_share,hifld_second,hifld_second_share
+42001,Adams,PA,Met-Ed,override,Met-Ed,0.8534,West Penn Power,0.1419
+42003,Allegheny,PA,Duquesne Light,override,Penn Power,0.9972,Duquesne Light,0.6719
+42005,Armstrong,PA,West Penn Power,override,West Penn Power,0.998,Penelec,0.0335
+42007,Beaver,PA,Duquesne Light,override,Penn Power,0.9999,Duquesne Light,0.6839
+42009,Bedford,PA,Penelec,override,Penelec,0.6549,West Penn Power,0.3451
+42011,Berks,PA,Met-Ed,override,Met-Ed,0.9048,PPL,0.0954
+42013,Blair,PA,Penelec,override,Penelec,1.0,,
+42015,Bradford,PA,Penelec,override,Penelec,0.9985,,
+42017,Bucks,PA,PECO,override,PECO,0.6381,PPL,0.1831
+42019,Butler,PA,West Penn Power,override,Penn Power,0.9995,West Penn Power,0.8418
+42021,Cambria,PA,Penelec,override,Penelec,1.0,,
+42023,Cameron,PA,Penelec,override,West Penn Power,1.0,,
+42025,Carbon,PA,PPL,hifld_iou,PPL,1.0,,
+42027,Centre,PA,West Penn Power,override,West Penn Power,0.7122,Penelec,0.2874
+42029,Chester,PA,PECO,override,PECO,0.91,PPL,0.0645
+42031,Clarion,PA,Penelec,override,Penelec,0.5345,West Penn Power,0.4017
+42033,Clearfield,PA,Penelec,override,Penelec,0.9993,,
+42035,Clinton,PA,PPL,hifld_iou,PPL,0.6253,West Penn Power,0.3775
+42037,Columbia,PA,PPL,hifld_iou,PPL,0.9986,,
+42039,Crawford,PA,Penelec,override,Penn Power,0.9976,Penelec,0.8839
+42041,Cumberland,PA,PPL,hifld_iou,PPL,0.5058,Penelec,0.2811
+42043,Dauphin,PA,PPL,hifld_iou,PPL,0.8599,Met-Ed,0.1395
+42045,Delaware,PA,PECO,override,PECO,0.9949,,
+42047,Elk,PA,Penelec,override,West Penn Power,0.8632,Penelec,0.1395
+42049,Erie,PA,Penelec,override,Penelec,0.9918,,
+42051,Fayette,PA,West Penn Power,override,West Penn Power,0.9991,,
+42053,Forest,PA,Penelec,override,Penelec,0.9992,,
+42055,Franklin,PA,West Penn Power,hifld_iou,West Penn Power,0.6867,Penelec,0.3325
+42057,Fulton,PA,West Penn Power,override,West Penn Power,0.9966,Penelec,0.0032
+42059,Greene,PA,West Penn Power,override,West Penn Power,0.9999,,
+42061,Huntingdon,PA,Penelec,override,Penelec,0.9998,,
+42063,Indiana,PA,West Penn Power,override,Penelec,0.9995,West Penn Power,0.0031
+42065,Jefferson,PA,Penelec,override,Penelec,0.9995,,
+42067,Juniata,PA,Penelec,override,PPL,0.639,Penelec,0.3234
+42069,Lackawanna,PA,PPL,hifld_iou,PPL,0.9996,,
+42071,Lancaster,PA,PPL,hifld_iou,PPL,0.9769,Met-Ed,0.0222
+42073,Lawrence,PA,Penn Power,override,Penn Power,1.0,,
+42075,Lebanon,PA,Met-Ed,override,Met-Ed,0.9165,PPL,0.0838
+42077,Lehigh,PA,PPL,override,PPL,0.8047,Met-Ed,0.2008
+42079,Luzerne,PA,PPL,hifld_iou,PPL,0.5668,,
+42081,Lycoming,PA,PPL,hifld_iou,PPL,0.454,West Penn Power,0.2924
+42083,McKean,PA,Penelec,override,Penelec,0.6719,West Penn Power,0.3274
+42085,Mercer,PA,Penn Power,override,Penn Power,0.9999,,
+42087,Mifflin,PA,Penelec,override,Penelec,0.9961,PPL,0.0029
+42089,Monroe,PA,Met-Ed,override,PPL,0.7374,Met-Ed,0.2622
+42091,Montgomery,PA,PECO,override,PECO,0.8043,Met-Ed,0.0942
+42093,Montour,PA,PPL,hifld_iou,PPL,1.0,,
+42095,Northampton,PA,Met-Ed,override,Met-Ed,0.6984,PPL,0.3003
+42097,Northumberland,PA,PPL,hifld_iou,PPL,1.0,,
+42099,Perry,PA,PPL,hifld_iou,PPL,0.8329,Penelec,0.1468
+42101,Philadelphia,PA,PECO,override,PECO,0.9964,,
+42103,Pike,PA,Met-Ed,override,PPL,0.5776,Met-Ed,0.4181
+42105,Potter,PA,Penelec,override,West Penn Power,0.5923,Penelec,0.4309
+42107,Schuylkill,PA,PPL,hifld_iou,PPL,0.9984,Met-Ed,0.0016
+42109,Snyder,PA,PPL,hifld_iou,PPL,1.0,,
+42111,Somerset,PA,Penelec,override,Penelec,0.9396,West Penn Power,0.0427
+42113,Sullivan,PA,Penelec,override,Penelec,0.9996,,
+42115,Susquehanna,PA,Penelec,override,Penelec,0.9292,PPL,0.0687
+42117,Tioga,PA,Penelec,override,Penelec,0.9981,,
+42119,Union,PA,PPL,hifld_iou,PPL,0.9991,,
+42121,Venango,PA,Penelec,hifld_iou,Penelec,0.9996,Penn Power,0.0026
+42123,Warren,PA,Penelec,override,Penelec,0.9993,,
+42125,Washington,PA,West Penn Power,override,West Penn Power,0.9998,Penn Power,0.001
+42127,Wayne,PA,PPL,hifld_iou,PPL,0.7354,Penelec,0.2632
+42129,Westmoreland,PA,West Penn Power,override,West Penn Power,0.9953,Penelec,0.1833
+42131,Wyoming,PA,Penelec,hifld_iou,Penelec,0.8346,PPL,0.0684
+42133,York,PA,Met-Ed,override,Met-Ed,0.8534,PECO,0.0908
+54001,Barbour,WV,Mon Power,hifld_iou,Mon Power,1.0,,
+54003,Berkeley,WV,Potomac Edison,override,Potomac Edison,0.9999,,
+54005,Boone,WV,Appalachian Power,hifld_iou,Appalachian Power,1.0,,
+54007,Braxton,WV,Mon Power,hifld_iou,Mon Power,1.0,,
+54009,Brooke,WV,Wheeling Power,override,Wheeling Power,0.9902,Mon Power,0.9895
+54011,Cabell,WV,Appalachian Power,hifld_iou,Appalachian Power,0.9972,,
+54013,Calhoun,WV,Mon Power,hifld_iou,Mon Power,1.0,,
+54015,Clay,WV,Appalachian Power,hifld_iou,Appalachian Power,0.5601,Mon Power,0.4399
+54017,Doddridge,WV,Mon Power,hifld_iou,Mon Power,1.0,Wheeling Power,0.0015
+54019,Fayette,WV,Appalachian Power,hifld_iou,Appalachian Power,1.0,,
+54021,Gilmer,WV,Mon Power,hifld_iou,Mon Power,1.0,,
+54023,Grant,WV,Potomac Edison,override,Potomac Edison,0.863,Mon Power,0.137
+54025,Greenbrier,WV,Mon Power,hifld_iou,Mon Power,0.5534,Appalachian Power,0.3529
+54027,Hampshire,WV,Potomac Edison,override,Potomac Edison,0.9985,,
+54029,Hancock,WV,Wheeling Power,override,Mon Power,0.9861,Wheeling Power,0.0052
+54031,Hardy,WV,Potomac Edison,override,Potomac Edison,0.9983,,
+54033,Harrison,WV,Mon Power,hifld_iou,Mon Power,1.0,,
+54035,Jackson,WV,Appalachian Power,hifld_iou,Appalachian Power,0.7104,Mon Power,0.3997
+54037,Jefferson,WV,Potomac Edison,override,Potomac Edison,0.9986,,
+54039,Kanawha,WV,Appalachian Power,hifld_iou,Appalachian Power,1.0,,
+54041,Lewis,WV,Mon Power,hifld_iou,Mon Power,1.0,,
+54043,Lincoln,WV,Appalachian Power,hifld_iou,Appalachian Power,1.0,,
+54045,Logan,WV,Appalachian Power,hifld_iou,Appalachian Power,1.0,,
+54047,McDowell,WV,Appalachian Power,hifld_iou,Appalachian Power,1.0,,
+54049,Marion,WV,Mon Power,hifld_iou,Mon Power,1.0,Wheeling Power,0.0021
+54051,Marshall,WV,Wheeling Power,override,Wheeling Power,0.9977,Appalachian Power,0.9952
+54053,Mason,WV,Appalachian Power,hifld_iou,Appalachian Power,0.9967,,
+54055,Mercer,WV,Appalachian Power,hifld_iou,Appalachian Power,1.0,,
+54057,Mineral,WV,Potomac Edison,override,Potomac Edison,0.9198,Mon Power,0.0932
+54059,Mingo,WV,Appalachian Power,hifld_iou,Appalachian Power,0.9928,,
+54061,Monongalia,WV,Mon Power,hifld_iou,Mon Power,0.9983,West Penn Power,0.0017
+54063,Monroe,WV,Mon Power,hifld_iou,Mon Power,0.746,Appalachian Power,0.3338
+54065,Morgan,WV,Potomac Edison,override,Potomac Edison,0.9993,,
+54067,Nicholas,WV,Mon Power,hifld_iou,Mon Power,0.7517,Appalachian Power,0.3597
+54069,Ohio,WV,Wheeling Power,override,Wheeling Power,0.9985,Appalachian Power,0.9959
+54071,Pendleton,WV,Mon Power,hifld_iou,Mon Power,0.9979,,
+54073,Pleasants,WV,Mon Power,hifld_iou,Mon Power,0.9952,,
+54075,Pocahontas,WV,Mon Power,hifld_iou,Mon Power,0.9983,,
+54077,Preston,WV,Mon Power,hifld_iou,Mon Power,0.9981,Potomac Edison,0.0017
+54079,Putnam,WV,Appalachian Power,hifld_iou,Appalachian Power,1.0,,
+54081,Raleigh,WV,Appalachian Power,hifld_iou,Appalachian Power,1.0,Mon Power,0.0057
+54083,Randolph,WV,Mon Power,hifld_iou,Mon Power,1.0,,
+54085,Ritchie,WV,Mon Power,hifld_iou,Mon Power,1.0,,
+54087,Roane,WV,Mon Power,hifld_iou,Mon Power,0.6151,Appalachian Power,0.3849
+54089,Summers,WV,Appalachian Power,hifld_iou,Appalachian Power,0.6836,Mon Power,0.4191
+54091,Taylor,WV,Mon Power,hifld_iou,Mon Power,1.0,,
+54093,Tucker,WV,Mon Power,hifld_iou,Mon Power,0.9984,Potomac Edison,0.0016
+54095,Tyler,WV,Mon Power,hifld_iou,Mon Power,0.9996,Wheeling Power,0.0037
+54097,Upshur,WV,Mon Power,hifld_iou,Mon Power,1.0,,
+54099,Wayne,WV,Appalachian Power,hifld_iou,Appalachian Power,0.9936,,
+54101,Webster,WV,Mon Power,hifld_iou,Mon Power,1.0,,
+54103,Wetzel,WV,Mon Power,hifld_iou,Mon Power,0.9992,Wheeling Power,0.9919
+54105,Wirt,WV,Mon Power,hifld_iou,Mon Power,1.0,,
+54107,Wood,WV,Mon Power,hifld_iou,Mon Power,0.9966,,
+54109,Wyoming,WV,Appalachian Power,hifld_iou,Appalachian Power,1.0,,

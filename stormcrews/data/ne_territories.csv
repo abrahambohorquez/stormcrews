@@ -1,0 +1,68 @@
+fips,name,state,territory,source,hifld_top,hifld_share,hifld_second,hifld_second_share
+9001,Fairfield,CT,Eversource CT,override,Eversource CT,0.9804,United Illuminating,0.9793
+9003,Hartford,CT,Eversource CT,override,Eversource CT,0.9999,,
+9005,Litchfield,CT,Eversource CT,override,Eversource CT,0.9991,United Illuminating,0.0012
+9007,Middlesex,CT,Eversource CT,override,Eversource CT,0.996,United Illuminating,0.0018
+9009,New Haven,CT,United Illuminating,override,Eversource CT,0.994,United Illuminating,0.9898
+9011,New London,CT,Eversource CT,override,Eversource CT,0.9959,,
+9013,Tolland,CT,Eversource CT,override,Eversource CT,1.0,,
+9015,Windham,CT,Eversource CT,override,Eversource CT,0.999,,
+23001,Androscoggin,ME,Central Maine Power,override,Central Maine Power,1.0,,
+23003,Aroostook,ME,Versant Power,override,Versant Power,0.9991,,
+23005,Cumberland,ME,Central Maine Power,override,Central Maine Power,0.9317,,
+23007,Franklin,ME,Central Maine Power,override,Central Maine Power,0.8117,,
+23009,Hancock,ME,Versant Power,override,Versant Power,1.0,Central Maine Power,0.1037
+23011,Kennebec,ME,Central Maine Power,override,Central Maine Power,1.0,,
+23013,Knox,ME,Central Maine Power,override,Central Maine Power,0.7133,,
+23015,Lincoln,ME,Central Maine Power,override,Central Maine Power,0.9802,,
+23017,Oxford,ME,Central Maine Power,override,Central Maine Power,0.8678,Eversource NH,0.0016
+23019,Penobscot,ME,Versant Power,override,Versant Power,0.9999,Central Maine Power,0.1087
+23021,Piscataquis,ME,Versant Power,override,Versant Power,0.9989,Central Maine Power,0.188
+23023,Sagadahoc,ME,Central Maine Power,override,Central Maine Power,0.982,,
+23025,Somerset,ME,Central Maine Power,override,Central Maine Power,0.4871,Versant Power,0.0011
+23027,Waldo,ME,Central Maine Power,override,Versant Power,0.999,Central Maine Power,0.9946
+23029,Washington,ME,Versant Power,override,Versant Power,0.9993,,
+23031,York,ME,Central Maine Power,override,Central Maine Power,0.9944,Eversource NH,0.0021
+25001,Barnstable,MA,Eversource MA,override,Eversource MA,0.9683,,
+25003,Berkshire,MA,National Grid MA,override,National Grid MA,0.6759,Eversource MA,0.5529
+25005,Bristol,MA,National Grid MA,override,National Grid MA,0.5974,Eversource MA,0.3587
+25007,Dukes,MA,Eversource MA,override,Eversource MA,0.9426,,
+25009,Essex,MA,National Grid MA,override,National Grid MA,0.9608,Unitil MA,0.0012
+25011,Franklin,MA,Eversource MA,override,National Grid MA,0.8521,Eversource MA,0.5656
+25013,Hampden,MA,Eversource MA,override,Eversource MA,0.4902,National Grid MA,0.4223
+25015,Hampshire,MA,Eversource MA,override,Eversource MA,0.7042,National Grid MA,0.4963
+25017,Middlesex,MA,Eversource MA,override,Unitil MA,0.9961,Eversource MA,0.5481
+25019,Nantucket,MA,National Grid MA,override,National Grid MA,1.0,,
+25021,Norfolk,MA,Eversource MA,override,National Grid MA,0.6263,Eversource MA,0.5285
+25023,Plymouth,MA,Eversource MA,override,Eversource MA,0.5667,National Grid MA,0.348
+25025,Suffolk,MA,Eversource MA,override,Eversource MA,0.8743,National Grid MA,0.118
+25027,Worcester,MA,National Grid MA,override,National Grid MA,0.9991,Unitil MA,0.9987
+33001,Belknap,NH,Eversource NH,override,Eversource NH,1.0,NH Electric Coop,0.9996
+33003,Carroll,NH,Eversource NH,override,Eversource NH,1.0,NH Electric Coop,0.8473
+33005,Cheshire,NH,Eversource NH,override,Eversource NH,0.9984,Liberty NH,0.9984
+33007,Coos,NH,Eversource NH,override,Eversource NH,0.9974,NH Electric Coop,0.2955
+33009,Grafton,NH,Eversource NH,override,Eversource NH,0.9984,Liberty NH,0.9978
+33011,Hillsborough,NH,Eversource NH,override,Eversource NH,0.9999,Liberty NH,0.9997
+33013,Merrimack,NH,Eversource NH,override,Eversource NH,1.0,NH Electric Coop,0.4496
+33015,Rockingham,NH,Eversource NH,override,Eversource NH,0.999,Liberty NH,0.9974
+33017,Strafford,NH,Eversource NH,override,Eversource NH,0.998,Unitil NH,0.3426
+33019,Sullivan,NH,Eversource NH,override,Eversource NH,0.9988,NH Electric Coop,0.9983
+44001,Bristol,RI,Rhode Island Energy,override,Rhode Island Energy,0.8785,,
+44003,Kent,RI,Rhode Island Energy,override,Rhode Island Energy,0.9963,Eversource CT,0.0031
+44005,Newport,RI,Rhode Island Energy,override,Rhode Island Energy,0.9327,National Grid MA,0.0013
+44007,Providence,RI,Rhode Island Energy,override,Rhode Island Energy,0.9996,,
+44009,Washington,RI,Rhode Island Energy,override,Rhode Island Energy,0.9923,Eversource CT,0.0014
+50001,Addison,VT,Green Mountain Power,override,Vermont Electric Coop,0.9965,Green Mountain Power,0.9876
+50003,Bennington,VT,Green Mountain Power,override,Green Mountain Power,0.9996,,
+50005,Caledonia,VT,Green Mountain Power,override,Vermont Electric Coop,0.9986,Green Mountain Power,0.3642
+50007,Chittenden,VT,Green Mountain Power,override,Green Mountain Power,0.7387,Vermont Electric Coop,0.2623
+50009,Essex,VT,Vermont Electric Coop,override,Vermont Electric Coop,0.997,Green Mountain Power,0.3426
+50011,Franklin,VT,Green Mountain Power,override,Vermont Electric Coop,0.9999,Green Mountain Power,0.4184
+50013,Grand Isle,VT,Vermont Electric Coop,override,Vermont Electric Coop,0.995,Green Mountain Power,0.005
+50015,Lamoille,VT,Green Mountain Power,override,Vermont Electric Coop,0.9984,Green Mountain Power,0.0307
+50017,Orange,VT,Green Mountain Power,override,Green Mountain Power,0.6189,Eversource NH,0.0018
+50019,Orleans,VT,Vermont Electric Coop,override,Vermont Electric Coop,0.9998,,
+50021,Rutland,VT,Green Mountain Power,override,Green Mountain Power,0.9987,,
+50023,Washington,VT,Green Mountain Power,override,Green Mountain Power,0.708,Vermont Electric Coop,0.001
+50025,Windham,VT,Green Mountain Power,override,Green Mountain Power,0.9668,,
+50027,Windsor,VT,Green Mountain Power,override,Green Mountain Power,0.9988,NH Electric Coop,0.001

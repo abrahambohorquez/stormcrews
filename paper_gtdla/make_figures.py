@@ -151,8 +151,8 @@ def explore():
     style()
     E._rc = lambda: plt.rc_context({"font.size": 9, "axes.titlesize": 9.5, "xtick.labelsize": 8.5,
                                     "ytick.labelsize": 8.5, "axes.labelsize": 9, "axes.grid": True})
-    base_ = E.run_case(E.default_settings(calibration="anchored"))
-    run_ = E.run_case(E.default_settings(calibration="anchored", fleet_factor=0.75))
+    base_ = E.run_case(E.default_settings(calibration=CAL, territories=True))
+    run_ = E.run_case(E.default_settings(calibration=CAL, territories=True, fleet_factor=0.75))
     fig = E.storm_figure(run_, base_, label="75 % local fleet", baseline_label="pinned: current practice")
     fig.set_size_inches(9.6, 2.6)
     fig.tight_layout(w_pad=1.0)

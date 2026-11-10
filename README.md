@@ -287,6 +287,7 @@ that current practice reproduces what was observed.
 | `equal` | Equal jobs and 3-hour repairs; only the fleet is fitted | 960 / 1,152 |
 | `anchored` | Fleet set so that local plus usual aid crews equal 4.0 per 1,000 customers out at the peak, the median of public utility filings; repair time fitted to customer-hours, spread to the shape | 342 / 302 |
 | `anchored_low`, `anchored_high` | The same at the lowest and highest ratio of the filings | |
+| `anchored_territory` | The anchored fleet, with the repair time refitted under `territories: true` (below) | 342 / 302 |
 
 ```python
 Simulator("new_england", calibration="anchored")
@@ -294,6 +295,23 @@ Simulator("new_england", calibration="anchored")
 
 The anchored calibration is the one to use when crew counts matter, since its fleet follows crew numbers utilities
 reported (1.6 to 5.9 line crews per 1,000 customers out at the peak in five filings).
+
+### Utility territories
+
+With `territories: true`, each utility territory keeps its own crews, which serve only its counties, and requests its
+own mutual aid once 1 % of its customers are out; the calibrated regional fleet is split across territories in
+proportion to the customers each serves (its standing fleet), and the usual aid, half the regional fleet, joins the
+territories in proportion to the damage each receives, as mutual assistance goes where the damage is. The territory of every county comes from the public
+HIFLD service-area polygons with overrides from the utilities' town lists (`stormcrews/data/TERRITORIES.md`): ten
+territories in New England (Eversource CT, MA and NH, National Grid MA, United Illuminating, Rhode Island Energy,
+Green Mountain Power, Vermont Electric Coop, Central Maine Power, Versant Power) and eleven in Pennsylvania and West
+Virginia. This is what reproduces the county pattern of a storm like Isaias, where Connecticut's utility was
+overwhelmed while the rest of the region recovered in a day; the papers use `anchored_territory` with
+`territories: true`.
+
+```python
+Simulator("new_england", calibration="anchored_territory", territories=True)
+```
 
 ## What-if weather
 
@@ -332,8 +350,12 @@ sc.Simulator("new_england").run(sc.rules.CurrentPractice(), storm, seed=1).metri
 The calibration fits customer-hours and the two decay times of each storm, so its fit is in sample. The regional peak
 is not a target and checks it: it comes out at 0.88 to 0.94 of the observed peak (median over storms, any
 calibration). Predicting every storm with repair parameters taken from the other storms of its region (leave one storm
-out), customer-hours miss by 34 % in New England and 29 % in Pennsylvania and West Virginia at the median. StormCrews
-replays observed storms closely and predicts an unseen one roughly.
+out, with the repair time and the job-size dispersion regressed on the peak and on the hours over which the damage
+arrives, five seeds per storm),
+customer-hours miss by 16 % in New England and 17 % in Pennsylvania and West Virginia at the median (16 % and 17 %
+when the choice of predictors is also held out), and fall within 25 % for 67 % and 59 % of the storms. A regression of
+customer-hours on the same two inputs, without the simulator, misses by 25 % and 27 %. StormCrews replays observed
+storms closely and predicts an unseen one roughly; its purpose is the what-if runs.
 
 <p align="center"><img src="docs/figures/validation.png" width="100%" alt="Validation"></p>
 <p align="center"><em>Observed EAGLE-I customers out (red), the anchored fit (navy) and the held-out prediction (gray,
@@ -387,8 +409,8 @@ sweeps a weather what-if over every storm; their results are in `results/`.
 
 ## Limitations
 
-- One pooled crew fleet per region; utilities restore their own territories, so the split of long outages between
-  utilities is not reproduced (in Isaias, Connecticut's are spread over the region).
+- Every county belongs whole to one utility territory, and the territories' crews and aid are shares of a regional
+  calibration; utilities with no public crew count are not calibrated on their own.
 - Counties are the unit. There is no feeder topology, switching or power flow, and crews drive between centroids.
 - Damage is replayed from the records; the what-if model is associational.
 - The calibration is per storm and in sample; out of sample a storm's customer-hours are predicted only roughly, and

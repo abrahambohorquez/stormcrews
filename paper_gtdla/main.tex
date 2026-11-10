@@ -237,8 +237,8 @@ user without code pick a storm, move the what-if and crew settings and compare t
 \section{What It Is For and What It Is Not For}\label{sec:use}
 
 StormCrews answers regional questions on real storms (Table~\ref{tab:use}), and its simplifications set the limits.
-One pooled fleet serves a whole region, while utilities restore their own territories, so the split of outages
-between utilities is not reproduced. Crews drive between area centroids. There is no feeder topology, no switching
+Each utility territory keeps its share of the regional fleet and its own aid, and its crews serve only its counties,
+with every county assigned whole to one territory. Crews drive between area centroids. There is no feeder topology, no switching
 and no power flow. The damage of a real storm is replayed, not generated, except through the what-if model, which is
 associational. Rules that request aid early read the hour of the peak from the data.
 
@@ -277,22 +277,24 @@ decay times are therefore targets. The peak is not, so it checks the fit, and it
 (\peakAllMin{} to \peakAllMax{} of the observed, median over storms).
 
 Because that fit is in sample, every storm was also predicted with parameters from the others. Leaving each storm out,
-$\log\bar R$ is regressed on the log of the peak customers out over the other storms of its region and $\sigma$ is
-their median, while the fleet keeps the anchor. Table~\ref{tab:val} and Fig.~\ref{fig:val} compare the two. Out of
+$\log\bar R$ and $\sigma$ are regressed, over the other storms of its region, on the log of the peak customers out and on the hours
+over which the middle 80\,\% of the damage arrives, both inputs of the engine, while the fleet keeps the anchor. The two predictors were chosen by this same test among seven candidate sets built from the
+inputs; the peak alone gives median errors of 28 and 24\,\%. Table~\ref{tab:val} and Fig.~\ref{fig:val} compare the two. Out of
 sample, a storm's customer-hours miss by \chErrOutNE\,\% in New England and \chErrOutPA\,\% in Pennsylvania and West
 Virginia at the median, and fall within 25\,\% for \chWithinOutNE\,\% and \chWithinOutPA\,\% of the storms. The hours
 from the peak to a tenth of it miss by \tNinetyOutNE{} and \tNinetyOutPA{} hours at the median. Summed over each
 region, held-out customer-hours come to \chPooledOutNE{} and \chPooledOutPA{} of those observed. The simulator replays
 observed storms closely and predicts an unseen storm only roughly.
 
-The county pattern shows what pooling crews leaves out. In Isaias, Connecticut lost \isaiasCHObsCT{} customer-hours per customer
+The county pattern shows why crews stay in their territories. In Isaias, Connecticut lost \isaiasCHObsCT{} customer-hours per customer
 and the rest of New England \isaiasCHObsRest. The simulation gives \isaiasCHSimCT{} and \isaiasCHSimRest{}
-(Fig.~\ref{fig:maps}): it puts the outages in the right places but spreads the long ones more evenly than the
-utilities, each restoring its own territory, did.
+(Fig.~\ref{fig:maps}, Spearman \isaiasCountyRho{} across counties); one pooled fleet for the whole region would give \isaiasCHPoolCT{} and
+\isaiasCHPoolRest, spreading the long outages more evenly than the utilities, each restoring its own territory, did.
 
 
 \begin{table}[t]
-\caption{Current practice against every observed storm, anchored calibration, seed 0}
+\caption{Current practice against every observed storm, anchored calibration, mean of 
+Seeds{} seeds}
 \label{tab:val}
 \centering\scriptsize
 \setlength{\tabcolsep}{2.6pt}
@@ -480,8 +482,8 @@ National Laboratory, the U.S. Department of Energy nor ECMWF endorses StormCrews
 StormCrews turns public outage records into a restoration simulator that a distribution planner, a regulator or a
 researcher can rerun and change. On \nStorms{} real storms it shows what a rule, a fleet size or a stronger storm does
 to the SAIDI contribution, to the customers out for days and to the crew-hours spent. It replays observed storms
-closely and predicts unseen ones roughly. It pools each region's crews, so it serves regional what-ifs and the
-comparison of rules, not the dispatch of one utility. Utility service territories and a third region come next.
+closely and predicts unseen ones roughly. It works at county level with each utility's share of the crews, so it serves
+regional what-ifs and the comparison of rules, not the dispatch of one utility. A third region comes next.
 
 \bibliographystyle{IEEEtran}
 \bibliography{refs}

@@ -60,6 +60,16 @@ and interior points, https://www.census.gov/geographies/reference-files/time-ser
 `cb_2020_us_county_5m` and `cb_2020_us_state_5m`, clipped to the two regions and simplified,
 https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html. Source: U.S. Census Bureau.
 
+## HIFLD Electric Retail Service Territories (public domain)
+
+The utility territory of every county (`territory` column of `ne_counties.csv` and `pawv_counties.csv`, and the
+tables `ne_territories.csv` and `pawv_territories.csv`): the investor-owned operating company whose service-area
+polygon covers most of the county, with overrides from the utilities' published town lists where the polygons overlap
+(`TERRITORIES.md` gives the rule, the overrides and the download date). Source: Homeland Infrastructure
+Foundation-Level Data, Electric Retail Service Territories,
+https://hifld-geoplatform.hub.arcgis.com/datasets/geoplatform::electric-retail-service-territories, U.S. Department
+of Homeland Security, public domain.
+
 ## NOAA Storm Events Database (public domain)
 
 Event type of every storm window. NOAA National Centers for Environmental Information, Storm Events Database,

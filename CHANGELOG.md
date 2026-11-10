@@ -1,5 +1,27 @@
 # Changelog
 
+## Unreleased
+
+**Added**
+- Utility territories: `territories: true` gives each utility territory its own crews, which serve only its counties,
+  and its own mutual-aid request; the calibrated fleet is split in proportion to the customers each territory serves,
+  and the usual aid joins the territories in proportion to the damage each receives.
+  The territory of every county comes from the public HIFLD service-area polygons with overrides from the utilities'
+  town lists (`stormcrews/data/TERRITORIES.md`, `scripts/add_territories.py`), and `scripts/calibrate_territories.py`
+  writes the `anchored_territory` calibration (anchored fleet, repair time refitted under territories). A run without
+  territories is unchanged bit for bit (`tests/test_territories.py`). The papers now use `anchored_territory`.
+
+**Changed**
+- Every experiment behind the papers now runs 5 seeds per storm (`SEEDS` in `paper_gtdla/experiments.py`), the
+  held-out check included, and the macros average seeds per storm before taking medians.
+- Leave-one-storm-out check (`paper_gtdla/experiments.py holdout`): the repair time and the job-size dispersion of a held-out storm are now
+  regressed on the log peak and on the hours over which the middle 80 % of the damage arrives (`arrival_hours`),
+  chosen among seven input-based candidate sets (`CANDIDATES`). With the territories, the median error of held-out customer-hours goes from 34 to 16 % in New England and from
+  29 to 17 % in Pennsylvania and West Virginia. The new `holdout_select` runs
+  every candidate so that the choice can itself be held out (nested selection: 16 and 17 %) and compared with a
+  regression of customer-hours on the same inputs without the simulator (25 and 27 %). `holdout.csv`, `holdout_parameters.csv`, `holdout_candidates*.csv`, `macros.tex`, the validation
+  figures and the README numbers are regenerated.
+
 ## 0.3.0 (2026-10-31)
 
 First public release.

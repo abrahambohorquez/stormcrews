@@ -62,6 +62,20 @@ class Region:
     def storm_ids(self):
         return [m["id"] for m in self.meta]
 
+    @property
+    def territories(self):
+        """Territory names in id order, or None when the county table has no `territory` column."""
+        if "territory" not in self.counties:
+            return None
+        return list(pd.Categorical(self.counties["territory"]).categories)
+
+    @property
+    def territory_ids(self):
+        """Integer territory id per county (the utility whose service area covers the county), or None."""
+        if "territory" not in self.counties:
+            return None
+        return pd.Categorical(self.counties["territory"]).codes.astype(int)
+
     def storm(self, i):
         m = next(x for x in self.meta if x["id"] == i)
         a = self._arr
